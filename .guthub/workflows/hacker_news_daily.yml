@@ -1,0 +1,30 @@
+name: Run Hacker News Script Daily
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Todos los días a las 00:00 UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run Hacker News Script
+        run: python get-show-new.py
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: show_hn_stories
+          path: show_hn_stories.txt

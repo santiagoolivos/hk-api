@@ -1,0 +1,1352 @@
+[
+    {
+        "id": 43616027,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Generative Benchmarking for RAG",
+        "username": "jeffchuber",
+        "url": "https://research.trychroma.com/generative-benchmarking",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43616027"
+    },
+    {
+        "id": 43615983,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: All-in-One Japanese Study Tool with AI + Anki",
+        "username": "dlee6018",
+        "url": "https://language-tutor-psi.vercel.app",
+        "description": "I&#x27;ve been using AI a lot lately to help me study Japanese. I can pick up a bunch of words just from watching anime, but I&#x27;m still pretty weak when it comes to speaking and reading characters. I tried using ChatGPT to practice, but it quickly got annoying bouncing between different tools \u2014 I couldn\u2019t chat and speak at the same time, and juggling stuff like Anki, dictionaries,etc.<p>I built this as an all-in-one tool to do this in one place.<p>Figured there are probably others in the same boat here, so wanted to share it here and see if anyone finds it helpful. Would love any feedback or ideas. Thanks, and hope it helps someone out!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43615983"
+    },
+    {
+        "id": 43615962,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AI agent that finds homes based on your requirements",
+        "username": "rangar",
+        "url": "https://theprophunt.com",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43615962"
+    },
+    {
+        "id": 43615233,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Ziplink \u2013 A URL Shortener for SaaS and Marketers",
+        "username": "gabor-boros",
+        "url": "https://www.ziplink.click",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43615233"
+    },
+    {
+        "id": 43615224,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Turning HN 'Who is Hiring?' comments into a searchable SQLite database",
+        "username": "williamsss",
+        "url": "https://amber-williams.github.io/hackernews-whos-hiring/",
+        "description": "Open-source code available here <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Amber-Williams&#x2F;hackernews-whos-hiring\">https:&#x2F;&#x2F;github.com&#x2F;Amber-Williams&#x2F;hackernews-whos-hiring</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43615224"
+    },
+    {
+        "id": 43615182,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: GizmoSQL \u2013 now easy to try online for FREE",
+        "username": "philbe77",
+        "url": "https://app.gizmodata.com",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43615182"
+    },
+    {
+        "id": 43614855,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Gleece \u2013 Streamlined API development framework for Go",
+        "username": "haimk",
+        "url": "https://docs.gleece.dev/",
+        "description": "Hello HN,<p>We come from the TypeScript ecosystem, and over the years, we&#x27;ve extensively utilized TSOA.<p>Recently, while working on some projects in Go, we noticed the absence of a similar framework. So, we decided to create one ourselves.<p>Even though Go&#x27;s simple and standard library-first approach is great, there&#x27;s still room for an all-in-one API framework.<p>Thus, inspired by the TSOA project and its flexibility, we created Gleece, an open-source Go framework that simplifies the process of building, documenting, and maintaining RESTful APIs.<p>Features include:<p>Code-First - Define and document your API endpoints in code, making them easy to maintain and understand.<p>Self-Documenting - Automatically generate OpenAPI 3.0&#x2F;3.1 specifications from your code, ensuring your API is always well-documented and up-to-date.<p>Plug &amp; Play - Easy to get started with and &quot;plays nice&quot; with other frameworks, routers, and tools.<p>Customizable - A template-centric approach allows for easy yet extensive customization.<p>Holistic - Built-in support for authentication, authorization, request&#x2F;response validation, and error handling to help you create robust APIs.<p>IDE Integration - The project includes an optional Visual Studio Code extension to provide developers with quality-of-life features.<p>You can check out the project on GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;gopher-fleece&#x2F;gleece\">https:&#x2F;&#x2F;github.com&#x2F;gopher-fleece&#x2F;gleece</a><p>and the documentation at <a href=\"https:&#x2F;&#x2F;docs.gleece.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.gleece.dev&#x2F;</a><p>Thanks,<p>Haim &amp; Yuval",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614855"
+    },
+    {
+        "id": 43614830,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: MCP server wrapper for Google Lighthouse",
+        "username": "pk97",
+        "url": "https://github.com/priyankark/lighthouse-mcp",
+        "description": "Allows AI assistants such as Cursor&#x2F;Cline&#x2F;GitHub Copilot to use Google&#x27;s lighthouse tool to measure perf metrics for your webpage. You can then run an agentic loop and get the assistants to optimize those metrics!<p>This was made using Cline. Pull requests accepted to make things better!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614830"
+    },
+    {
+        "id": 43614766,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Disco \u2013 The self-hosting platform I wish existed years ago",
+        "username": "gregsadetsky",
+        "url": null,
+        "description": "Hey HN, for the past 1.5 years my cofounder Antoine and I have been building Disco, an Open Source deployment platform that lets you host multiple web apps on a single server: <a href=\"https:&#x2F;&#x2F;disco.cloud&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;disco.cloud&#x2F;</a><p>After getting tired of high per-project pricing on platforms like Heroku and Render, and frustrated with Kubernetes&#x27; complexity, we created a platform with all the polish and convenience of commercial solutions, but as an Open Source project you can run anywhere. Disco gives you a streamlined experience (ie a clean CLI and web UI) with the freedom and economics of self-hosting.<p>Key features:<p>- Deploy from GitHub with fast deployment times - from git push to being live, our main static site deploys in 2 seconds (really); a medium sized Django app deploys in ~25 seconds<p>- Host multiple projects on a single server, cutting costs by 50%+ compared to per-project pricing<p>- Works with Node, Rust, Python, Django, Rails, static sites, and more<p>- Includes &quot;good enough&quot; Postgres for projects that don&#x27;t need enterprise features<p>- API keys for team access instead of SSH key management<p>- Run on your own infrastructure - from cloud VMs to Raspberry Pis to on-prem<p>- Built-in horizontal scaling - add servers to distribute the load and increase capacity<p>- Optionally, let us manage the infra for you: same Open Source stack, but less to worry about<p>A real-world example: We moved idealist.org &#x27;s staging environments, a highly trafficked site, from Heroku to Disco on a single $50&#x2F;month server, which now hosts 6 staging environments. On Heroku, each would have cost $500&#x2F;month ($3k total). We also moved all of Idealist&#x27;s production frontend SSR rendering to Disco, getting better stability at 1&#x2F;5th of the cost.<p>I personally moved a number of my hobby sites to a Raspberry Pi that sits at home, saving me hundreds for apps that used to be at Heroku and Render. See my (unhinged) Localhost talk at the Recurse Center about this - <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=z2lP7C8VT6M\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=z2lP7C8VT6M</a><p>Speaking of Recurse, we host a &quot;community&quot; Disco installation there i.e. a shared 8Gb Raspberry Pi that&#x27;s hosting 52 (static&#x2F;backend&#x2F;go&#x2F;python&#x2F;rust, etc.) web projects at the time of this writing. That&#x27;s also a fun use case!<p>TLDR: Disco is perfect for both DIY self-hosters and teams looking for a more cost-effective deployment platform. Available now for self-hosting (free and Open Source) or as a managed service.<p>Try it out <a href=\"https:&#x2F;&#x2F;disco.cloud&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;disco.cloud&#x2F;</a> and let us know what you think here or on our Discord. Cheers!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614766"
+    },
+    {
+        "id": 43614582,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Minimal MCP server in Go showcasing project architecture",
+        "username": "TuanKiri",
+        "url": "https://github.com/TuanKiri/weather-mcp-server",
+        "description": "I&#x27;m relatively new to Go, but recently got interested in how MCP servers work. I started thinking about what the architecture of such a project might look like, and decided to build a minimalist version as an experiment.<p>I based it on my past experience writing regular REST API servers and figured it might be useful or interesting to others as well.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614582"
+    },
+    {
+        "id": 43614557,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Tired of ugly landing pages? I built a library that doesn't suck",
+        "username": "aretecodes",
+        "url": "https://www.astrae.design",
+        "description": "Over the last 6 years as a front-end developer and designer, I kept seeing the same issue:<p>Great products. Terrible landing pages.\nUgly, slow, or straight up confusing.<p>So I built Astrae \u2014 a marketplace of clean, performant, and modern landing page templates made with React + Tailwind + Framer Motion.<p>They&#x27;re:\nBlazing fast &amp; production-ready<p>Design-first but developer-friendly<p>Easy to plug into any Next.js or React stack<p>Right now it&#x27;s mostly built for:<p>Indie hackers who hate design<p>Devs launching SaaS products<p>Agencies spinning up MVPs<p>If you&#x27;re someone who\u2019s tired of wasting hours on UI or fighting with messy design systems, would love to hear what you think.<p>Happy to share a free template with anyone who gives feedback. Cheers.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614557"
+    },
+    {
+        "id": 43614285,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Lux \u2013 A luxurious package manager for Lua",
+        "username": "mrcjkb",
+        "url": "https://mrcjkb.dev/posts/2025-04-07-lux-announcement.html",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43614285"
+    },
+    {
+        "id": 43614089,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: nix-mcp-servers \u2013 MCP server Nix package repo",
+        "username": "cameronfyfe",
+        "url": "https://github.com/cameronfyfe/nix-mcp-servers",
+        "description": "Started a collection of nix packages for some MCP servers I use. Makes installation into a NixOS-based system easy; also allows for running binaries straight from the flake on any Linux&#x2F;macOS systems with nix installed. This can be convenient for MCP servers like `github-mcp-server` written in Go that aren&#x27;t runnable using `uvx` or `npx`.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43614089"
+    },
+    {
+        "id": 43614051,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I tried making YouTube safer for my kids",
+        "username": "beechwood",
+        "url": "https://maekitsafe.com",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43614051"
+    },
+    {
+        "id": 43613896,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Kahuna, the IndexedDB-Manager Webextension",
+        "username": "thinkdecidedo",
+        "url": "https://github.com/hummingme/kahuna",
+        "description": "This has been my pet project and playground for a long time and has gone throught several framework changes, overhauls, etc.. Sometime last winter I realized that there has been a lot of progress since I started using plain javascript and lit-html and that it is time for a release. And then the hard work began...<p>But anyone who has used the browser&#x27;s own developer tools for working with IndexedDB databases will probably agree that there must be more convenient methods. And even though Kahuna can&#x27;t do everything I want it to yet, it&#x27;s certainly a good start.<p>Since yesterday, the webextension is available in the Chrome Web Store [1] and as a Firefox Add-On [2].<p>Feedback, comments, bug reports, and feature requests are all more than welcome!<p>[1] <a href=\"https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;kahuna&#x2F;ilafpdbgcaodnkdklgemggjamhpdjile\" rel=\"nofollow\">https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;kahuna&#x2F;ilafpdbgcaod...</a><p>[2] <a href=\"https:&#x2F;&#x2F;addons.mozilla.org&#x2F;en-US&#x2F;firefox&#x2F;addon&#x2F;kahuna-the-indexeddb-manager\" rel=\"nofollow\">https:&#x2F;&#x2F;addons.mozilla.org&#x2F;en-US&#x2F;firefox&#x2F;addon&#x2F;kahuna-the-in...</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613896"
+    },
+    {
+        "id": 43613893,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Transfer CloudWatch Logs to S3 via Firehose",
+        "username": "ibuki42O",
+        "url": "https://github.com/v420v/cloudwatch-logs-to-s3",
+        "description": "This project demonstrates how to utilize CloudWatch Logs and Firehose to transfer logs from an EC2 instance to S3 using AWS CloudFormation.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613893"
+    },
+    {
+        "id": 43613855,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Soundscapes and Lofi Player",
+        "username": "g3eorge",
+        "url": "https://www.noisefill.com/",
+        "description": "Hello HN! I would like to share my website which lets you play soundscapes and lofi music. All the sounds are in the public domain.<p>GitHub repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;thingbomb&#x2F;noisefill\">https:&#x2F;&#x2F;github.com&#x2F;thingbomb&#x2F;noisefill</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613855"
+    },
+    {
+        "id": 43613718,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Billdrip \u2013 Invoice scheduling with payment links and reminders",
+        "username": "neutronsoup",
+        "url": "https://www.billdrip.com/",
+        "description": "I built a web app that helps freelancers and small businesses schedule invoice emails with automatic reminders and optional Stripe payment links.<p>Background: My partner and I run a small property development company, and we often get invoices (from contractors, cleaners, HOAs) as email attachments. Paying them involves logging into my banking portal, which is my case requires access to a list of codes printed on a card issued by my bank (I know that some EU countries even need card readers to make online payments), and I often don\u2019t have access to that right away, or can&#x27;t be bothered to do it at that time. As a result, I sometimes forget to pay those invoices until much later.<p>My hypothesis with Billdrip is that letting businesses create scheduled invoice emails that includes the invoice PDF and, optionally, a &quot;Pay Now&quot; button (Stripe payment link) will increase on-time payments.<p>Let me know what you think, any feedback is appreciated!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613718"
+    },
+    {
+        "id": 43613690,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Clone any web element to React and Tailwind with this Chrome extension",
+        "username": "yuvalyes",
+        "url": "https://chromewebstore.google.com/detail/anyframeai-html-to-react/cbfoalaidkoiggnpjbkkbhggaanoacgo",
+        "description": "Hi HN!<p>Backstory - I&#x27;ve been writing backend code for years, and about a year ago I told my boss to shove it and went full solopreneur mode.<p>Problem is - many products need a nice web interface, and I&#x27;m a TERRIBLE designer. over the past few months, I kept feeding screenshots of website sections i found beautiful to v0&#x2F;Claude, asking it to give me something similar for my own apps. This approach sometimes works, but often completely falls apart for more complex UI elements.<p>So, i built this chrome extension, which grabs the actual source code (heavily pre-processed and sanitized) and feeds that to the LLM as context, instead of just a screenshot - and it works way better!\nIt lets you pick any element in a webpage (kinda like the chrome devtools element selector), and it then outputs a react + tailwind component of the selected element.<p>would love your feedback or any thoughts&#x2F;ideas<p>Yuval",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613690"
+    },
+    {
+        "id": 43613672,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made an AI tutor and teaching assistant for the classroom",
+        "username": "HelloZorzini",
+        "url": "https://classx.org/",
+        "description": "Hi Everyone!!<p>We&#x27;re a group of experienced entrepreneurs, educators, and AI enthusiasts brought together by a shared mission: to reimagine how people teach and learn in the age of intelligent technology. Our team has spent years building meaningful products in the EdTech space, always with a focus on improving learning outcomes and reducing friction for both teachers and students.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613672"
+    },
+    {
+        "id": 43613496,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Timezone Converter in Map Form",
+        "username": "ifz",
+        "url": "https://ishamf.dev/p/daylight-and-timezone-map/",
+        "description": "I often need to convert times between time zones, so I built this tool to convert between them quickly and efficiently.<p>1. Add the cities you want to convert between (this is saved in the browser).<p>2. Drag on the map until the time on the source city is the time you want.<p>3. Look at the time at the other city.<p>It&#x27;s even more helpful to use on a phone since it doesn&#x27;t require typing to convert between time zones or look up the time in another city (assuming you already added the cities you care about).<p>If you need to convert a time far in the future, you can input the date and time in the picker next to the city, and it will handle any DST shifts as well.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613496"
+    },
+    {
+        "id": 43613367,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: VSCode as MCP Server",
+        "username": "acomagu",
+        "url": "https://github.com/acomagu/vscode-as-mcp-server",
+        "description": "I built a VSCode extension that turns your editor into an MCP (Model Context Protocol) server, letting you seamlessly integrate advanced AI-assisted coding features from tools like Claude Desktop. It supports real-time code diagnostics, command execution within VSCode terminals, built-in browser previews, and even relay tools from other MCP extensions like GitHub Copilot. Feedback welcome!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613367"
+    },
+    {
+        "id": 43613279,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: SQLTest.online: A free, interactive SQL practice platform I built",
+        "username": "rozhnev",
+        "url": "https://sqltest.online",
+        "description": "Just launched: SQLTest.online - a free, hands-on platform for learning and practicing SQL. Features exercises covering basic syntax through advanced topics. This is a personal project I&#x27;ve been working on.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613279"
+    },
+    {
+        "id": 43613250,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: A New Type of Dictionary for (Language) Learners",
+        "username": "dothereading",
+        "url": "https://chromewebstore.google.com/detail/incontext/mmcbllbfhfomkoofddninbabpjcdildj",
+        "description": "Inspired by Krashen&#x27;s i+1 hypothesis and yomitan (a Japanese popup dictionary) my friend an I made a chrome extension that provides you with a custom definition of any word or phrase you encounter on the internet.<p>Custom because in addition to adapting to the context of the text,  you can also adapt the difficulty level of your definition. This is great if you are an intermediate language student and want to go monolingual, but are struggling with the full native level dictionary definitions.<p>(P.S. there is also a science version that explains the highlighted text at multiple levels... think Wired&#x27;s 5 levels More info about the tool at <a href=\"https:&#x2F;&#x2F;incontext.fun\" rel=\"nofollow\">https:&#x2F;&#x2F;incontext.fun</a>)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43613250"
+    },
+    {
+        "id": 43613194,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Browser MCP \u2013 Automate your browser using Cursor, Claude, VS Code",
+        "username": "namukang",
+        "url": "https://browsermcp.io/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43613194"
+    },
+    {
+        "id": 43612974,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: HyperWebster, Volume A. A dictionary of every possible thought",
+        "username": "sonicrocketman",
+        "url": "https://random.skyrocket.software/hyperwebster/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43612974"
+    },
+    {
+        "id": 43612688,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I created a tool that aligns your CV with a job requirement",
+        "username": "miloo94",
+        "url": "https://www.reqmatch.com",
+        "description": "Hey HN,<p>This is my first post on HackerNews ever, and honestly I\u2019ve been contemplating for a long while whether to post this. Usually, the quality of the things that people present here is very high (as is the level of discussion) and I became very self-conscious about the value of my work, but here goes nothing.<p>After submitting thousands of CVs in the recent months and getting an automatic rejection in 99% of the cases, I thought why not create a tool that will give me at least some direction where I can improve my CV and estimate how well I fit the criteria of a given job offer. The result of this is the app that I called reqmatch. This is the first time I dabbled in web development, as my expertise lies in iOS Development, but I am very much open to criticism, and what HNs general thoughts about this project are. If you want to see me using it, you can watch a short video that I posted here: <a href=\"https:&#x2F;&#x2F;www.linkedin.com&#x2F;posts&#x2F;activity-7314927920626466816-rgGV?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACylIQUBIV31NAcujp1ZtUAZ-y3hiQM5hxY\" rel=\"nofollow\">https:&#x2F;&#x2F;www.linkedin.com&#x2F;posts&#x2F;activity-7314927920626466816-...</a>, but the general premise of the app is very simple and I encourage you to try it :)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43612688"
+    },
+    {
+        "id": 43612656,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Lately ADHD Journey Planner",
+        "username": "erikmacinnis",
+        "url": "https://www.getlately.app/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43612656"
+    },
+    {
+        "id": 43612571,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Built a successful development subscription without hiring employees",
+        "username": "rocksalad",
+        "url": "https://avastu.dev/",
+        "description": "Hey, I used to believe growing my freelance business meant hiring more people. Honestly, managing a team wasn&#x27;t appealing to me, I preferred working directly with clients and ensuring every project was up to my standards. Freelancers were sometimes unreliable; deadlines were missed, quality fluctuated, and communication was inconsistent. Clients noticed this too, often expressing frustration with unpredictability and varied results.<p>Tracking hours was another headache. Every client seemed to have their own unique expectations for reporting hours and billing. I spent hours every week just managing time logs and invoices, leaving less time for actual development work and personal life. It was exhausting and draining my enthusiasm for the work I once loved.<p>So, instead of scaling up traditionally, I launched Avastu.dev, a subscription-based development service I run entirely on my own. This transformed not only my business but significantly improved the quality of my life.<p>Here&#x27;s exactly how it changed things for me:<p>- 48-hour average project turnaround: No more juggling multiple freelancers&#x27; schedules or missed deadlines. My clients appreciate fast, predictable results.<p>- 90% client retention rate: Delivering consistent quality built trust and repeat business. My clients now know exactly what they&#x27;re getting, every single month.<p>- Eliminated hourly tracking and billing headaches: With a flat monthly fee, tracking hours became irrelevant. Clients get unlimited development tasks, removing uncertainty and simplifying billing entirely.<p>- Improved work-life balance: I can now focus fully on my work without distraction or administrative burdens. I\u2019ve regained personal time and enjoy my work more than ever.<p>Avastu.dev clearly defines the services offered, from frontend and backend development to WordPress, UX&#x2F;UI design, and AI integrations. This clarity helps clients quickly understand the value they&#x27;re getting.<p>Running Avastu.dev as a subscription service brought back my passion for development and significantly improved both client satisfaction and my own quality of life.<p>You can see exactly how it works at Avastu.dev. It might just transform your approach to development",
+        "discussion_url": "https://news.ycombinator.com/item?id=43612571"
+    },
+    {
+        "id": 43611999,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: ActiveDay \u2013 First-Ever Real Widgets for the iPhone Lock Screen",
+        "username": "urip",
+        "url": "https://www.activeday.app/",
+        "description": "Hi all!<p>I always thought it was disappointing that the iPhone Lock Screen couldn&#x27;t show proper widgets, especially for my calendar and reminders \u2014 just tiny widgets or a single event. So I built an app to fix that.<p>Under the hood, it uses Live Activities along with some custom logic to make it work seamlessly.<p>Check it out at <a href=\"https:&#x2F;&#x2F;www.activeday.app&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.activeday.app&#x2F;</a><p>I&#x27;d love to hear your thoughts and feedback, and answer any questions you might have. Thanks for your support!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43611999"
+    },
+    {
+        "id": 43611999,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: ActiveDay \u2013 First-Ever Real Widgets for the iPhone Lock Screen",
+        "username": "urip",
+        "url": "https://www.activeday.app/",
+        "description": "Hi all!<p>I always thought it was disappointing that the iPhone Lock Screen couldn&#x27;t show proper widgets, especially for my calendar and reminders \u2014 just tiny widgets or a single event. So I built an app to fix that.<p>Under the hood, it uses Live Activities along with some custom logic to make it work seamlessly.<p>Check it out at <a href=\"https:&#x2F;&#x2F;www.activeday.app&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.activeday.app&#x2F;</a><p>I&#x27;d love to hear your thoughts and feedback, and answer any questions you might have. Thanks for your support!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43611999"
+    },
+    {
+        "id": 43611234,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Lightweight open source \"framework\" for building hybrid iOS/macOS apps",
+        "username": "pcbmaker20",
+        "url": "https://enclose.app",
+        "description": "I just released a lightweight open source framework for building hybrid iOS&#x2F;macOS apps using web technologies with native integration. It&#x27;s designed for devs who want to combine the flexibility of HTML&#x2F;JS with native features\u2014without relying on something heavy like Cordova or React Native.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43611234"
+    },
+    {
+        "id": 43611161,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Converge, the daily AI word association game",
+        "username": "cwackerfuss",
+        "url": "https://www.convergegame.com/",
+        "description": "1 year ago I was issued a DMCA takedown from the New York Times.<p>Due to alleged copyright infringement with Wordle, they requested I immediately remove Reactle, the similar word game and open-source codebase that I maintained that garnered 4k stars on Github and spawned 100s of fun variations in many different languages and themes (anyone remember Taylordle?). These downstream apps also received requests for takedown.<p>Then the media caught wind. 404 Media broke the story, and over the next 2 days, CBS, Gizmodo, AP, and NPR reached out over LinkedIn for comments. It was a whirlwind of attention I wasn\u2019t ready for.<p>Now, 1 year later, I\u2019m seeking vengeance!<p>How you ask? Well\u2026. I built a brand new daily puzzle game. Friends, family and colleagues have already been enjoying the challenge daily and I\u2019d love you to try it too.<p>Here\u2019s how it works: You choose any word. The AI starts with the daily word. You get 8 chances to meet in the middle. That\u2019s it.<p>Can you converge?<p>P.s. here&#x27;s a link to the NPR story: <a href=\"https:&#x2F;&#x2F;www.npr.org&#x2F;2024&#x2F;03&#x2F;13&#x2F;1238142507&#x2F;cease-desist-new-york-times-wordle-spin-offs\" rel=\"nofollow\">https:&#x2F;&#x2F;www.npr.org&#x2F;2024&#x2F;03&#x2F;13&#x2F;1238142507&#x2F;cease-desist-new-y...</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43611161"
+    },
+    {
+        "id": 43610794,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: RSS/Atom Feed Analyzer \u2013 test your feed for best practices",
+        "username": "Fileformat",
+        "url": "https://www.rss.style/feed-analyzer.html",
+        "description": "While working on a side project with RSS &amp; Atom feeds, I discovered that a lot of RSS&#x2F;Atom feeds in the wild are <i>(cough)</i> sub-optimal.<p>The W3C has a very nice Feed Validation Service[1], but it only looks at the feed itself, not at the linked pages.  And a lot of the problems that it finds are issues in the body content which can mask more serious errors.<p>So I write an RSS&#x2F;Atom Feed Analyzer[2] that checks for things like headers, consistent links and backlinks.<p>One of the (potentially) more controvesial things it recommends is using the content type &quot;text&#x2F;xml&quot;.  The normal recommendation causes the &quot;Save As&quot; dialog popup in some browsers, which is IMHO a horrible user experience.<p>Anyhow, give it a try and let me know what you think!  RSS.Style has a list of high-profile bloggers&#x27; feeds[3] that you can try.  And feel better about having problems in your own feed!<p>Source (TypeScript) is available[4] (MIT license).  It is running as a function on Cloudflare Pages.  It is just something that I hacked together and grew over time: don&#x27;t be judgemental!<p>PS: And use <a href=\"https:&#x2F;&#x2F;www.rss.style&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.rss.style&#x2F;</a> to make you feeds look nicer in a browser!<p>[1] <a href=\"https:&#x2F;&#x2F;validator.w3.org&#x2F;feed&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;validator.w3.org&#x2F;feed&#x2F;</a><p>[2] <a href=\"https:&#x2F;&#x2F;www.rss.style&#x2F;feed-analyzer.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.rss.style&#x2F;feed-analyzer.html</a><p>[3] <a href=\"https:&#x2F;&#x2F;www.rss.style&#x2F;#examples\" rel=\"nofollow\">https:&#x2F;&#x2F;www.rss.style&#x2F;#examples</a><p>[4] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;fileformat&#x2F;rss.style&#x2F;blob&#x2F;main&#x2F;functions&#x2F;feed-analyzer.html.ts\">https:&#x2F;&#x2F;github.com&#x2F;fileformat&#x2F;rss.style&#x2F;blob&#x2F;main&#x2F;functions&#x2F;...</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610794"
+    },
+    {
+        "id": 43610739,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I build another WebRTC file transfer app with focus on UI",
+        "username": "vladnedelcu",
+        "url": "https://use.safefiles.app",
+        "description": "I discovered WebRTC last summer and tried to build a bunch of stuff with it. I tried building an atomic swap protocol for BTC and MultiversX and everything was coded in Go so that it can run in the browser using WASM.<p>But there was one project that I left hanging for a while focused on just transferring files, usually nobody recommends transferring files through this protocol but its just a side project.<p>I checked out some projects that are implemented in a very professional way and I liked it so much. I wanted to do a similar project to send my band mates a lot of videos of our shows (more than 8 GB) and I did this project called Hyperspace and these dudes came with some ideas on how to improve the UI and experience overall.<p>So what&#x27;s interesting about this project is that I tried to do it as simple as ever. I used Go + HTMX, I tried to remove everything that was unnecessary, I also added a cool 2FA for connecting to another peer.<p>The flow is very simple. You create a session which is purely made out of words. \nOnce the other peer wants to connect the app generated a pin which should be shared back with the one that started the session, and boom you are instantly connected and can share ONLY ONE file at the time.<p>There are a some stuff that I want to improve later obviously, but I just want to put the project out there.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610739"
+    },
+    {
+        "id": 43610641,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: YouStylize \u2013 Photos to Magic and Studio Ghibli Style Art",
+        "username": "maattee",
+        "url": "https://youstylize.com",
+        "description": "Turn your everyday photos into stunning, one-of-a-kind masterpieces with YouStylize. Upload your images and watch them evolve into captivating artistic styles in seconds. Unleash your creativity and turn moments into magic art today!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610641"
+    },
+    {
+        "id": 43610605,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: EduVibz \u2013 Turning School Curricula into Music (Beta)",
+        "username": "JasonViviers",
+        "url": "https://www.eduvibz.com",
+        "description": "Hi HN!<p>After a year of building solo\u2014balancing late nights, a demanding day job, family commitments, and countless cups of coffee - I\u2019m excited (and relieved!) to announce the beta launch of EduVibz.<p>EduVibz transforms traditional curriculum topics into catchy, educational songs to help students learn more easily and effectively. I&#x27;ve started lean by covering three subjects from the South African CAPS Grade 12 curriculum, with additional Grade 12 and Grade 8 subjects already created and soon to be uploaded. The intention behind this initial release is to gather user feedback to refine both the music and the content, ensuring it\u2019s genuinely impactful before expanding to more grades and other curricula.<p>Part of the reason it took this long was securing a provisional patent, given that (to my knowledge) this is the first platform of its kind to attempt delivering curriculum-aligned educational songs at scale, while keeping content accurate, relevant, and continually updated.<p>I\u2019ve learned a lot building this so far, made my fair share of mistakes, and recognize that I probably could\u2019ve launched leaner. But I&#x27;m committed to improving and learning as I go.<p>You can check it out at www.eduvibz.com. Please note: a quick, free signup (just name, email, and password) is required to access the music library due to our streaming setup.<p>I&#x27;d greatly appreciate any feedback on the concept, the songs, the UX&#x2F;UI, or anything else you feel could help EduVibz become better and more impactful. If you&#x27;re passionate about EdTech or have experience scaling early-stage educational products, your insights would be particularly invaluable.<p>Thanks so much for taking a look. I\u2019m looking forward to hearing your thoughts!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610605"
+    },
+    {
+        "id": 43610468,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: OTPDock \u2013 API inbox for testing email OTP flows in end-to-end tests",
+        "username": "vitjbr",
+        "url": "https://otpdock.com",
+        "description": "Hey HN,<p>I built OTPDock to make testing email OTP flows less painful.<p>I was tired of hacking together Gmail or digging through inboxes just to grab a code during E2E tests. This tool gives you a test inbox and a simple API to fetch the OTP \u2014 that\u2019s it.<p>How it works:\n- You send an email to anything@your-subdomain.otpdock.com\n- We parse it, extract the OTP, and make it available via API\n- You grab the code in your test and move on<p>Took about 10 days from idea to working beta. Still super early, but free tier is live if you want to play with it.<p>Would love any feedback, ideas, or critiques.<p>Thanks!\n<a href=\"https:&#x2F;&#x2F;otpdock.com\" rel=\"nofollow\">https:&#x2F;&#x2F;otpdock.com</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610468"
+    },
+    {
+        "id": 43610452,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: YouTube Musical Spectrum as a DAW Plugin",
+        "username": "mfcc64",
+        "url": "https://github.com/mfcc64/youtube-musical-spectrum-daw",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43610452"
+    },
+    {
+        "id": 43610435,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I created a no-code mobile onboarding builder",
+        "username": "drvarmin",
+        "url": "https://onboardzy.com",
+        "description": "Onboarding flows are a huge part of an app\u2019s conversion rate, but I\u2019ve always been annoyed by how much work it takes to create, iterate, and test them properly.<p>So I built Onboardzy.<p>It\u2019s a drag-and-drop onboarding builder that plugs into your iOS app with just a couple lines of code.<p>You can then push updates or test different flows in real time, no need to recompile or wait for App Store review.<p>It&#x27;s perfect if you want to experiment or improve onboarding without the usual overhead.<p>Would love your feedback. If you want to try it, It\u2019s free",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610435"
+    },
+    {
+        "id": 43610178,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Crowdsourced tips on the Internet for gaining muscle",
+        "username": "paulcn",
+        "url": "https://musclehacks.space",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43610178"
+    },
+    {
+        "id": 43610094,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Bucketscan \u2013 Turn Key Anti-Virus for Cloud Storage (AWS S3, etc.)",
+        "username": "joshghent",
+        "url": "https://bucketscan.com",
+        "description": "Hey HN!<p>A coworker and I were recently tasked with securing cloud storage against malware \u2014 specifically for S3. We expected to find a simple API-based antivirus service. Instead, we mostly found self-hosted ClamAV setups and&#x2F;or a lot of duct tape.<p>So, we built Bucketscan.\nIt\u2019s an API-first malware scanner for cloud object storage (S3, Azure Blob, R2, etc). \nYou can get scanning up and running in about 15 minutes. \nThere\u2019s also a dashboard for visibility into detections and usage, and we\u2019re working on things like policy-based actions and historical forensics.<p>We have tried to keep the MVP as small as possible - functional, but far from &quot;done&quot;. We\u2019re keen to hear from others who\u2019ve faced similar challenges.\nWhat would make something like this actually useful for you? We\u2019re offering steep discounts in exchange for feedback and would love to involve early users in shaping the roadmap.<p>Would love your thoughts!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43610094"
+    },
+    {
+        "id": 43609998,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: ChromebookFinder \u2013 Easily Compare Chromebook Specs and Prices",
+        "username": "oquidave",
+        "url": "https://chromebookfinder.com/",
+        "description": "Hi HN<p>I&#x27;ve just launched <a href=\"https:&#x2F;&#x2F;www.ChromebookFinder.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ChromebookFinder.com</a>, a simple tool I built to help users find and compare Chromebooks without bouncing between 5+ tabs.<p>As someone who&#x27;s used and reviewed Chromebooks for years, I realized how frustrating it can be to compare different models \u2014 especially with all the variations in specs, release years, and vague model names. So I built ChromebookFinder to fix that.<p>What it does:<p>Search and browse hundreds of Chromebook models<p>Compare models side-by-side<p>View specs, features, and live price comparisons from major stores (Amazon, Best Buy, etc.)<p>Filter by release year, form factor, or user type<p>See which models are brand new via &quot;New Release&quot; badges<p>Access curated buying guides and top picks for students, professionals, etc.<p>Why it might be useful:\nWhether you&#x27;re buying for school, work, or dev testing, it can be hard to figure out which Chromebook suits your needs (and is still supported). This tool aims to simplify that process and save time.<p>No signup required \u2014 just open the site and explore:\n <a href=\"https:&#x2F;&#x2F;www.ChromebookFinder.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ChromebookFinder.com</a><p>I\u2019d love your feedback, especially around UX, data accuracy, or features you\u2019d want in a v2. Thanks for checking it out!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609998"
+    },
+    {
+        "id": 43609877,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: An AI Powered Legal Assistant",
+        "username": "DavidMercerr",
+        "url": "https://www.lexence.tech/",
+        "description": "Hi HN,<p>I\u2019ve been building Lexence with a small team - it\u2019s an AI-powered legal assistant designed to help people understand, draft, and explore legal content faster.<p>You can ask legal questions, get clauses drafted, explain legal jargon, or paste full contracts for a breakdown. We\u2019ve trained it using multiple data sources and kept the interface simple for anyone to use - not just lawyers.<p>It\u2019s free to try right now. We\u2019d love feedback on the product, the UX, and what you think we could improve.<p>Try it here: <a href=\"https:&#x2F;&#x2F;www.lexence.tech&#x2F;?ref=HackerNews\" rel=\"nofollow\">https:&#x2F;&#x2F;www.lexence.tech&#x2F;?ref=HackerNews</a><p>We\u2019re around and would love to hear your thoughts",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609877"
+    },
+    {
+        "id": 43609856,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: NightScreen Mode extension to reduce eye strain while working late",
+        "username": "mkapoor26",
+        "url": "https://chromewebstore.google.com/detail/nightscreen-mode/jlllgpbcialcahaicdokkjhlehfjklfp",
+        "description": "I built this after getting tired of burning my eyes working late at night. Most such extensions either break websites or don\u2019t filter blue light properly.<p>So what it does is, it adds a clean dark mode and an amber light filter that helps reduce eye strain and improve sleep quality. It also allows you to manage brightness, contrast of the screen and you can add black and white mode too. It works on all sites and has no ads.<p>You can check it out here: <a href=\"https:&#x2F;&#x2F;nightscreenmode.app\" rel=\"nofollow\">https:&#x2F;&#x2F;nightscreenmode.app</a><p>Would love your feedback or suggestions. Happy to answer questions!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609856"
+    },
+    {
+        "id": 43609758,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I turned GitHub contributions into a retro battle game",
+        "username": "Imad_M",
+        "url": "https://epicdevbattlesofhistory.com",
+        "description": "Hey HN,<p>This is a little web game called Epic Dev Battles of History. It takes public GitHub contribution stats (like commit counts, streaks, activity levels) and uses them to simulate a retro arcade-style battle between two profiles.<p>You can enter your GitHub username and challenge a friend or colleague, try the online matchmaking, or pick one of the pre-loaded profiles as an opponent. After the battle, it shows a breakdown of the stats used.<p>It started as a fun side-project to visualize GitHub activity in a different way.<p>You can play it live here: <a href=\"https:&#x2F;&#x2F;epicdevbattlesofhistory.com\" rel=\"nofollow\">https:&#x2F;&#x2F;epicdevbattlesofhistory.com</a><p>It&#x27;s currently a closed-source project. I&#x27;m curious to hear any thoughts you might have on the concept or gameplay, and please let me know if you encounter any bugs!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609758"
+    },
+    {
+        "id": 43609703,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made an AI chatbot to help challenge anxious thoughts",
+        "username": "pcoenen",
+        "url": "https://anxietybreaker.com/",
+        "description": "Hey HN,<p>I&#x27;m a solo founder who has struggled with anxiety myself.<p>I found that once anxious thoughts start spiraling, it\u2019s really hard to interrupt them \u2014 especially in the moment. So I built Anxiety Breaker, a chatbot that helps you challenge those thoughts using evidence-based techniques from Cognitive Behavioral Therapy (CBT).<p>It also includes quick 3-minute daily lessons to help you understand how anxiety works and how to manage it long-term.<p>My goal was to make something simple, private, and accessible for anyone who might not have access to therapy.<p>I hope it can help anyone!<p>Would love any feedback!<p>Thanks for checking it out",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609703"
+    },
+    {
+        "id": 43609695,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: SQL Noir \u2013 A detective game where you learn SQL by solving crimes",
+        "username": "chrisBHappy",
+        "url": "https://github.com/hristo2612/SQLNoir",
+        "description": "I posted about SQL Noir a while ago \u2014 it\u2019s an open-source game that teaches SQL through narrative-driven investigations. You act as a detective solving crimes by writing real SQL queries against actual databases.<p>Since then, I\u2019ve added 2 new cases (now 6 in total), improved the UX, and fixed a bunch of early issues thanks to community feedback.<p>It\u2019s still 100% free and open source. Would love feedback on the new cases, or ideas for future mysteries.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609695"
+    },
+    {
+        "id": 43609560,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I've Built a Link in Bio Page Multi-Tool",
+        "username": "dimitri-koenig",
+        "url": "https://showcaseful.com",
+        "description": "Hi guys<p>I&#x27;ve built a link in bio app, with additional mini apps like polls and waitlists, image galleries and file downloads, and more.<p>The idea is to give creators, artists, developers and others, a place to share their content, but also engage with their customers &#x2F; audience directly on the page.<p>Let me know what you think.<p>Thx\nBest\nDimitri",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609560"
+    },
+    {
+        "id": 43609454,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Modify Codeblock CSS in Hugo with Simple Render Hooks",
+        "username": "thisdougb",
+        "url": "https://doocot.sh/blog/2025/04/04/modify-codeblock-css-hugo-render-hook.html",
+        "description": "Hi,<p>Latest task in solo-building a tech business. Creating a statically generated blog that fits seamlessly alongside a dynamically generated main website.<p>There&#x27;s not much around about Hugo static site generation while not using themes. I found opting out of themes much simpler overall. And it then didn&#x27;t take long to understand how Hugo actually works.<p>I&#x27;m still not 100% decided on .html extensions, but pretty much decided against Hugo&#x27;s default of a trailing slash on page urls.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609454"
+    },
+    {
+        "id": 43609442,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Overlay app gives step-by-step help inside any software",
+        "username": "artmartiros",
+        "url": "https://wisbox.ai",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43609442"
+    },
+    {
+        "id": 43609366,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: An open-source code scanner to find issues in prompts and LLM calls",
+        "username": "imalikshake",
+        "url": "https://github.com/kereva-dev/kereva-scanner",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43609366"
+    },
+    {
+        "id": 43609203,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Helpedby AI \u2013 Multi LLMs chat with auto router, agentic RAG, MCP, etc.",
+        "username": "mgilangjanuar",
+        "url": "https://chat.helpedby.ai",
+        "description": "What if, you didn&#x27;t have to select a model every time you wanted to chat with an AI?<p>I built a chat platform with AI that has the capability to auto-route the best model to help you with your queries, such as Claude Sonnet 3.5 for coding tasks, GPT 4o for creative writing, and so on.<p>It also comes with members&#x27; invitation to the workspace, agentic RAG, and the ability to create your own MCP to solve your specific issues.<p>The best part is that you don&#x27;t have to subscribe to anything. The service uses a pay-as-you-go model where you top up your balance, and it will be deducted based on your usage (token in &amp; token out).<p>Try now at <a href=\"https:&#x2F;&#x2F;chat.helpedby.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;chat.helpedby.ai</a> and let me know your thoughts!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609203"
+    },
+    {
+        "id": 43609143,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Browser Router \u2013 Open links in different browsers based on URL rules",
+        "username": "x011",
+        "url": "https://github.com/x011/browser-router",
+        "description": "Browser Router is a custom link handler for Windows that intercepts HTTP and HTTPS links and opens them in different browsers based on user-defined rules.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609143"
+    },
+    {
+        "id": 43609107,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: An intentionally annoying app to break doomscrolling",
+        "username": "nullderef",
+        "url": "https://speedbumpapp.com/en/",
+        "description": "Based on personal struggles, I built an app that shows annoying things on my phone when I doomscroll. This includes dancing cats, the screen time police, or rain.<p>Social media is great as long as you don&#x27;t overuse it -- I learn and connect with friends thanks to it. But it&#x27;s too easy to get hooked.<p>When you open addictive apps, SpeedBump gives you a few options: 2, 5, 15, 30 minutes. The more you want to use, the more you have to wait before opening. Once time&#x27;s up, it starts to annoy you a lot. There&#x27;s no way to extend the timer without breaking your streak; you&#x27;ll have to take a 15 min break.<p>I used Compose Multiplatform. It&#x27;s been very fun to develop and actually works for me.<p>Check it out here and let me know what you think: <a href=\"https:&#x2F;&#x2F;speedbumpapp.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;speedbumpapp.com&#x2F;</a> :)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609107"
+    },
+    {
+        "id": 43609042,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Teach Your Parents Smartphone",
+        "username": "pankajtanwar",
+        "url": "https://www.teach-your-parents-smartphone.com/",
+        "description": "My parents got super confused when PhonePe (payment app in India) updated their app overnight. They immediately blamed me for &quot;breaking their phone&quot; lol. I had to spend an hour showing them how to use the new design.<p>Same thing happened with WhatsApp video calls. I realized this is a common problem - we teach our parents tech stuff once, but they forget because they don&#x27;t practice enough.<p>So I made this tool that lets my parents practice using apps through step-by-step tutorials at their own pace. No one rushing them, no one judging.<p>The goal? Help my parents feel more confident with technology and give them a safe space to practice without feeling stupid for asking the same questions over and over.<p>Check it out here - <a href=\"https:&#x2F;&#x2F;www.teach-your-parents-smartphone.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.teach-your-parents-smartphone.com&#x2F;</a>\nOpen sourced codebase - <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Pankajtanwarbanna&#x2F;teach-your-parents-smartphone\">https:&#x2F;&#x2F;github.com&#x2F;Pankajtanwarbanna&#x2F;teach-your-parents-smar...</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609042"
+    },
+    {
+        "id": 43609011,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: A free movies and series randomiser",
+        "username": "justanotherunit",
+        "url": "https://smam.luhakk.com",
+        "description": "Hi HN! Over 3 years ago I developed a movies and series randomiser in Cordova web to deploy on app stores.<p>The first versions had ads in it to monetize the development, also a &quot;PRO&quot; version was released for the price of 1 dollar (or something like that, the lowest price tier as far as I remember).<p>Anyway, in recent years I&#x27;ve reached a point where all applications does not need to be monetized, some are just fun to develop and release for free. Show me a Movie is one of them! The current state of the app is the same as of 3 years ago. Besides getting it to work in the browser, minor bug fixes has been fixed.<p>With that said, go ahead and try it out. It is totally free, I only track page count using GoatCounter (for the fun of it). If you want to can leave some valuable feedback and insight which either I or someone else on HN can use in future projects!<p>Warm regards,\nLukas",
+        "discussion_url": "https://news.ycombinator.com/item?id=43609011"
+    },
+    {
+        "id": 43608973,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I rebuilt my platform afetr getting 2 clients",
+        "username": "HarisMladenov",
+        "url": "https://alytica.tech",
+        "description": "Hey everyone,<p>I first launched Alytica, my product analytics platform, back on December 21, 2024. I built it for two simple reasons:<p>1.I needed a solid and easy-to-use analytics solution for my own projects.<p>2.I&#x27;m naturally curious (okay, a bit geeky ) and wanted to see firsthand how these platforms handle tons of events.<p>Initially, I challenged myself to create and launch the MVP in just three weeks. Honestly, it wasn&#x27;t perfect\u2014in fact, it was pretty rough. But I decided to launch anyway, and surprisingly, I got a few clients who actually liked it.<p>Two or three months ago, I started rebuilding it from the ground up, and I&#x27;m excited to finally share Alytica v2! This new version is exactly what I had in mind from the start\u2014more reliable, user-friendly, and packed with improvements. And there&#x27;s still plenty more coming soon.<p>To celebrate this relaunch, I&#x27;m giving the first 100 users 20% off their first month with the code LAUNCH20. There&#x27;s also a free plan available, so you can easily try it out without any commitment.<p>Check it out at alytica.tech and let me know what you think!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43608973"
+    },
+    {
+        "id": 43608827,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Open Source MVP Launch Kit (NextJS, Stripe, Supabase), 563 Github Stars",
+        "username": "ShenSeanChen",
+        "url": "https://twitter.com/ShenSeanChen/status/1895163913161109792",
+        "description": "I&#x27;m open sourcing a template I built to launch a full-stack SaaS with Stripe Payment, NextJS, Supabase and Google OAuth, in ONE SHOT. It took me some time so I decided to share this to you all. The goal is to help everyone save time when launching your next SaaS, with EVERYTHING YOU NEED. You can build anything. You can learn anything.<p>Links<p>- Github Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ShenSeanChen&#x2F;launch-mvp-stripe-nextjs-supabase&#x2F;branches\">https:&#x2F;&#x2F;github.com&#x2F;ShenSeanChen&#x2F;launch-mvp-stripe-nextjs-sup...</a><p>- Try The App: <a href=\"https:&#x2F;&#x2F;mvp.seanchen.io\" rel=\"nofollow\">https:&#x2F;&#x2F;mvp.seanchen.io</a>\nX&#x2F;Twitter: <a href=\"https:&#x2F;&#x2F;x.com&#x2F;ShenSeanChen&#x2F;status&#x2F;1895163913161109792\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;ShenSeanChen&#x2F;status&#x2F;1895163913161109792</a><p>- YouTube Tutorial: <a href=\"https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=ad1BxZufer8&amp;list=PLE9hy4A7ZTmpGq7GHf5tgGFWh2277AeDR&amp;index=9\" rel=\"nofollow\">https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=ad1BxZufer8&amp;list=PLE9hy4A7ZTmpGq...</a><p>- Buy Me A Coffee: <a href=\"https:&#x2F;&#x2F;buy.stripe.com&#x2F;5kA176bA895ggog4gh\" rel=\"nofollow\">https:&#x2F;&#x2F;buy.stripe.com&#x2F;5kA176bA895ggog4gh</a><p>Template Features:<p>- Authentication with Supabase<p>- Stripe payment integration<p>- Dark mode support<p>- Responsive design<p>- Tailwind CSS styling<p>- Framer Motion animations<p>- TypeScript support<p>- Error boundary implementation<p>- SEO optimized<p>Any feedback is welcome!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43608827"
+    },
+    {
+        "id": 43608463,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Simple time tracking and invoicing for freelancers and small agencies",
+        "username": "ImranK",
+        "url": "https://usetimestack.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43608463"
+    },
+    {
+        "id": 43608463,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Simple time tracking and invoicing for freelancers and small agencies",
+        "username": "ImranK",
+        "url": "https://usetimestack.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43608463"
+    },
+    {
+        "id": 43608421,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I Built a Brat Style Generator",
+        "username": "jokera",
+        "url": "https://heybrat.com/",
+        "description": "I recently developed Brat Generator, an open-source tool inspired by Charli XCX&#x27;s &quot;Brat&quot; album cover aesthetic that went viral on social media.\nThe project uses React + Remix, HTML Canvas API for image generation, and custom CSS filters for the blur effects. The most interesting technical challenge was implementing an adaptive text sizing algorithm that automatically adjusts font size based on container dimensions and text length.\nKey features:\nMultiple preset themes (classic green, black &amp; white, blue)\nFully customizable options (colors, blur effects, fonts, borders)\nOne-click high-quality image download\nRandom style generator\nFree to use, no registration required",
+        "discussion_url": "https://news.ycombinator.com/item?id=43608421"
+    },
+    {
+        "id": 43607744,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Uncurl.dev \u2013 Convert curl commands to a shareable, executable UI",
+        "username": "darubramha",
+        "url": "https://uncurl.dev/",
+        "description": "Hey HN,<p>I built uncurl.dev to scratch my own itch: I kept getting curl commands in API docs, bug reports, or Slack messages and wanted a quick way to visualize, run, and debug them without firing up Postman or writing code to dissect them. It was also sometimes painful to create a test page specifically for non-tech users to consume an API. I originally vibe-coded this over a weekend just to make it easier for myself to debug API requests shared as curl commands. It slowly grew into something I found surprisingly useful in my workflow, so I decided to clean it up and share it.<p>uncurl.dev takes a curl command and:\n- Converts it into a visual representation\n- Lets you edit and inspect all parts of the request\n- Allows sharing via a unique link\n- (Optionally) executes it from the server, so business or non-technical users can see results<p>Execution is currently behind login, with a cap (5&#x2F;min) to avoid abuse and manage costs. Non-logged-in users can still build and share curl commands\u2014they just can\u2019t execute them. The server runs each request in a Docker sandbox with strict resource&#x2F;time limits (cpu, memory, timeout, no network access outside the request).<p>It\u2019s not meant to replace full-featured tools like Postman or Hoppscotch. It\u2019s more of a \u201cCLI-to-UI bridge\u201d for fast sharing and debugging, especially in dev workflows where curl is the starting point. Think of it like Pastebin or JSFiddle, but for curl commands.<p>If you\u2019ve ever copied a curl from an API doc and wanted a cleaner way to see it or send it to someone else, I\u2019d love your feedback.<p>Thanks!\n(You can try it without signup here: <a href=\"https:&#x2F;&#x2F;uncurl.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;uncurl.dev</a>)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43607744"
+    },
+    {
+        "id": 43607611,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: GhostCast \u2013 Record screen, change your voice, and download in 1 click",
+        "username": "vinaysolapurkar",
+        "url": "https://www.ghostcast.xyz/",
+        "description": "I built GhostCast, a lightweight web app that lets you:<p>Record your screen and microphone together<p>Change your voice in real-time using ElevenLabs<p>Download the final video with screen + modified voice in one file<p>Works on browser (no installs)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43607611"
+    },
+    {
+        "id": 43607453,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Platform for non-technical people to build and deploy websites/apps",
+        "username": "nutpan",
+        "url": "https://www.jdoodle.ai/",
+        "description": "I launched my side project (JDoodle) here 10 years ago, and it has served millions of students, teachers and developers since then. Thanks for your feedback on the initial days.<p>Launching a new product - JDoodle.ai. This is for non-technical users to build and deploy websites and web apps.<p>Unlike other online AI coding platforms that are trying to be an online version of Cursor, we will focus on non-technical users and try to make it easier for them to build apps without seeing or touching code.<p>AI is still maturing in coding, so we will provide the additional layers and guardrails required for non-tech users to build and launch confidently.<p>Currently, users can build, deploy, integrate with other systems like Hubspot, Make, and Zapier, assign a custom domain, upload images, etc.<p>Very soon, they can connect to a secure database and authentication system.<p>This is a genuine effort from JDoodle&#x27;s vision of making programming simpler, not just trying to ride the wave. So, I would really appreciate your feedback on how we can make it useful for the real world (not just hobbyists).",
+        "discussion_url": "https://news.ycombinator.com/item?id=43607453"
+    },
+    {
+        "id": 43606971,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Fujifilm Recipe Sharing Site",
+        "username": "hvperborea",
+        "url": "https://www.filmsims.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43606971"
+    },
+    {
+        "id": 43606843,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Pin My Workflow",
+        "username": "ebfe1",
+        "url": "https://github.com/santrancisco/pmw",
+        "description": "Last friday i went through a bunch of our workflows and started pinning their hashes... it got annoying so i created a little app to assist, it is quite simple, you can add a list of workflow org you are ok with version tags (if you want to keep them up-to-date) , as the app search through the repo and find dubious workflow, it will prompt and let you know what hash it is updating it to and link for you to verify... if you accept, it add to config and automatically replace the ones that matches the same version tag in the future, saving you time. The config can be saved in same repository so you can rerun anytime.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43606843"
+    },
+    {
+        "id": 43606725,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made a browser tab management plugin",
+        "username": "jackiefeng",
+        "url": "https://chromewebstore.google.com/detail/tabtab-tab-management-too/bplfdojoimpegfcgepljdbfjdalmcffa",
+        "description": "Your productivity tool, save your browser tabs anytime, anywhere.<p>TabTab: A tab management tool\nYour productivity tool, save your browser tabs anytime, anywhere.<p>A more convenient tab management tool than bookmarks. You can add tabs to your favorites by simply dragging and dropping.<p>Supports tab group management and one-click opening of tab groups.<p>More intuitive view, tiling your favorite tabs.<p>Supports remote data synchronization, self-hosted data synchronization protects your privacy and security.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43606725"
+    },
+    {
+        "id": 43606410,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Wiederhol \u2013 GitHub for Checklists",
+        "username": "ivandenysov",
+        "url": "https://wiederhol.com/",
+        "description": "Greetings!<p>My wife and I built a collaborative platform for reusable checklists.<p>Users can share templates of checklists with few select users or everyone, copy templates of other users (like forking a repository on github), submit suggestions for checklists (like opening a PR on github).<p>I&#x27;ve got the idea after reading Atul Gawande&#x27;s &#x27;Checklist Manifesto&#x27; (<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;The_Checklist_Manifesto\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;The_Checklist_Manifesto</a>). Plus I kept forgetting things when going to the office, gym or traveling.<p>We&#x27;ve tried a few other checklist apps, like Microsoft To Do. But they all seem more geared towards one-off lists or lists that repeat on schedule. Plus web versions and collaborative features always felt like an afterthought.<p>Wiederhol is free for private use.<p>iOS users can install our app via <a href=\"https:&#x2F;&#x2F;apps.apple.com&#x2F;de&#x2F;app&#x2F;wiederhol&#x2F;id6739186169\">https:&#x2F;&#x2F;apps.apple.com&#x2F;de&#x2F;app&#x2F;wiederhol&#x2F;id6739186169</a>.\nAndroid users can install <a href=\"https:&#x2F;&#x2F;wiederhol.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;wiederhol.com&#x2F;</a> as a PWA (Progressive Web Application).<p>Tech stack: Ruby on Rails, React, PostgreSQL, <a href=\"https:&#x2F;&#x2F;dokku.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;dokku.com&#x2F;</a> for hosting on Hetzner, <a href=\"https:&#x2F;&#x2F;pwabuilder.com\" rel=\"nofollow\">https:&#x2F;&#x2F;pwabuilder.com</a> for the iOS app.<p>PS: Wiederhol means &#x27;repeat&#x27; (imperative verb form) in German.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43606410"
+    },
+    {
+        "id": 43606312,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Built a Python debugger that sends your execution trace to an LLM",
+        "username": "alvin_r_h",
+        "url": "https://github.com/alvin-r/snooper-ai",
+        "description": "This is a command line debugger that runs your code and sends the execution trace to an LLM. I&#x27;ve found that copy-pasting error messages and code isn&#x27;t enough to solve complex bugs, figured that this would solve that.<p>Note that this is a fork of PySnooper with a simple LLM layer over it, all credits to the team that built it!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43606312"
+    },
+    {
+        "id": 43605616,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I wanted WallpaperEngine but for images and more granular so I built it",
+        "username": "defrim",
+        "url": "https://github.com/DefrimBinakaj/WallMod",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43605616"
+    },
+    {
+        "id": 43605601,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Mini MDS \u2013 A lightweight, open-source, locally-hosted Modern Data Stack",
+        "username": "esadek",
+        "url": "https://github.com/esadek/mini-mds",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43605601"
+    },
+    {
+        "id": 43605568,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Spend Elon Musk's fortune on AirPods, NFL teams, etc as fast as you can",
+        "username": "_artifice_",
+        "url": "https://spend-elons-money.artifice.so/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43605568"
+    },
+    {
+        "id": 43605543,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Shellmates \u2013 Rent bare metal and divide into VMs with firecracker",
+        "username": "andrewfromx",
+        "url": null,
+        "description": "Hello devs, weekend passion project here. It started with this burning desire I&#x27;ve have for a while to rent a bare metal server from Hetzner. Sure it&#x27;s all the way in Germany and I&#x27;m in the USA but the price! $34 a month for 64 GB RAM, 4 core cpu, 512 GB SSD. That&#x27;s like 90% less from AWS ec2 instance of same specs.<p>How shellmates works:<p><pre><code>    1. Rent a powerful bare metal server from providers like Hetzner or OVH at prices starting from $34.50&#x2F;month\n    2. We help you setup Firecracker VMs to divide your server into smaller VMs\n    3. Keep what you need and rent out the rest to other developers at fair prices\n    4. Save up to 90% compared to cloud providers like AWS while building relationships with other developers\n</code></pre>\nSo I&#x27;m eating my own dogfood with:<p><a href=\"https:&#x2F;&#x2F;shellmates.andrewarrow.dev&#x2F;spots&#x2F;c8f3c470-f353-4804-bd5c-a5c30bba7dbb\" rel=\"nofollow\">https:&#x2F;&#x2F;shellmates.andrewarrow.dev&#x2F;spots&#x2F;c8f3c470-f353-4804-...</a><p>Looking for someone to share the cost with me. There is a real stripe link for $18.07 a month. (Exactly half my actual cost + stripe fees.)<p>Learned a ton about Firecracker and Firecracker&#x27;s jailer and how to setup everything with iproutes.<p>The homepage tries to explain everything:<p><a href=\"https:&#x2F;&#x2F;shellmates.andrewarrow.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;shellmates.andrewarrow.dev</a><p>Thanks for checking it out! And I&#x27;m totally serious about sharing this server.<p>[video demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MNcnoMVRC68\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MNcnoMVRC68</a>]",
+        "discussion_url": "https://news.ycombinator.com/item?id=43605543"
+    },
+    {
+        "id": 43605253,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AI tool to make plan your project and you can download it as PDF",
+        "username": "mfareed",
+        "url": "https://taskra.space",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43605253"
+    },
+    {
+        "id": 43605233,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Cricket Stats GPT",
+        "username": "iceman_w",
+        "url": "https://cricket.pivots.fyi/",
+        "description": "Query statistics for IPL 2025 using natural language. You can ask questions like:<p>- What is Kohli&#x27;s strike rate in the first 5 overs of the match?<p>- What is Dhoni&#x27;s average in matches CSK wins?<p>- What is the average score of the team batting first?<p>- Who are the top 5 batters with highest strike rate (minimum 50 runs scored)?<p>Have fun digging into stats you always were curious about but had no way to actually find out. <a href=\"https:&#x2F;&#x2F;cricket.pivots.fyi&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cricket.pivots.fyi&#x2F;</a><p>I built this tool for fun, would love to hear feedback!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43605233"
+    },
+    {
+        "id": 43604959,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Chrome extension that gives Claude Pro API-free tool use capabilities",
+        "username": "bartek_gdn",
+        "url": null,
+        "description": "Hi HN community!<p>I&#x27;ve created a Chrome extension and Node.js server combo that lets Claude use external tools (calendar, Spotify, etc.) from within regular browser conversations - without any API access.<p>## Why<p>Tool use is available in Claude via API, but I haven&#x27;t found a way to use tools from the web interface.<p>Over a weekend I&#x27;ve created a PoC and spent the next few weeks polishing the details before sharing.<p>The architecture is modular, making it easy to add new tools. I&#x27;ve included detailed setup instructions in the repo.<p>## How it works<p>- The extension injects a content script onto claude.ai&#x2F;chat pages<p>- A background script captures all Claude responses via Chrome debugger API<p>- When Claude generates XML tool tags (e.g., &lt;calendar&gt;...&lt;&#x2F;calendar&gt;), the server executes the corresponding action<p>- Results appear as system messages that you can paste into your conversation, so that Claude is aware of failures etc.<p>Demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=j8lgsGurY1w\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=j8lgsGurY1w</a><p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;BartlomiejLewandowski&#x2F;claude-browser-tool-use\">https:&#x2F;&#x2F;github.com&#x2F;BartlomiejLewandowski&#x2F;claude-browser-tool...</a><p>## Tools currently supported<p>- Google Calendar (create events)<p>- Spotify (play music)<p>Would love feedback on the approach and ideas for other useful tools to add!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43604959"
+    },
+    {
+        "id": 43604866,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AI-Powered Face Shape Detection for Personalized Style Recommendations",
+        "username": "incendies",
+        "url": "https://www.facedetectoronline.com/",
+        "description": "Hey HN, I wanted to share a project I\u2019ve been working on: an AI tool that instantly detects your face shape and provides personalized recommendations for hairstyles, glasses, and makeup. I got the idea after noticing how tricky it can be to find styles that truly suit your unique features, and I wanted to make that process easier and more data-driven.<p>The tool uses computer vision to analyze facial features and classify face shapes, then matches them with style suggestions based on some geometric and aesthetic principles I researched. Building the AI model was a fun challenge\u2014training it to accurately detect face shapes while keeping it lightweight for quick results took a lot of iteration. I also worked on making the recommendations practical and user-friendly.<p>I\u2019d love to get your feedback! What do you think about using AI for this kind of personalization? Are there other features or use cases you\u2019d find interesting? If you\u2019ve worked on similar computer vision projects, I\u2019d be curious to hear about your experiences too.<p>Looking forward to your thoughts!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43604866"
+    },
+    {
+        "id": 43604676,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: A fast, minimal and offline-friendly web playground",
+        "username": "evenoroddman",
+        "url": "https://scriptpad.dev/?id=ybqiqNVknx0aYPMCaTlJ#/fullpage",
+        "description": "I built a web-based HTML&#x2F;CSS&#x2F;JS editor focused on speed, simplicity, and offline access. No bloat \u2014 just open and start coding.<p>What makes it different:\nLive Preview \u2013 Edit HTML, CSS, and JS side-by-side with instant feedback.<p>Offline support \u2013 Works without internet. You can even install it as a PWA and use it like a native app.<p>No Login Required \u2013 Just visit, code, and preview. Login only if you want to save&#x2F;share.<p>Savable &amp; Shareable Links \u2013 Save scripts in the cloud and get shareable links.<p>Customizable Editor \u2013 Themes, fonts, auto-format on save, layout tweaks, line wrapping, etc.<p>Hotkey Support \u2013 Power user shortcuts with tooltips showing keybinds.<p>Download as ZIP \u2013 Export your project with HTML&#x2F;CSS&#x2F;JS files separated.<p>Ideal for tinkering, prototyping, teaching, or even building micro-tools. It\u2019s intentionally simple and fast \u2014 more features coming soon.<p>Try a sample snippet: <a href=\"https:&#x2F;&#x2F;scriptpad.dev&#x2F;?id=z5VydF5TrdbPiygCLIao&amp;o=1&amp;c=1\" rel=\"nofollow\">https:&#x2F;&#x2F;scriptpad.dev&#x2F;?id=z5VydF5TrdbPiygCLIao&amp;o=1&amp;c=1</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43604676"
+    },
+    {
+        "id": 43604460,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I built a Trump filter for RSS feeds",
+        "username": "kjmr",
+        "url": "https://rssfilter.com",
+        "description": "I love RSS feeds - it\u2019s how I keep up with all of my (tech) news. The big downside with RSS though? You get all the articles that are in the feed. And unless your RSS reader of choice offers built-in mute or filter functionality, you\u2019re just stuck with those articles.<p>So I built RSSfilter.com, a service that filters public RSS feeds, and spits out a new RSS feed without the articles that match keywords or categories you\u2019re not interested in.<p>Announcement: <a href=\"https:&#x2F;&#x2F;www.loopwerk.io&#x2F;articles&#x2F;2025&#x2F;announding-rssfilter-com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.loopwerk.io&#x2F;articles&#x2F;2025&#x2F;announding-rssfilter-c...</a><p>Site: <a href=\"https:&#x2F;&#x2F;rssfilter.com\" rel=\"nofollow\">https:&#x2F;&#x2F;rssfilter.com</a><p>Django code: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;loopwerk&#x2F;django-rss-filter\">https:&#x2F;&#x2F;github.com&#x2F;loopwerk&#x2F;django-rss-filter</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43604460"
+    },
+    {
+        "id": 43604424,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Gobley \u2013 Call Rust from Kotlin Multiplatform",
+        "username": "salgorithm",
+        "url": "https://gobley.dev/",
+        "description": "Hi Hacker News, we&#x27;ve just released Gobley v0.2.0!<p>Gobley provides Gradle build integration between Kotlin Multiplatform (KMP) and Cargo for Android, iOS, and JVM. Kotlin&#x2F;JS and Kotlin&#x2F;WASM support is planned, so stay tuned!<p>We also have some documentation for newcomers:\n- Hands-on tutorial: <a href=\"https:&#x2F;&#x2F;gobley.dev&#x2F;docs&#x2F;tutorial\" rel=\"nofollow\">https:&#x2F;&#x2F;gobley.dev&#x2F;docs&#x2F;tutorial</a>\n- Cross-compilation tips to integrate Kotlin, Rust, and C++: <a href=\"https:&#x2F;&#x2F;gobley.dev&#x2F;docs&#x2F;cross-compilation-tips\" rel=\"nofollow\">https:&#x2F;&#x2F;gobley.dev&#x2F;docs&#x2F;cross-compilation-tips</a>\n- Cross-platform example app (Android, iOS, Windows API, &amp; Linux GTK): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;gobley&#x2F;gobley&#x2F;tree&#x2F;main&#x2F;examples&#x2F;app&#x2F;src\">https:&#x2F;&#x2F;github.com&#x2F;gobley&#x2F;gobley&#x2F;tree&#x2F;main&#x2F;examples&#x2F;app&#x2F;src</a>\n- GitHub discussions: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;gobley&#x2F;gobley&#x2F;discussions\">https:&#x2F;&#x2F;github.com&#x2F;gobley&#x2F;gobley&#x2F;discussions</a><p>Gobley is a fork of the (now archived) uniffi-kotlin-multiplatform-bindings (<a href=\"https:&#x2F;&#x2F;gitlab.com&#x2F;trixnity&#x2F;uniffi-kotlin-multiplatform-bindings\" rel=\"nofollow\">https:&#x2F;&#x2F;gitlab.com&#x2F;trixnity&#x2F;uniffi-kotlin-multiplatform-bind...</a>) which is built on Mozilla\u2019s excellent (still active) UniFFI (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;uniffi-rs\">https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;uniffi-rs</a>) project.<p>Please try it out and let us know what you think!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43604424"
+    },
+    {
+        "id": 43604134,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made a minimal, powerful bookmarking app.",
+        "username": "quinto_quarto",
+        "url": "https://apps.apple.com/us/app/eyeball-ai-bookmarking/id6670705634",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43604134"
+    },
+    {
+        "id": 43603911,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: A \"Buy Me a Coffee\" Button for Crypto Donations",
+        "username": "SamPerson",
+        "url": "https://fundhog.bunnylabs.dev/",
+        "description": "I am building a simple donation platform where creators can accept tips in crypto \u2014 kind of like \u201cBuy Me a Coffee,\u201d but Web3-native.<p>No signups required for supporters. Just share your donation page and anyone can send MATIC, ETH, or any ERC-20 token directly to your wallet. It\u2019s gas-efficient and built on Polygon.<p>Each creator gets a customizable page with a short URL and optional message board. Everything is non-custodial \u2014 you own your keys and your funds.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43603911"
+    },
+    {
+        "id": 43603856,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: YouTubeGO \u2013 Open-source YouTube/audio downloader built in Python",
+        "username": "toxi360",
+        "url": "https://github.com/Efeckc17/YoutubeGO",
+        "description": "Hey HN,<p>I&#x27;ve been working on a cross-platform, fully open-source YouTube&#x2F;media downloader called *YouTubeGO*.<p>Built with *Python + PyQt5*, it provides:\n- MP4&#x2F;MP3 downloads using `yt-dlp`\n- Playlist support\n- System tray integration\n- Download queue + scheduler\n- Drag &amp; drop support\n- FFmpeg detection for audio extraction\n- Modular code structure (core&#x2F;ui&#x2F;tests)<p>Why I built it:  \nMost alternatives are either Electron-based (bloated) or CLI-only. I wanted something lightweight, native, and clean that just works on Linux, Windows and macOS.<p>Licensed under Apache 2.0  \n GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Efeckc17&#x2F;YoutubeGO\">https:&#x2F;&#x2F;github.com&#x2F;Efeckc17&#x2F;YoutubeGO</a>  \n Feedback &amp; contributions welcome!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43603856"
+    },
+    {
+        "id": 43603441,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Latitude.sh Databases \u2013 Simple PostgreSQL DBaaS on Bare Metal",
+        "username": "gabrielmouallem",
+        "url": "https://www.latitude.sh/databases",
+        "description": "Hi HN,<p>Gabriel here, one of the developers at Latitude.sh (we&#x27;re a bare metal cloud provider).<p>Over the past year or so, I&#x27;ve been the primary developer building Latitude.sh Databases \u2013 our take on a managed PostgreSQL service. The core idea was to offer a straightforward and competitively priced option for developers who need reliable PostgreSQL without overly complex configurations, leveraging the performance benefits of running directly on bare metal.<p>It runs on our global bare metal infrastructure. Key features we&#x27;ve implemented include:<p>* Built-in monitoring &amp; connection pooling<p>* IP Address Whitelisting (Trusted Sources)<p>* Automated backups configured directly to <i>your own</i> S3 bucket (giving you control over storage and potentially costs)<p>* An optional integration with Supabase, allowing you to use parts of their dashboard for enhanced usability with your database.<p>Under the hood, it&#x27;s built on Kubernetes running on our bare metal servers, using the CloudNativePG operator to manage the PostgreSQL instances. We&#x27;ve found this operator approach works well for handling stateful database workloads in K8s, challenging the old notion that databases don&#x27;t belong there.<p>The service stemmed from internal needs and early interest gathered from a waitlist (~300 signups). It&#x27;s currently live and available for use.<p>We&#x27;re launching it here on HN because we&#x27;d genuinely appreciate your feedback on:<p>* The overall developer experience and UI simplicity.<p>* The current feature set (especially the S3 backup and Supabase integration).<p>* Performance perceptions (given the bare metal base).<p>* Our pricing model&#x27;s competitiveness and clarity.<p>* Any technical aspects of the implementation (running PG on K8s&#x2F;bare metal).<p>Happy to answer any questions you have!<p>You can check out the product page here: <a href=\"https:&#x2F;&#x2F;www.latitude.sh&#x2F;databases\" rel=\"nofollow\">https:&#x2F;&#x2F;www.latitude.sh&#x2F;databases</a><p>Thanks for looking!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43603441"
+    },
+    {
+        "id": 43603275,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I turned my kid's worksheet into a math game in 10 minutes with Claude",
+        "username": "MattSayar",
+        "url": "https://mattsayar.com/how-i-vibe-coded-a-math-game-in-ten-minutes/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43603275"
+    },
+    {
+        "id": 43603008,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I created a ELI5 Blockchain glossary, with also a bit of interactivity",
+        "username": "95thoms",
+        "url": "https://blockchain-like-im-5.vercel.app/",
+        "description": "The reason is simply that I&#x27;m learning blockchain and i found myself searching and hardly recalling terminology. So I started building a glossary (that slowly i&#x27;m making interactive) in which the terms are explained with ELI5 analogies. AI helped me with that. Hope you find it useful. \nYou can contribute to the data set here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;thomscoder&#x2F;blockchain-like-im-5\">https:&#x2F;&#x2F;github.com&#x2F;thomscoder&#x2F;blockchain-like-im-5</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43603008"
+    },
+    {
+        "id": 43602956,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Sayso \u2013 We Fixed AI Phone Calls",
+        "username": "lschneider",
+        "url": "https://www.saysoapp.com",
+        "description": "Hi HN,<p>YC w24 company here. We just pivoted from drone delivery and on-demand GPU rental back to our original idea - using AI for language learning.<p>The Sayso app uses interactive Stories, <i>really</i> good AI Phone Calls and immersive community posts to create a fantastic Spanish learning experience.<p>Sayso lets you \u201cshop around\u201d for the lesson&#x2F;story you want to do. Each story contains - well - a fun story that lets you see Spanish used in real world contexts, has you say a few useful sentences out loud so you practice pronunciation and ends with a short phone call that puts you on the spot. At the end, new words are added to an FSRS5-powered flashcard stack (most efficient memorization algorithm). I can tell you, it\u2019s a lot of fun, words just stick and you gain a lot of knowledge quickly.<p>Stories and phone calls are made to be fun and useful. E.g., instead of \u201chow to order a coffee\u201d, we do something like \u201ca waiter spills coffee on you\u201d - you can choose to be nice or yell at him. This way, phrases just stick really well.<p>There are also community posts, which are short videos in or about Spanish with a short exercise that lets you say a sentence out loud in the end. And there are phone call scenarios that are a bit longer.<p>As additional motivation, there are Amazon gift vouchers for the leaderboard toppers every week!<p>How did we get here?\nWe were part of YC w24. We applied to YC with AI language learning initially but decided to work on drone delivery during YC given our ML &amp; engineering backgrounds. Turns out, no one needs that and the unit economics simply don\u2019t work out. Then we launched gpudeploy.com and got #1 on HN [<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40260259\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40260259</a>]! But this didn&#x27;t work out either - we turned into glorified car (Nvidia GPU) salesmen which we were not good at. So we went back to our original idea, language learning. We launched an initial app last year and now took the learnings and recently launched SAYSO.<p>It is available on iOS only for now.<p>Enjoy and have a nice rest of the weekend!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602956"
+    },
+    {
+        "id": 43602720,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I Built a Nutrition Tracking app with features I wanted from other apps",
+        "username": "puzzledAdi",
+        "url": "https://macrobalance.app/",
+        "description": "During my last semester break, I got obsessed with calorie tracking and ended up juggling multiple apps to keep tabs on my intake. Each app had its killer feature that I couldn\u2019t get enough of, and I started dreaming of a single app that could bring all those standout tools together. So, I pinged my friend, and we decided to take a crack at building it ourselves. What I thought would be a quick weekend side project spiraled into an epic adventure.<p>I built this app using Flutter and Supabase as the main frontend and backend. I also used Swift for some components, such as the camera and widgets, for a better native experience.<p>I included all the features that I liked from the different apps I used.<p>A reliable database: We obtain food data from a comprehensive, high-quality database. This database primarily includes Western and European foods and information from package labels. We will soon add data from additional countries.<p>AI photo logging: Click a photo of your meal and get the estimates for calories and other macros. It&#x27;s pretty handy when at a restaurant where the nutritional values of food are not listed.<p>AI meal description: If you forgot to take a picture before eating, describe what you ate afterward to log it. Works similarly to food logging.<p>Barcode scanning: The feature is very quick and snappy, retrieving data from a vast open-source database.<p>Progress tracking: Uses intuitive graphs to track your steps, weight, and daily macros intake.<p>No ads and Privacy focused: Users can sign in with Apple to protect their privacy. No ads.<p>Integration with Apple: The app has dynamic widgets and integrates with the Apple Health app.<p>The next feature I&#x27;m working on is a dynamic nutrition coach that calculates goals based on the user&#x27;s personal progress, i.e., instead of a general formula for all users, it dynamically changes from user to user weekly, guiding the user like a personal coach.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602720"
+    },
+    {
+        "id": 43602484,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I have built my first AI notetaker. Any feedback?",
+        "username": "tommat32",
+        "url": null,
+        "description": "Hey there,<p>While searching for my next role as a PM in Blockchain + AI, I started building an AI-powered notetaker called MindNote: <a href=\"https:&#x2F;&#x2F;www.mindnote.online\" rel=\"nofollow\">https:&#x2F;&#x2F;www.mindnote.online</a>. The idea is simple: you input your thoughts, and AI helps you complete or modify them.<p>If you decide to test it, try using the prompt:  \nKeep this text and\u2026&quot;(add budget, complete list, organize alphabetically, add their translation, etc.).<p>The first big release is all about modifying your notes with AI prompts. The next big step? Capturing thoughts directly from the mind using brain-to-text technology.<p>There is a 3 days free trial: <a href=\"https:&#x2F;&#x2F;www.mindnote.online\" rel=\"nofollow\">https:&#x2F;&#x2F;www.mindnote.online</a>\nVideo tutorial: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=okq_LZLbDfI\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=okq_LZLbDfI</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602484"
+    },
+    {
+        "id": 43602484,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I have built my first AI notetaker. Any feedback?",
+        "username": "tommat32",
+        "url": null,
+        "description": "Hey there,<p>While searching for my next role as a PM in Blockchain + AI, I started building an AI-powered notetaker called MindNote: <a href=\"https:&#x2F;&#x2F;www.mindnote.online\" rel=\"nofollow\">https:&#x2F;&#x2F;www.mindnote.online</a>. The idea is simple: you input your thoughts, and AI helps you complete or modify them.<p>If you decide to test it, try using the prompt:  \nKeep this text and\u2026&quot;(add budget, complete list, organize alphabetically, add their translation, etc.).<p>The first big release is all about modifying your notes with AI prompts. The next big step? Capturing thoughts directly from the mind using brain-to-text technology.<p>There is a 3 days free trial: <a href=\"https:&#x2F;&#x2F;www.mindnote.online\" rel=\"nofollow\">https:&#x2F;&#x2F;www.mindnote.online</a>\nVideo tutorial: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=okq_LZLbDfI\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=okq_LZLbDfI</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602484"
+    },
+    {
+        "id": 43602381,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Show HN: I Built a News Aggregator Where Users Curate and Share Sources",
+        "username": "LorenzoBloedow",
+        "url": "https://anythingfeed.com",
+        "description": "What do you guys think? I built this because it&#x27;s something I&#x27;ve always wanted.<p>Just a heads-up: at the time of writing, the source creation service is overloaded, it&#x27;ll be back in around 5 hours, you can still create collections and do everything else normally, just can&#x27;t add sources that don&#x27;t already exist.\nThis overload is due to me not yet being able to afford the paid plan for the API I&#x27;m using to fetch the news articles =P",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602381"
+    },
+    {
+        "id": 43602243,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Is marketing possible using AI?",
+        "username": "_akshansh_",
+        "url": null,
+        "description": "Hi HN, \nI have been searching up the rabbit hole of the internet for some help in marketing on my project and was unable to find much using the AI, so I built at SMS Tactic Ltd. \nThe site is up for review let me know what else to do now.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602243"
+    },
+    {
+        "id": 43602211,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Lessons Learned from the Friends Episode Tagging Project",
+        "username": "deanebarker",
+        "url": "https://deanebarker.net/other/friends/lessons/",
+        "description": "I tagged every episode of the American sitcom &quot;Friends&quot; and wrote about what I learned from the experience. The link is to the &quot;lessons learned&quot; summation -- there&#x27;s a link to the actual project at the top of the page.<p>Also, there&#x27;s an HTML web component linked from the main project as well -- it allows filtering of tag-based items.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602211"
+    },
+    {
+        "id": 43602155,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made an AI news summariser for any topic in the world",
+        "username": "Leewlms",
+        "url": "https://apps.apple.com/au/app/bitesize-news-summaries/id6742542364",
+        "description": "Hi HN,<p>I built Bitesize, a free app that lets you catch up on the news through fast, focused summaries \u2014 built for people who want context without the clutter.<p>It started 6 months ago when I got tired of bouncing between sites to piece together what was actually happening in the world. Single outlets felt too limited, aggregators were noisy and repetitive, and most articles buried the key info under fluff.<p>Bitesize is my attempt to fix that. It follows three simple principles:\n- Show only what matters \u2014 no filler, no repeats\n- Recaps that take under a minute to read\n- A personalized feed on any topic you care about<p>What\u2019s next:\n- Faster, smarter topic search\n- Text-to-speech summaries\n- Multi-language support<p>Would love to hear your thoughts, feedback, or ideas!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602155"
+    },
+    {
+        "id": 43602015,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Memo \u2013 Manage Your Apple Notes and Reminders from the Terminal",
+        "username": "antoniorodr",
+        "url": null,
+        "description": "Hello everyone!<p>This is my first &quot;serious&quot; project, so please be kind  I&#x27;ve been learning Python since last August.<p>The project is still in beta, and currently only supports Apple Notes \u2014 Apple Reminders integration is coming later. There\u2019s still a lot of work ahead, but I wanted to share the first beta to get some feedback and test it out in the wild.<p>You can find the project here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;antoniorodr&#x2F;memo\">https:&#x2F;&#x2F;github.com&#x2F;antoniorodr&#x2F;memo</a><p>I\u2019d be more than grateful for any feedback, suggestions, or contributions. Thank you so much!<p>What My Project Does?<p>memo is a simple command-line interface (CLI) tool for managing your Apple Notes (and eventually Apple Reminders). It\u2019s written in Python and aims to offer a fast, keyboard-driven way to create, search, and organize notes straight from your terminal.<p>Target Audience<p>Everyone who works primarily from the terminal and doesn\u2019t want to switch to GUI apps just to jot down a quick note, organize thoughts, or check their Apple Notes. If you love the keyboard, minimalism, and staying in the flow \u2014 this tool is for you.<p>How It\u2019s Different?<p>Unlike other note-taking tools or wrappers around Apple Notes, memo is built specifically for terminal-first users who want tight, native integration with macOS without relying on sync services or third-party platforms. It uses Python to directly access the native Notes database on your Mac, meaning you don\u2019t have to leave your terminal \u2014 and your notes stay local, fast, and secure.<p>It\u2019s not trying to replace full-fledged note apps, but rather to complement your workflow if you live in the shell and want a lightweight, scriptable, and distraction-free way to interact with your Apple Notes.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602015"
+    },
+    {
+        "id": 43602012,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Gym Rat, my open source Notion powered fitness app. It works on my TV!",
+        "username": "jkosoy",
+        "url": "https://jkosoy.com/2025/04/05/gym-rat/",
+        "description": "Hi HN! I got into fitness a few years ago and recently moved, leaving behind my beloved local gym. I couldn\u2019t find anything that suited my  goals and schedule, so I decided to built out my own home gym. I was surprised to find how hard it was to find any software I liked to make good workouts - anything close cost as much as a gym membership itself! Gym Rat was born from trying to make it simple and fun.<p>I started my gym with two weights, a kettlebell and a resistance band, so I know the app can scale up or down to any regime. While the mobile experience needs work, I have used it for when I\u2019m traveling and it still does the job.<p>I\u2019m putting it out there in case anyone else might find value in it. I\u2019d welcome your ideas or feedback. I don\u2019t have plans to monetize it - that\u2019s not my goal - nor do I want to put other paid apps out of business. This was a side project I just decided to put a little TLC into and hope others might get something out of it, too.<p>LMK what you think!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43602012"
+    },
+    {
+        "id": 43601999,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AI Explains Complex Codebase in 5 Minutes (Open Sourced)",
+        "username": "zh2408",
+        "url": "https://github.com/The-Pocket/Tutorial-Codebase-Knowledge",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43601999"
+    },
+    {
+        "id": 43601587,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Temp Number Phone \u2013 Free temporary numbers to receive SMS online",
+        "username": "anna81",
+        "url": "https://tempnumberphone.com",
+        "description": "I built a free tool for receiving SMS verification codes online using disposable phone numbers. No registration or login required \u2013 just pick a number and see the messages in real-time.<p>This tool is helpful for quick one-time verifications on platforms like Gmail, Telegram, or Facebook, without using your real number.<p>Would love feedback from the community!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601587"
+    },
+    {
+        "id": 43601502,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Swap 'Em Poker, daily puzzle game",
+        "username": "ZenBlender",
+        "url": "https://www.swapempoker.com/",
+        "description": "Hi HN!<p>Swap &#x27;Em Poker is a daily puzzle game using poker hands inspired by Texas Hold &#x27;Em. Given a set of &quot;board&quot; cards and a series of &quot;hands&quot;, the poker hands start out in increasing order of strength. The goal is to swap cards between the board and the hands until the resulting hand strengths are reversed. (More instructions on the site.) Every day brings new easy&#x2F;medium&#x2F;hard puzzles to play.<p>I designed and built it myself. Comments, questions, feedback?<p>My puzzle generator for this is a fairly sophisticated algorithm that finds puzzles that satisfy certain requirements. It has led to some surprising discoveries, such as puzzles that have 7 hands but are solvable in only 2 swaps.<p>This is actually my second solo-developed poker game, the other is Triplejack Poker ( <a href=\"https:&#x2F;&#x2F;www.triplejack.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.triplejack.com&#x2F;</a> ) that has been running for over 20 years!<p>Thank you for playing!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601502"
+    },
+    {
+        "id": 43601495,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Morphik \u2013 Open-source MCP server for technical document search",
+        "username": "Adityav369",
+        "url": "https://docs.morphik.ai/using-morphik/mcp",
+        "description": "Hey HN - we built Morphik MCP to solve a common problem: finding specific information across scattered technical docs. We&#x27;ve experimented with GraphRAG, ColPali, contextual embeddings, and more. MCP emerged as the solution that unifies these approaches.<p>Features:\n- Multimodal search across text, diagrams, and videos\n- Natural language knowledge base management\n- Fully open-source with responsive support<p>What sets MCP apart is its ability to return images (including diagrams) directly to the MCP client. Users have applied it to search over data ranging from blood tests to patents, and we use this daily with Cursor and Claude.<p>Give it a spin, and let us know what you think.<p>Link to our repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;morphik-org&#x2F;morphik-core\">https:&#x2F;&#x2F;github.com&#x2F;morphik-org&#x2F;morphik-core</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601495"
+    },
+    {
+        "id": 43601337,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I Just Revamped My Image-to-Image Conversion Tool",
+        "username": "debugdynamo",
+        "url": "https://www.ekpic.com/demo/",
+        "description": "I&#x27;ve just revamped my website for image-to-image conversion called Ekpic and would love to get your feedback on the new version.\nI have not visitors nor anything, but hey, whatever . In any case, I wanted to have good metrics for speed. I just changed the framework to astro. Still various modifications to do. All images are converted locally, that&#x27;s one of the reasons I created the site. Also, I wanted something a bit more modern than the standard.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601337"
+    },
+    {
+        "id": 43601301,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I built a Rust crate for running unsafe code safely",
+        "username": "braxxox",
+        "url": "https://github.com/brannondorsey/mem-isolate",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43601301"
+    },
+    {
+        "id": 43601245,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Interactive Minkowski Addition Visualization",
+        "username": "Kipt_",
+        "url": "https://www.gameloomstudio.com/blog8.html",
+        "description": "I&#x27;m coding physics for our game and wanted to share how Minkowski Addition and support functions work, so I made it into an interactive blog post.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601245"
+    },
+    {
+        "id": 43601142,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: FormWing \u2013 AI Form Filler for Lead Gen and Testing",
+        "username": "acoyfellow",
+        "url": null,
+        "description": "Built this to automate form filling across the web, for two main use cases:\n 1. Outbound Lead Gen \u2013 Skip paid ads and slow SEO. This hits public contact forms directly. Feed it a URL or list of URLs + a short prompt (e.g. \u201cLooking for warehouse partners in TX\u201d), and the system uses AI to analyze the form and submit your message.\n 2. Form Testing \u2013 Devs and marketing teams need to test forms constantly. Manual testing is slow. This autofills forms with realistic, varied data. Good for regression tests and sanity checks.<p>Stack:\n \u2022 Frontend: SvelteKit\n \u2022 Infra: Cloudflare Workers, Queues, and Workflows\n \u2022 Data: Firebase + Firestore\n \u2022 Runtime: Edge-native, async queue-based processing\n \u2022 Extras: Headless browser automation for screenshotting and fallback parsing<p>Early access live now. Free 7-day trial (100 form submissions&#x2F;day, credit card required). Early bird perks for first 5 users.<p>Looking for feedback from folks doing outreach automation, scraping, testing, etc.<p><a href=\"https:&#x2F;&#x2F;formwing.com\" rel=\"nofollow\">https:&#x2F;&#x2F;formwing.com</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601142"
+    },
+    {
+        "id": 43601115,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Binge Waste: Stop binge-watching, move your life forward",
+        "username": "saguiitay",
+        "url": "https://binge-waste.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43601115"
+    },
+    {
+        "id": 43601110,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: GibleArt \u2013 Transform Your Photos into Ghibli-Style Art Using AI",
+        "username": "howardV",
+        "url": "https://gibleart.org",
+        "description": "GibleArt is an open-source web application that transforms your photos into Ghibli-style artwork using AI. Here&#x27;s what makes it special:\n Key Features:\nInstant transformation of any photo into Ghibli animation style\nClean, modern UI built with Next.js 14 and Tailwind CSS\nReal-time progress tracking during image generation\nSecure image processing with Cloudflare Turnstile protection\nMobile-friendly responsive design\n Tech Stack:\nFrontend: Next.js 14, TypeScript, Tailwind CSS, Shadcn UI\nAuthentication: Next-Auth\nInternationalization: next-intl (supports English &amp; Chinese)\nState Management: React Context\nPayment Integration: Stripe\nSecurity: Cloudflare Turnstile\n Why I Built This:\nI&#x27;ve always been fascinated by Ghibli&#x27;s unique art style and wanted to make it accessible to everyone. This tool lets anyone create Ghibli-style artwork from their photos in seconds.\n Privacy &amp; Security:\nNo image data stored permanently\nSecure payment processing\nAnti-abuse protection with Cloudflare\nUser data encryption\n Try It Out:\n[Demo Link]\n[GitHub Repo]\nLooking for feedback from the HN community, especially on:\nPerformance optimization\nUI&#x2F;UX improvements\nAdditional features you&#x27;d like to see",
+        "discussion_url": "https://news.ycombinator.com/item?id=43601110"
+    },
+    {
+        "id": 43600939,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made a tool that asks hard introspective questions",
+        "username": "indiantinker",
+        "url": "https://www.iwonderwhy.xyz/",
+        "description": "I built a small AI tool called &quot;I Wonder Why&quot; that asks you introspective questions instead of giving answers. It&#x27;s designed to help you think more deeply and reach your own conclusions, in contrast to most AI that just generate more information.<p>Each conversation is limited to 10 exchanges, with no login or data storage. It&#x27;s intentionally minimal and focused on mindful, reflective dialogue. Think Socratic method meets chatbot.<p>My friends who are into meditation and self-inquiry have found it surprisingly helpful. So, i thought I would share with folks here on HN, and see what they think. It is not for everyone though as questions don&#x27;t always bring pleasure.<p>I wrote about why I built it here : <a href=\"https:&#x2F;&#x2F;indiantinker.bearblog.dev&#x2F;iwonderwhy-thoughts-around-making-an-ai-socratic-questioner&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;indiantinker.bearblog.dev&#x2F;iwonderwhy-thoughts-around...</a><p>Try it here: <a href=\"https:&#x2F;&#x2F;iwonderwhy.xyz&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;iwonderwhy.xyz&#x2F;</a><p>Thanks.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43600939"
+    },
+    {
+        "id": 43600667,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Convert Any Pydantic Model to OpenAI JSON Schema",
+        "username": "NerualNowtork",
+        "url": "https://pypi.org/project/datamodel-converter/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43600667"
+    },
+    {
+        "id": 43600411,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: HTTP search engine for old PC",
+        "username": "Turboblack",
+        "url": "http://z00m.ws",
+        "description": "<a href=\"http:&#x2F;&#x2F;z00m.ws\" rel=\"nofollow\">http:&#x2F;&#x2F;z00m.ws</a> - search engine for very old PC`s<p>also no AI<p>enjoy",
+        "discussion_url": "https://news.ycombinator.com/item?id=43600411"
+    },
+    {
+        "id": 43600397,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Smart AI tool to make project planning easy",
+        "username": "mfareed",
+        "url": "https://taskra.space/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43600397"
+    },
+    {
+        "id": 43600361,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Character Gateway \u2013 AI Character API Platform for OpenRouter Users",
+        "username": "daunio",
+        "url": "https://charactergateway.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43600361"
+    },
+    {
+        "id": 43600301,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: View Raycast Extension by Downloads",
+        "username": "wtoa",
+        "url": "https://bulletin.kakiyaga.com/sources/Raycast",
+        "description": "When I started using Raycast, I found that it was difficult to discover extensions, so I spent some time this weekend making this site to help you search extensions and have a peek at trending extensions too!<p>I only have data for the last 2 days so the best I can do is to show trending downloads from the last day &#x2F; week :)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43600301"
+    },
+    {
+        "id": 43600216,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Understand GitHub repos, PDF docs through mindmaps, RAG search",
+        "username": "1rvinn",
+        "url": "https://github.com/1rvinn/mindpalace",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43600216"
+    },
+    {
+        "id": 43599882,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AdminForth \u2013 Open-Source Admin Framework for Node.js and Vue",
+        "username": "deviscool",
+        "url": null,
+        "description": "AdminForth is a free and open-source framework for building powerful back-office applications using Node.js, Vue 3, and Tailwind CSS. It comes with built-in auth, user management, plugins (SSO, 2FA, AI autocomplete, CSV import&#x2F;export, and more), and fully customizable UI.<p>Live Demo: <a href=\"https:&#x2F;&#x2F;demo.adminforth.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;demo.adminforth.dev</a><p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;devforth&#x2F;adminforth\">https:&#x2F;&#x2F;github.com&#x2F;devforth&#x2F;adminforth</a><p>Docs &#x2F; Getting Started: <a href=\"https:&#x2F;&#x2F;adminforth.dev&#x2F;docs&#x2F;tutorial&#x2F;gettingStarted&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;adminforth.dev&#x2F;docs&#x2F;tutorial&#x2F;gettingStarted&#x2F;</a><p>We\u2019d love your feedback, feature suggestions, or contributions!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599882"
+    },
+    {
+        "id": 43599726,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made a briefing document generator based on your Questionary",
+        "username": "devmtk",
+        "url": "https://BriefFast.com",
+        "description": "I wanted an easy briefing generator\u2014nothing from AI. Don\u2019t get me wrong\u2014I\u2019m a fan of AI, but I wanted something that really fits.<p>I created as many Templates as I needed myself. I got a little crazy with all my Templates for the PDF versions. And did a little bit of overengineering for a questionnaire. I made it free and I hope it makes your lives just a little bit easier.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599726"
+    },
+    {
+        "id": 43599639,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: OS Automation Is Here",
+        "username": "zynovex",
+        "url": "https://github.com/Protyasha-Roy/ion",
+        "description": "I&#x27;m not sure if anyone has tried doing it already. Maybe did. But here is my prototype of the OS automation tool. It reads tasks given by the user in natural language, uses gemini to generate commands to carry out the task, then gets executed as user proceeds.<p>Problems faced:\n1. It didn&#x27;t have context about the system&#x2F;file-folder structures. So had to implement the indexing. Though it doesn&#x27;t do the work fully rn.\n2. Improper commands. Sometimes it generates commands that don&#x27;t make sense. It can be tackled with search through predefined commands and feeding to the AI I guess.\n3. Combining all this, I want to make it more intelligent so it can take actions even with vague commands.<p>I&#x27;m not sure if it works well with macos&#x2F;linux. Please let me know. I&#x27;ll continue this project. And give a star :)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599639"
+    },
+    {
+        "id": 43599470,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I Built ImgFiber-Better Image Optimizer. Free No Limits",
+        "username": "iambavith",
+        "url": "https://www.imgfiber.com/",
+        "description": "No file size&#x2F;upload limits.\nProcessed locally right inside your browser. \nNo Server Uploads.<p>NOT A FFmpeg Wrapper.<p>It&#x27;s not like any other Alternatives, Try for yourself!<p>Are you someone who deals with lots of images and always find yourself with your storage full? or Someone Who deals with websites optimization and would love to get that fast loading speed? No matter who you are, as long as you deal with Images, Imgfiber got your back!<p>\u2b07 Reduce image file sizes by up to 95% without losing quality!\n Supports all major formats: JPG, PNG, JPEG, GIF, SVG, and WebP.\n Works entirely in your browser\u2014no uploads, no servers, just the power of your own device!\n Blazing fast compression\u2014processes images as quickly as you drag and drop.\n Delivers results 2x better than competitors like OptImage, CompressX, TinyPNG, and Squoosh.\n Totally FREE with no file size or count limits - compress as many images as you want!<p>Social Proof? -\nI am gonna be honest with you! I don&#x27;t have social proof! \nI&#x27;ve been too busy building cool tools like IMGFiber, Codeaway, QuickWrap entire year that i forgot they need Lovely users to have significant value to its existent. I&#x27;ve spent an year building great range of SaaS and had zero exposure to provide your with trusted by 40,000+ users around the world! Nah! I don&#x27;t have that! that&#x27;s why i am here!<p>I would geneuinly love for you to give ImgFiber a shot!<p>Check it out ImgFiber.com and let me know your thoughts!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599470"
+    },
+    {
+        "id": 43599262,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: File Architect \u2013 Create file and folder structures with plain text",
+        "username": "seblavoie",
+        "url": "https://filearchitect.com/",
+        "description": "Hey HN, I built File Architect to quickly create file and folder structures on mac using simple text outlines and tab indentation. The core of the app is also open-sourced at <a href=\"https:&#x2F;&#x2F;github.com&#x2F;filearchitect\">https:&#x2F;&#x2F;github.com&#x2F;filearchitect</a>. Would love feedback!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599262"
+    },
+    {
+        "id": 43599193,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Search by name added for products, product categories",
+        "username": "neonim",
+        "url": "https://github.com/oitcode/samarium",
+        "description": "Search was missing before. Now you can search by name for products and product categories.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599193"
+    },
+    {
+        "id": 43599193,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Search by name added for products, product categories",
+        "username": "neonim",
+        "url": "https://github.com/oitcode/samarium",
+        "description": "Search was missing before. Now you can search by name for products and product categories.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599193"
+    },
+    {
+        "id": 43599186,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Built a tool to schedule stuff inside your app \u2013 what you guys think",
+        "username": "samocodes",
+        "url": "https://schedify.dev",
+        "description": "I\u2019ve been working on a tool called Schedify \u2014 it lets your app schedule stuff to happen later, like\u2026\n* send something in 5 minutes\n* trigger a feature next week\n* run logic in 2026 (seriously)<p>Why I built it:\nEvery time I needed to delay something in my own apps, it turned into a spaghetti mess of cron jobs, queues, and time-based hacks. So I made Schedify to do one thing: help you delay things cleanly \u2014 no boilerplate, no infra pain.<p>Right now it&#x27;s in private beta \u2014 if you\u2019re building something and think this might help, drop a comment. Happy to share access.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43599186"
+    },
+    {
+        "id": 43598052,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Reactive Proxy State \u2013 Vue-style reactivity without Vue",
+        "username": "Yiin",
+        "url": "https://yiin.github.io/reactive-proxy-state/",
+        "description": "I really like how Vue 3 handles reactive state. It&#x27;s simple and works well.<p>But it&#x27;s tied to the frontend, so I wrote something similar that works in plain JavaScript, without Vue or any UI layer.<p>I called it Reactive Proxy State ...because it is. It uses proxies and tracks deep changes. Works with arrays, Maps, Sets, Dates. Emits changes so state can be rebuilt.<p>Might be useful if you want reactive state outside of the frontend.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Yiin&#x2F;reactive-proxy-state\">https:&#x2F;&#x2F;github.com&#x2F;Yiin&#x2F;reactive-proxy-state</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43598052"
+    },
+    {
+        "id": 43597987,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I also built a word game. My mom is indifferent, but I think its ccool",
+        "username": "jonathanleane",
+        "url": "https://playletterlinks.com/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43597987"
+    },
+    {
+        "id": 43597922,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: The first golf course maintenance app on Replit",
+        "username": "taivare",
+        "url": "https://meanergreens-greggbarber.replit.app/",
+        "description": "I decided to democratize this hole replacement instructional app so even small rural courses can have great greens like the top courses.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597922"
+    },
+    {
+        "id": 43597738,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Professional Profile Page",
+        "username": "saranshsharma",
+        "url": "https://2nd.exchange",
+        "description": "Folks who care about \n1. Owning their professional data \n2. Algorithms that decide our interactions from the  applications \n3. Don\u2019t want to get stuck in infinite scroll mode \n4. Deeply care about sharing with people you know<p>I have developed a simple professional profile page which stores your followers and can public ally recommend your profile.<p>I don\u2019t like LinkedIn it\u2019s a great thing but they sell your data and use heavy attention based advertising it\u2019s becoming a place for marketing company .<p>Work in progress the code in GitHub at GitHub&#x2F;cynsar-capital&#x2F;second-ex",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597738"
+    },
+    {
+        "id": 43597459,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Sound of Sorting, Reimagined for iPadOS and macOS",
+        "username": "nhubbard",
+        "url": "https://github.com/nhubbard/sort-visualizer-swift",
+        "description": "Hello HN!<p>Put simply, this project is a complete rebuild of the famous Sound of Sorting visualizer, written in Swift with SwiftUI for iPadOS and macOS.<p>I originally envisioned it as a straight port of the original app, but I quickly realized that it would not be possible to do it that way.<p>It has most of the features of the original visualizer, plus some more educational features, like descriptions of the algorithms, space and time complexity, and implementations of each algorithm in 10 different programming languages.<p>I also put a lot of work into the sound synthesis, a custom syntax highlighter for displaying the code in the app, and the entire sorting platform itself.<p>I&#x27;ve been working on this project for many, many years now. It was my very first Swift project when I bought my MacBook Pro in late 2021, and it helped me learn so much detail about how Apple platform development works. I&#x27;ve since written a few other apps, like a darkroom timer for when I was developing my own film and prints.<p>I welcome any and all issues and pull requests, and any constructive criticism of the project. I&#x27;m sure there&#x27;s some old code hidden away somewhere that I can&#x27;t see it, or I wrote some of the code in a very inefficient way, and some Swift wizard will come along and point out how I can make it faster.<p>Thanks!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597459"
+    },
+    {
+        "id": 43597411,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made a conversational AI for interview prep",
+        "username": "yomwolde",
+        "url": "https://www.speakfast.ai/",
+        "description": "SpeakFast helps you prep by actually talking\u2014not just reading tips or recording yourself. The AI interviews you, challenges you in real time, and gives coaching based on how you&#x27;re doing. It can even build a custom roadmap around your weak spots.<p>There are 200K+ real roles from top tech companies to practice with. You can also paste a job description and get a tailored mock interview instantly.<p>It\u2019s composable, flexible, and built to feel real",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597411"
+    },
+    {
+        "id": 43597299,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Obelisq \u2013 load .env variables into process.env and get type-safety",
+        "username": "carlos-menezes",
+        "url": "https://github.com/carlos-menezes/obelisq",
+        "description": "First and foremost, thanks for taking you time checking the project. This is the first release (just released 0.1.0 on npm) and many things may change. Contributions are welcomed.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597299"
+    },
+    {
+        "id": 43597238,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I built cartoon avatar maker app",
+        "username": "zuraOnNews",
+        "url": "https://apps.apple.com/ge/app/cartoon-avatar-maker-gotoon/id6744040885",
+        "description": "Hello guys, zura here, developer of the app, i made this app in a day, literally, launched the day after and surprisingly as a noname developer, ( i got 20 followers on X tho ) i got 100 + downloads on first 24 hours, since it was in trend i decide to join it and create my own version.<p>Thanks!!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43597238"
+    },
+    {
+        "id": 43596901,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: BookofWisdom \u2013 An AI Journal That Helps You Reflect Smarter",
+        "username": "skwkdv",
+        "url": "https://www.bookofwisdom.me",
+        "description": "I created a social journaling app that uses AI to help you reflect on your entries and find meaningful insights over time. I wanted a journaling tool that went beyond just recording daily entries. Something that could help me understand patterns in my thinking.<p>If you give it a try, I hope it brings you something valuable.<p>Feedback welcome! Thanks!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43596901"
+    },
+    {
+        "id": 43596862,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I Made a No-Code Excel to HTML Table Maker",
+        "username": "bobbyelmes",
+        "url": "https://htmltablemaker.com/",
+        "description": "I built <a href=\"https:&#x2F;&#x2F;htmltablemaker.com\" rel=\"nofollow\">https:&#x2F;&#x2F;htmltablemaker.com</a> as a no-code tool for anyone who wants to turn an Excel spreadsheet into a clean, responsive, filterable HTML table.<p>I thought it could be particularly useful for freelance developers who need to quickly display \nlots of data without setting up the whole backend and table logic.<p>No coding required<p>Supports large spreadsheets (thousands of rows)<p>Built-in advanced data filtering &amp; sorting.<p>Customizable layout and styling.<p>Instant embed code for any website.<p>It\u2019s free for low-traffic sites and really simple to use \u2014 upload a spreadsheet, design your table, and paste the embed code anywhere.<p>Would love your feedback, feature requests, or any bug reports!<p>Try it here: <a href=\"https:&#x2F;&#x2F;htmltablemaker.com\" rel=\"nofollow\">https:&#x2F;&#x2F;htmltablemaker.com</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43596862"
+    },
+    {
+        "id": 43596722,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Windows XP Themed Personal Site Built with React",
+        "username": "okincilleb",
+        "url": "https://www.sohailsayed.com/",
+        "description": "I geek out on any UI from the 2000s, so I built my personal site to look and feel like Windows XP. Made this two years ago to get better at React.<p>My goal was to fool my dad into thinking he was actually using Windows XP and it seemed to work.<p>No mobile version (yet) :(<p>If you think it&#x27;s cool you can check out the somewhat outdated code: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;SohailSayed&#x2F;winxp-personal-website\">https:&#x2F;&#x2F;github.com&#x2F;SohailSayed&#x2F;winxp-personal-website</a>",
+        "discussion_url": "https://news.ycombinator.com/item?id=43596722"
+    },
+    {
+        "id": 43596662,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Git merge-PR to merge PRs with rebase and merge commit",
+        "username": "goerz",
+        "url": "https://github.com/goerz/git-merge-pr",
+        "description": "This script encapsulates my general philosophy for merging PRs on GitHub: they should be rebased onto the latest master, but be merged with an explicit merge commit",
+        "discussion_url": "https://news.ycombinator.com/item?id=43596662"
+    },
+    {
+        "id": 43595837,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I built an app that asks what you want to achieve, then tells you how",
+        "username": "ifeanyi_sa",
+        "url": "https://research.projectinference.app",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43595837"
+    },
+    {
+        "id": 43595836,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: AI frontend code generator from TS type and OpenAPI",
+        "username": "jhnam88",
+        "url": "https://github.com/wrtnlabs/autoview",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43595836"
+    },
+    {
+        "id": 43595661,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I made an AI Platform that gamifies applying to jobs",
+        "username": "ironessence",
+        "url": "https://www.applyninja.ai/",
+        "description": "Hi there! I&#x27;ve created ApplyNinja, a platform that uses AI to help jobseekers apply to jobs faster and better.<p>What differentiates ApplyNinja from the other &quot;auto-apply&quot; platforms is the trained AI model behind it. It learns from your resume and the jobs you apply to, and it provides better and better results.<p>Currently, it serves as a helper for the entire application process:\n- Track &amp; Monitor job applications\n- Generates Resume suggestions and highlights the parts that are not so good\n- Auto-fixes and generates a new resume based on the suggestions\n- Creates Cover Letters based on your resume and the job description\n- Generates Company Insights, scraping user reviews from Glassdoor, Indeed etc.\n- Generates Salary Insights so jobseekers have a negotiation leverage\n- Generates Technical Interview Questions based on the Job Description<p>On top of all of this, it provides a gamified experience, because consistency is the key in applying to jobs.<p>Me and my friends are using it daily and manage to land approximately 5-10 interviews&#x2F;month as Software Engineers.<p>I would really love any kind of feedback. Thank you very much!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43595661"
+    },
+    {
+        "id": 43595606,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Convert a sprite sheet into a GIF with one click (open source)",
+        "username": "getToTheChopin",
+        "url": "https://collidingscopes.github.io/spritesheet-to-gif/",
+        "description": "I built a free web tool that turns sprite sheets (often used for video game character animations) into GIFs.<p>Upload your spritesheet image, and then use the controls to set row &#x2F; column count, frame duration, and image offset margins.<p>The tool then converts your sprite sheet into a GIF file.<p>Completely free and open source (MIT license).<p>Github repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;collidingScopes&#x2F;spritesheet-to-gif\">https:&#x2F;&#x2F;github.com&#x2F;collidingScopes&#x2F;spritesheet-to-gif</a><p>Any suggestions or feedback would be much appreciated!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43595606"
+    },
+    {
+        "id": 43595442,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: iPhone 2005 weird \"Blob Keyboard\" simulator",
+        "username": "juliendorra",
+        "url": null,
+        "description": "Hi HN,<p>I teach tech design history, and one of the key stories I cover is the development of the original iPhone keyboard by Ken Kocienda. Reading about it in his book &quot;Creative Selection&quot; is great, but I wanted my students (and now you!) to actually <i>feel</i> this step in the process.<p>So, I built a web simulator of the &quot;Blob Keyboard&quot;, Kocienda&#x27;s very first attempt at a touchscreen keyboard that actually works, from September 2005:<p>Try the Blob Keyboard: <a href=\"https:&#x2F;&#x2F;juliendorra.github.io&#x2F;blob-keyboard-simulator&#x2F;blob-keyboard-simulator.html\" rel=\"nofollow\">https:&#x2F;&#x2F;juliendorra.github.io&#x2F;blob-keyboard-simulator&#x2F;blob-k...</a><p>- Tap for the middle letter<p>- Swipe left or right for the side letters<p>More on the github repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;juliendorra&#x2F;blob-keyboard-simulator\">https:&#x2F;&#x2F;github.com&#x2F;juliendorra&#x2F;blob-keyboard-simulator</a><p>The Blob Keyboard prototype emerged during a UX crisis for iPhone team (their software keyboard just didn&#x27;t work at all, fingers being too big, and the Newton failure loomed over them), highlighting how innovation is rarely a straight path. It was developed on a tethered touchscreen display codenamed &quot;Wallaby&quot;.<p>To make this simulator as authentic as possible, I referenced images from Kocienda&#x27;s book and even got direct feedback and guidance from Ken Kocienda himself on Bluesky.<p>What to expect (or\u2026 what not to expect):<p>This is a reconstruction of a very early prototype with limitations reflecting that specific moment. The goal was to test first if typing with accuracy was even possible, as all the rest was moot if it failed!<p>It&#x27;s NOT QWERTY: They were still hoping to get us out of QWERTY, but then familiarity won.<p>No Backspace: You can&#x27;t delete.<p>No Cursor Movement: The text field is just a simple display.<p>No Caps or Numbers: Only lowercase letters.<p>No Smooth Animations: Keys just &quot;pop&quot; instantly when pressed. Kocienda noted that your eye fills in the gaps, giving a sense of movement.<p>Best Experience:<p>While it works with a mouse&#x2F;trackpad on desktop, it&#x27;s designed for touchscreens to better replicate the original Wallaby hardware interaction. Use it on your phone!<p>This project aims to provide a tangible glimpse into a turning point moment in iPhone development and the iterative nature of design. It&#x27;s like stepping back in time and trying out that early demo on Kocienda&#x27;s desk.<p>I would love to hear your reactions and thoughts on experiencing this piece of UI history! What other significant prototype do you wish you could experience?",
+        "discussion_url": "https://news.ycombinator.com/item?id=43595442"
+    },
+    {
+        "id": 43595436,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: A self-solving Rubik's Cube designed with the help of AI",
+        "username": "stingtao",
+        "url": "https://rubik.stingtao.info/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43595436"
+    },
+    {
+        "id": 43595168,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Reharmonizing Racing in the Street by Bruce Springsteen",
+        "username": "lozzo",
+        "url": "https://farina00.github.io/essays/racing-in-the-street/",
+        "description": "I put together a short essay on re-harmonizing Racing in the Street by Bruce Springsteen.\nJust a simple demonstration of what\u2019s possible today with a few hours and the right mix of technology",
+        "discussion_url": "https://news.ycombinator.com/item?id=43595168"
+    },
+    {
+        "id": 43595122,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: An open source tool to generate contour map landscapes in real-time",
+        "username": "getToTheChopin",
+        "url": "https://collidingscopes.github.io/curious-contours/",
+        "description": "This is a free web tool to create procedural terrain textures in real-time in the browser.<p>How this works: a bunch of 3D spheres (meta-balls) are drawn on the canvas. They float around and combine with others based on distance. Then, 2D cross-sections are drawn using a Marching Squares algorithm. This ends up producing a terrain contour aesthtetic.<p>Use the controls at the top-right to set animation speed, size, level of complexity, rotation, colours, and more.<p>Use the buttons at the bottom-right to randomize the output, and export as image or mp4 video.<p>This tool is completely free and open source (MIT license). You&#x27;re welcome to use it however you wish!<p>This project is coded using vanilla Javascript, HTML5 canvas, and CSS.<p>Github repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;collidingScopes&#x2F;curious-contours\">https:&#x2F;&#x2F;github.com&#x2F;collidingScopes&#x2F;curious-contours</a><p>Any suggestions, feedback, or pull requests would be much appreciated!<p>I hope the game dev &#x2F; procedural generation community finds this useful in some way :)",
+        "discussion_url": "https://news.ycombinator.com/item?id=43595122"
+    },
+    {
+        "id": 43594976,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Turbocontent \u2013 Social media content generator with visual mockups",
+        "username": "Extender777",
+        "url": "https://turbocontent.art/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43594976"
+    },
+    {
+        "id": 43594551,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Weekend Project-Floral Booth-Custom SVG Floral Pattern Generator",
+        "username": "momoiamcgi",
+        "url": "https://floralbooth.momoiamcgi.com",
+        "description": "Hi HN,<p>FloralBooth is a browser-based tool that lets users generate and customize floral SVG patterns.\nThis started as an experiment within my ongoing generative design project, reusing the same key visual language and core code base. Along the way, it naturally evolved into a tool (lol) You can:<p>Adjust count, size, position, color, and stroke of each element<p>Instantly generate real-time SVG code<p>Download as SVG or PNG<p>Even use your custom floral composition as a live photo filter (camera mode)<p>It\u2019s fully client-side, install-free, and mobile-friendly.<p>I&#x27;m working on a broader system that can convert image into reusable, code-based assets, aiming to help both designers and developers build generative tools like this more easily.<p>I\u2019d love feedback on what directions might be most useful next?",
+        "discussion_url": "https://news.ycombinator.com/item?id=43594551"
+    },
+    {
+        "id": 43594436,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Wave \u2013 A low-level systems language",
+        "username": "LunaStev",
+        "url": "https://github.com/LunaStev/Wave",
+        "description": "Hi HN! I&#x27;m building a new programming language called Wave.\nIt&#x27;s currently in pre-beta and very early stages of development.<p>Wave aims to be a low-level systems programming language \u2014 like C or Rust \u2014 but with a cleaner syntax, no garbage collector, and a fully custom toolchain.<p>Right now, the implementation includes:<p>- Basic control flow: if, while, break (next: continue)<p>- Strict type declarations (e.g., var i: i32 = 0;)<p>- Simple CLI compiler using LLVM (temporary \u2014 will be replaced by a custom backend called Whale)<p>Important: Low-level features like memory management, pointer support, and custom calling conventions are not implemented yet.\nThis is still a language prototype, focused on syntax, structure, and core architecture.<p>I&#x27;m sharing this to get early feedback, suggestions, and thoughts from other language creators or systems programmers!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43594436"
+    },
+    {
+        "id": 43594371,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Kindle Comic Converter to Read Manga on eInk Kindle/Kobo/ReMarkable",
+        "username": "seam_carver",
+        "url": "https://github.com/ciromattia/kcc",
+        "description": "Kindle Comic Converter optimizes comics and manga for eink readers like Kindle, Kobo, ReMarkable, and more. Its main feature is various optional image processing steps to look good on eink screens, which have different requirements than normal LCD screens. It also does file size optimization by downscaling to your devices native resolution, which helps performance on underpowered ereaders. Supported input formats include folders&#x2F;CBZ&#x2F;CBR&#x2F;PDF of JPG&#x2F;PNG files and more. Supported output formats include MOBI&#x2F;AZW3, EPUB, KEPUB, and CBZ.\n------<p>Hey everyone! I&#x27;m the current maintainer of KCC since 2023, thanks for using it! I\u2019ve been reading manga on Kindle ever since I got the big 9.7\u201d Kindle DX from 2010 using mangle, and upgraded to the even bigger 10.2\u201d Kindle Scribe 2022 using KCC.<p>The biggest contributions I&#x27;ve made to KCC are:<p>added modern macOS support and removed homebrew requirement<p>ported code to run on native Apple silicon M1 chip and later for a 2x speed boost (qt5-&gt;qt6)<p>free open source windows codesign with SignPath<p>fixed Kindle Scribe support<p>and tons of other various features and bug fixes and developer friendly changes<p>created a legacy Windows 7 build with 300+ downloads\u2026<p>The biggest community PRs were:<p>huge 2x speed boosts due to various CPU&#x2F;IO optimizations<p>Kobo&#x2F;Remarkable support.<p>Enjoy using KCC and let me know if you have any questions!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43594371"
+    },
+    {
+        "id": 43594316,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: What Plane (Beta) \u2013 An NextJS app to explore and compare light aircraft",
+        "username": "WiseHare",
+        "url": "https://www.what-plane.com/",
+        "description": "A NextJS web app to help users find and compare light aircraft.<p>We want to make the process of identifying the right plane for you fun, informative and easy.<p>It is still early days for the project - very open to feedback, ideas or contributions!",
+        "discussion_url": "https://news.ycombinator.com/item?id=43594316"
+    },
+    {
+        "id": 43594309,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: I built Database Modeling tool",
+        "username": "tamani_karim",
+        "url": "https://www.stackrender.io",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43594309"
+    },
+    {
+        "id": 43594237,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: Just Launched: QForm \u2013 Build Beautiful Waitlists in Minutes",
+        "username": "AkshayS96",
+        "url": "https://www.qform.in/",
+        "description": null,
+        "discussion_url": "https://news.ycombinator.com/item?id=43594237"
+    },
+    {
+        "id": 43594198,
+        "origin": "show_hn_newstories",
+        "title": "Show HN: LZ Desktop \u2013 Organize your files, links, documents",
+        "username": "kgcoder",
+        "url": "https://reinventingtheweb.com/download/",
+        "description": "Hey HN<p>I\u2019ve been working on this app since November 2023. It\u2019s still in Beta. Basically it serves as a desktop. You keep it running at all times an it\u2019s always fullscreen.<p>You can drag and drop files on it, and it will create file shortcuts. You can draw lines and arrows. You can add images and web-links, create text documents.<p>The idea is to organise your content spatially.",
+        "discussion_url": "https://news.ycombinator.com/item?id=43594198"
+    }
+]

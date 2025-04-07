@@ -1,3 +1,4 @@
+from datetime import datetime
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -37,11 +38,13 @@ def get_show_hn_stories_from_web():
                     title = story_data.get('title', '')
                     if title.startswith("Show HN"):
                         stories.append({
+                            'id': story_data.get('id'),
                             'origin': 'show_hn_newstories',
                             'title': story_data.get('title'),
                             'username': story_data.get('by'),
                             'url': story_data.get('url'),
-                            'description': story_data.get('text')
+                            'description': story_data.get('text'),
+                            'discussion_url': f'https://news.ycombinator.com/item?id={story_id}'
                         })
 
             # Obtener el ID del último elemento para la próxima página
@@ -55,8 +58,11 @@ def get_show_hn_stories_from_web():
         return []
 
 
-def save_stories_to_file(stories, filename):
+def save_stories_to_file(stories):
     try:
+        date_str = datetime.now().strftime("%d-%m-%Y")
+        filename = f"show-responses/show_hn_stories_{date_str}.txt"
+
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(json.dumps(stories, indent=4))
         print(f"Stories saved to {filename}")
@@ -66,4 +72,4 @@ def save_stories_to_file(stories, filename):
 
 if __name__ == "__main__":
     stories = get_show_hn_stories_from_web()
-    save_stories_to_file(stories, 'show_hn_stories.txt')
+    save_stories_to_file(stories)

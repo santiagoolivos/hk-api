@@ -1,0 +1,975 @@
+[
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I vibe coded WikiXplorer \u2013 GamePad for WikiXplorer in 20 minutes",
+        "username": "IbnUlAdam",
+        "url": "https://wikixplorer.vercel.app",
+        "description": "Just dropped WikiXplorer \u2013 GamePad, a fun, fast-built companion for WikiXplorer that lets you explore Wikipedia in a gamepad-style UI. Coded the fun project in just 20 minutes using v0 and Next.js, and it\u2019s live on Vercel. It\u2019s a playful experiment to make Wikipedia feel more interactive and scroll-friendly. Would love feedback and ideas.<p>Thanks"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Hatchet v1 \u2013 A task orchestration platform built on Postgres",
+        "username": "abelanger",
+        "url": "https://github.com/hatchet-dev/hatchet",
+        "description": "Hey HN - this is Alexander from Hatchet. We\u2019re building an open-source platform for managing background tasks, using Postgres as the underlying database.<p>Just over a year ago, we launched Hatchet as a distributed task queue built on top of Postgres with a 100% MIT license (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39643136\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39643136</a>). The feedback and response we got from the HN community was overwhelming. In the first month after launching, we processed about 20k tasks on the platform \u2014 today, we\u2019re processing over 20k tasks per minute (&gt;1 billion per month).<p>Scaling up this quickly was difficult \u2014 every task in Hatchet corresponds to at minimum 5 Postgres transactions and we would see bursts on Hatchet Cloud instances to over 5k tasks&#x2F;second, which corresponds to roughly 25k transactions&#x2F;second. As it turns out, a simple Postgres queue utilizing FOR UPDATE SKIP LOCKED doesn\u2019t cut it at this scale. After provisioning the largest instance type that CloudSQL offers, we even discussed potentially moving some load off of Postgres in favor of something trendy like Clickhouse + Kafka.<p>But we doubled down on Postgres, and spent about 6 months learning how to operate Postgres databases at scale and reading the Postgres manual and several other resources [0] during commutes and at night. We stuck with Postgres for two reasons:<p>1. We wanted to make Hatchet as portable and easy to administer as possible, and felt that implementing our own storage engine specifically on Hatchet Cloud would be disingenuous at best, and in the worst case, would take our focus away from the open source community.<p>2. More importantly, Postgres is general-purpose, which is what makes it both great but hard to scale for some types of workloads. This is also what allows us to offer a general-purpose orchestration platform \u2014 we heavily utilize Postgres features like transactions, SKIP LOCKED, recursive queries, triggers, COPY FROM, and much more.<p>Which brings us to today. We\u2019re announcing a full rewrite of the Hatchet engine \u2014 still built on Postgres \u2014 together with our task orchestration layer which is built on top of our underlying queue. To be more specific, we\u2019re launching:<p>1. DAG-based workflows that support a much wider array of conditions, including sleep conditions, event-based triggering, and conditional execution based on parent output data [1].<p>2. Durable execution \u2014 durable execution refers to a function\u2019s ability to recover from failure by caching intermediate results and automatically replaying them on a retry. We call a function with this ability a durable task. We also support durable sleep and durable events, which you can read more about here [2]<p>3. Queue features such as key-based concurrency queues (for implementing fair queueing), rate limiting, sticky assignment, and worker affinity.<p>4. Improved performance across every dimension we\u2019ve tested, which we attribute to six improvements to the Hatchet architecture: range-based partitioning of time series tables, hash-based partitioning of task events (for updating task statuses), separating our monitoring tables from our queue, buffered reads and writes, switching all high-volume tables to use identity columns, and aggressive use of Postgres triggers.<p>We&#x27;ve also removed RabbitMQ as a required dependency for self-hosting.<p>We&#x27;d greatly appreciate any feedback you have and hope you get the chance to try out Hatchet.<p>[0] <a href=\"https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;</a><p>[1] <a href=\"https:&#x2F;&#x2F;docs.hatchet.run&#x2F;home&#x2F;conditional-workflows\">https:&#x2F;&#x2F;docs.hatchet.run&#x2F;home&#x2F;conditional-workflows</a><p>[2] <a href=\"https:&#x2F;&#x2F;docs.hatchet.run&#x2F;home&#x2F;durable-execution\">https:&#x2F;&#x2F;docs.hatchet.run&#x2F;home&#x2F;durable-execution</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: The C3 programming language (C alternative language)",
+        "username": "lerno",
+        "url": "https://github.com/c3lang/c3c",
+        "description": "Get it from here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;c3lang&#x2F;c3c\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;c3lang&#x2F;c3c</a><p>In 2019, while contributing to the C2 language, I started up &quot;C3&quot; as a pet project while waiting for pull requests to be approved...<p>Now it&#x27;s 6 years later and C3 well on its way to 1.0, having released 0.7.0 last week.<p>Unlike other C alternatives, C3 tries to evolve C \u2013 but without concern to backwards compatibility to the latter.<p>What it adds to C is among other things:<p>- Module system<p>- Semantic macros and compile time introspection<p>- Lightweight generic modules<p>- Zero overhead errors<p>- Build-in slices and SIMD types<p>- Gradual contracts<p>- Built-in checks in debug mode<p>You can find more details on the site: <a href=\"https:&#x2F;&#x2F;c3-lang.org\" rel=\"nofollow\">https:&#x2F;&#x2F;c3-lang.org</a>\nIt might be interesting to look at the examples: <a href=\"https:&#x2F;&#x2F;c3-lang.org&#x2F;language-overview&#x2F;examples&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;c3-lang.org&#x2F;language-overview&#x2F;examples&#x2F;</a> so see how the language looks for some simple examples.<p><i>Some other links that might be interesting follows:</i><p>I&#x27;ve posted about C3 on HN before, notably<p>- <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24108980\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24108980</a><p>- <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=27876570\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=27876570</a><p>- <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=32005678\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=32005678</a><p>Here are some interviews on C3:<p>- <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=UC8VDRJqXfc\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=UC8VDRJqXfc</a><p>- <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9rS8MVZH-vA\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9rS8MVZH-vA</a><p>Here is a series doing various tasks in C3:<p>- <a href=\"https:&#x2F;&#x2F;ebn.codeberg.page&#x2F;programming&#x2F;c3&#x2F;c3-file-io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;ebn.codeberg.page&#x2F;programming&#x2F;c3&#x2F;c3-file-io&#x2F;</a><p>Some projects:<p>- Gameboy emulator <a href=\"https:&#x2F;&#x2F;github.com&#x2F;OdnetninI&#x2F;Gameboy-Emulator&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;OdnetninI&#x2F;Gameboy-Emulator&#x2F;</a><p>- RISCV Bare metal Hello World: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0iAJxx6Ok4E\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0iAJxx6Ok4E</a><p>- &quot;Depths of Daemonheim&quot; roguelike <a href=\"https:&#x2F;&#x2F;github.com&#x2F;TechnicalFowl&#x2F;7DRL-2025\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;TechnicalFowl&#x2F;7DRL-2025</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Transputer emulator in JavaScript (fast enough to be useful)",
+        "username": "nanochess",
+        "url": "https://nanochess.org/transputer_emulator.html",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: GitMCP is an automatic MCP server for every GitHub repo",
+        "username": "liadyo",
+        "url": "https://gitmcp.io/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: 2x2 Generator (With Sound Effects)",
+        "username": "grapevine12",
+        "url": "https://www.2x2-generator.com/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Monkeys.zip \u2013 3000 Monkeys on Typewriters",
+        "username": "yathern",
+        "url": "https://monkeys.zip/",
+        "description": "Hey HN! I posted this on April 1st when it launched, and though it didn&#x27;t get traction here, it was a minor hit on reddit! Now that we&#x27;ve got a few thousand monkeys under our belt, wanted to give it another shot here!<p>Happy to talk about the technical details of running the site - using supabase&#x2F;postgres and constantly putting out fires from the traffic."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Benchi \u2013 A benchmarking tool written in Go",
+        "username": "lmazgon",
+        "url": "https://github.com/ConduitIO/benchi",
+        "description": "Benchi is a CLI tool for running benchmarks and collecting metrics. It&#x27;s using Docker Compose to orchestrate the infrastructure and tools being benchmarked, making it repeatable and runnable on different machines. It allows you to run the same benchmark for different tools and compare the collected results.<p>The repository contains a simple example. For a more elaborate example see how we use Benchi to compare data pipelines running on Conduit and Kafka Connect, two data streaming tools (still work in progress): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ConduitIO&#x2F;streaming-benchmarks\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ConduitIO&#x2F;streaming-benchmarks</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Zxc \u2013 Rust TLS proxy with tmux and Vim as UI, BurpSuite alternative",
+        "username": "darkseid_is",
+        "url": "https://github.com/hail-hydrant/zxc",
+        "description": "Ditch Burp Suite\u2019s bloat for zxc, a Rust-built, terminal-based proxy that uses\ntmux and Vim to intercept HTTP&#x2F;S and WebSocket traffic. It captures requests\nfor debugging, security testing, or tweaking\u2014fast and lean.<p># Key Features\n- Disk Wizardry: Stashes massive datasets on disk-100k+ entries without breaking a sweat.<p>- Addons: Boost your workflow with default support for ffuf and sqlmap, or craft your own addons for extra fun.<p>- Buffer Tweaks: Edit variables in a popup (e.g., b:host, b:scheme) in Interceptor&#x2F;Repeater to twist requests.<p>- Config Control: TOML files for global ($HOME&#x2F;.config&#x2F;zxc&#x2F;config.toml) or per-session tweaks.<p>- Content Filtering: Skip requests based on the request Content-Type header.<p>- Domain Filtering: selectively include or exclude specific domains, offering granular control over which traffic is proxied or relayed, with support for wildcards like *.example.com<p>- Edit Config on the Fly: Tweak session settings live from History in a popup-changes hit instantly or refresh manually if edited outside.<p>- Encoding Tricks: Base64 or URL encode&#x2F;decode in Visual mode-sneaky.<p>- Extended Attributes: Supercharge your workflow with `.req` files automatically tagged with critical metadata (e.g., user.host, user.http) - break free from the sandbox and unlock powerful integration with external tools like scripts or analyzers.<p>- Extension Filtering: Skip requests based on the requested contents extension `.mp3`, `.mp4` etc.<p>- History Display Filters: Tweak History logs by host, URI, or status code with Vim regex flair.<p>- History Window: View and filter all traffic in real-time.<p>- Interception Queue: Manage pending requests and responses in real-time\u2014view the queue with scheme and host details, then forward, drop, or tweak them as they pile up in the Interceptor window.<p>- Malformed Requests: Custom HTTP&#x2F;1.1 parser for sending quirky, security-testing requests.<p>- Repeater Window: Resend and tweak HTTP or WebSocket requests with ease<p>- Request Sharing: Share requests freely between windows for seamless tweaking and testing.<p>- Search Superpowers: Search requests or responses and add to Vim\u2019s quickfix&#x2F;location lists.<p>- Session Management: Create named sessions and attach to older sessions to resume work seamlessly.<p>- Traffic Interception: Edit requests and responses live in Vim.<p>- WebSocket History: A clear, organized history view of all WebSocket traffic with `.whis` files for a full overview, or dive into single-session details with `.wsess` files.<p>- WebSocket: Proxy and replay WebSocket traffic.<p>For complete list of features and screenshots refer the repo, <a href=\"https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc</a> ."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I open-sourced a tool to compare Google Play apps side-by-side",
+        "username": "ntorresdev",
+        "url": "https://clashofapps.com",
+        "description": "I recently open-sourced Clash of Apps, a tool I built to compare Google Play apps side-by-side \u2014 features, ASO, reviews, ratings, update frequency, etc.<p>It started as a way for me to research competitors more efficiently and evolved into something others might find useful too. Great for indie hackers, devs, or anyone working on mobile apps.<p>Try it here: <a href=\"https:&#x2F;&#x2F;clashofapps.com\" rel=\"nofollow\">https:&#x2F;&#x2F;clashofapps.com</a>\n GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ntgussoni&#x2F;clashofapps\">https:&#x2F;&#x2F;github.com&#x2F;ntgussoni&#x2F;clashofapps</a><p>It\u2019s still early \u2014 open to feedback, ideas, or contributions!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Offline JavaScript PubSub between browser tabs",
+        "username": "l1am0",
+        "url": "https://simon-frey.com/tabsub/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Refactored \u2013 personal time tracker with Git",
+        "username": "thisdougb",
+        "url": "https://github.com/thisdougb/git-time-hooks",
+        "description": "After some feedback I spent some time re-reading through the git docs, and refactored to add time tracking data into the commit message directly. It&#x27;s simpler than using tags.<p>thanks."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Built a visual UI editor that exports to code",
+        "username": "alexstyl",
+        "url": "https://license.builtwithpaper.com/landing",
+        "description": "I&#x27;ve been specializing in UI for over a decade. Using code for UI is great but I always wished there was a more visual code to build apps and sites. So I went ahead and built it.<p>Decided to build it with Compose Multiplatform since I work a lot with Kotlin. Currently exports to CMP as it was simpler due to the context switch.<p>You can try it for free and export some apps"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Mermaid Chart VS Code Plugin: Mermaid.js Diagrams in Visual Studio Code",
+        "username": "msfi",
+        "url": "https://docs.mermaidchart.com/blog/posts/mermaid-chart-vs-code-plugin-create-and-edit-mermaid-js-diagrams-in-visual-studio-code",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Slipstream \u2013 A Python library for stateful stream processing",
+        "username": "menziess",
+        "url": "https://slipstream.readthedocs.io/en/1.0.1/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: OpenNutrition \u2013 A free, public nutrition database",
+        "username": "joshdickson",
+        "url": "https://www.opennutrition.app/search",
+        "description": "Hi HN!<p>Today I\u2019m excited to launch OpenNutrition: a free, ODbL-licenced nutrition database of everyday generic, branded, and restaurant foods, a search engine that can browse the web to import new foods, and a companion app that bundles the database and search as a free macro tracking app.<p>Consistently logging the foods you eat has been shown to support long-term health outcomes (1)(2), but doing so easily depends on having a large, accurate, and up-to-date nutrition database. Free, public databases are often out-of-date, hard to navigate, and missing critical coverage (like branded restaurant foods). User-generated databases can be unreliable or closed-source. Commercial databases come with ongoing, often per-seat licensing costs, and usage restrictions that limit innovation.<p>As an amateur powerlifter and long-term weight loss maintainer, helping others pursue their health goals is something I care about deeply. After exiting my previous startup last year, I wanted to investigate the possibility of using LLMs to create the database and infrastructure required to make a great food logging app that was cost engineered for free and accessible distribution, as I believe that the availability of these tools is a public good. That led to creating the dataset I\u2019m releasing today; nutritional data is public record, and its organization and dissemination should be, too.<p>What\u2019s in the database?<p>- 5,287 common everyday foods, 3,836 prepared and generic restaurant foods, and 4,182 distinct menu items from ~50 popular US restaurant chains; foods have standardized naming, consistent numeric serving sizes, estimated micronutrient profiles, descriptions, and citations&#x2F;groundings to USDA, AUSNUT, FRIDA, CNF, etc, when possible.<p>- 313,442 of the most popular US branded grocery products with standardized naming, parsed serving sizes, and additive&#x2F;allergen data, grounded in branded USDA data; the most popular 1% have estimated micronutrient data, with the goal of full coverage.<p>Even the largest commercial databases can be frustrating to work with when searching for foods or customizations without existing coverage. To solve this, I created a real-time version of the same approach used to build the core database that can browse the web to learn about new foods or food customizations if needed (e.g., a highly customized Starbucks order). There is a limited demo on the web, and in-app you can log foods with text search, via barcode scan, or by image, all of which can search the web to import foods for you if needed. Foods discovered via these searches are fed back into the database, and I plan to publish updated versions as coverage expands.<p>- Search &amp; Explore: <a href=\"https:&#x2F;&#x2F;www.opennutrition.app&#x2F;search\" rel=\"nofollow\">https:&#x2F;&#x2F;www.opennutrition.app&#x2F;search</a><p>- Methodology&#x2F;About: <a href=\"https:&#x2F;&#x2F;www.opennutrition.app&#x2F;about\" rel=\"nofollow\">https:&#x2F;&#x2F;www.opennutrition.app&#x2F;about</a><p>- Get the iOS App: <a href=\"https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;opennutrition-macro-tracker&#x2F;id6670272666\">https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;opennutrition-macro-tracker&#x2F;id...</a><p>- Download the dataset: <a href=\"https:&#x2F;&#x2F;www.opennutrition.app&#x2F;download\" rel=\"nofollow\">https:&#x2F;&#x2F;www.opennutrition.app&#x2F;download</a><p>OpenNutrition\u2019s iOS app offers free essential logging and a limited number of agentic searches, plus expenditure tracking and ongoing diet recommendations like best-in-class paid apps. A paid tier ($49&#x2F;year) unlocks additional searches and features (data backup, prioritized micronutrient coverage for logged foods), and helps fund further development and broader library coverage.<p>I\u2019d love to hear your feedback, questions, and suggestions\u2014whether it\u2019s about the database itself, a really great&#x2F;bad search result, or the app.<p>1. Burke et al., 2011, <a href=\"https:&#x2F;&#x2F;www.ncbi.nlm.nih.gov&#x2F;pmc&#x2F;articles&#x2F;PMC3268700&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ncbi.nlm.nih.gov&#x2F;pmc&#x2F;articles&#x2F;PMC3268700&#x2F;</a><p>2. Patel et al., 2019, <a href=\"https:&#x2F;&#x2F;mhealth.jmir.org&#x2F;2019&#x2F;2&#x2F;e12209&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;mhealth.jmir.org&#x2F;2019&#x2F;2&#x2F;e12209&#x2F;</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A Chrome extension to give you back control over short-form videos",
+        "username": "darajava",
+        "url": "https://chromewebstore.google.com/detail/seek-anywhere/opofkjlejjcjalcpaimnpmkmjlclgded",
+        "description": "Hi HN! I built this little extension to prevent, in my opinion, the most offensive anti-pattern used by tech companies. That is removing the seek bar in short-form videos.<p>The &quot;seek bar&quot; is the bar at the bottom of a video that progresses as you play the video, and that you can click on or drag to skip around. Why companies ever thought it was a good idea to get rid of this I don&#x27;t know, but I find it infuriating, so I decided to add it back for myself and thought others might like it too.<p>ReelControl adds a progress bar and seeking capabilities to videos on Instagram, YouTube Shorts, and Facebook Reels.<p>I do sometimes enjoy watching short-form content and I&#x27;ve found that with this extension enabled I can be more mindful about it and get sucked in way less. I&#x27;m also on my phone less because I tend to favor the web versions of these platforms now.<p>Open source--PRs and issues welcome! <a href=\"https:&#x2F;&#x2F;github.com&#x2F;darajava&#x2F;seek-anywhere&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;darajava&#x2F;seek-anywhere&#x2F;</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Novanode, Global load balancing with Caddy, no vendor lock-in",
+        "username": "martianE",
+        "url": null,
+        "description": "I&#x27;ve been a long-time Cloudflare user, but sometimes I just want a global load balancer without the lock-in and with full configuration control (e.g., some Cloudflare rules require an enterprise plan).<p>I love Caddy for its easy configuration, and that&#x27;s why I created Novnaode. It makes it easy to launch hosted Caddy instances (with Nginx coming soon) and puts you fully in control of how to manage the configurations.<p>No more being restricted by enterprise tiers or limited configuration options - just simple, powerful, and flexible global load balancing.<p>Check it out here: <a href=\"https:&#x2F;&#x2F;novanode.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;novanode.sh</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Zig Topological Sort Library for Parallel Processing",
+        "username": "ww520",
+        "url": "https://github.com/williamw520/toposort",
+        "description": "I believe the best way to learn a language is by doing an in-depth project. This is my first Zig project intended for learning the ropes on publishing a Zig package. It turns out to be quite solid and performant. It might be a bit over-engineered.<p>This little library is packed with the following features:<p><pre><code>  - Building dependency graph from dependency data.\n  - Performing topological sort on the dependency graph.\n  - Generating dependence-free subsets for parallel processing.\n  - Cycle detection and cycle reporting.</code></pre>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Nue \u2013 Apps lighter than a React button",
+        "username": "tipiirai",
+        "url": "https://nuejs.org/blog/large-scale-apps/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Color palettes inspired by Mexican architecture",
+        "username": "sillysideprojs",
+        "url": "https://seis.pointlessprojects.com/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: JavaScript PubSub in 163 Bytes",
+        "username": "hmmokidk",
+        "url": "https://github.com/hassanshaikley/pico-pubsub",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Duolingo-style exercises but with real-world content like the news",
+        "username": "ph4evers",
+        "url": "https://app.fluentsubs.com/exercises/daily",
+        "description": "I&#x27;ve been working on a little side project that combines Duolingo-like listening comprehension exercises with real content .<p>Every video is transcribed to get much better transcripts than the closed captions. I filter on high quality transcripts, and afterwards a LLM selects only plausible segments for the exercises. This seems to work well for quality control and seems to be reliable enough for these short exercises.<p>Would love your thoughts!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Terminal dashboard that throttles my PC during peak electricity rates",
+        "username": "naveen_k",
+        "url": "https://www.naveen.ing/cli-for-smartplugs/",
+        "description": "WattWise is a CLI tool that monitors my workstation\u2019s power draw using a smart plug and automatically throttles the CPU &amp; GPUs during expensive Time-of-Use electricity periods. Built with Python, uses PID controllers for smooth transitions between power states. Works with TP-Link Kasa plugs and Home Assistant."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: 2004Scape (RuneScape) singleplayer self-hosted Windows/Linux/FreeBSD",
+        "username": "Espionage724",
+        "url": "https://lostcity.rs/t/singleplayer-main-branch-scripts-and-desktop-start-launchers-on-windows-linux-freebsd/54",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made a little puzzle game about a rogue chess knight",
+        "username": "freetonik",
+        "url": "https://knightride.rakhim.org/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Await-Tree \u2013 Visualize Async Rust Task Execution in Real-Time",
+        "username": "Sheldon_fun",
+        "url": "https://github.com/risingwavelabs/await-tree",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Chip-8 emulator written in JavaScript",
+        "username": "atum47",
+        "url": "https://github.com/victorqribeiro/Chip8js",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A new VSCode extension that shows definition functions in a stack",
+        "username": "mchahn",
+        "url": "https://github.com/eridien/vscode-definition-stack",
+        "description": "Definition Stack is a new vscode extension I have just released. It is a reading tool for Javascript and Typescript. It is available in the extension marketplace.<p>You just click in a function in any source code, execute a command, and a new tab opens next to the original. That tab has a &quot;block&quot; which contains a copy of the function you clicked in. In that code every word (symbol) that has a definition is highlighted.  If you click on a higlighted word a new block opens above the original which contains the source code of the definition for that word. You can click in that block and repeat to create a stack.  All function blocks are in the one tab that you can scroll through.<p>There are other options like collapsing a block, deleting it, etc. It is easy to open a block, look at it, and delete it taking you back to the block below. Then clicking in the lower block with another word opens yet another block above.  Continuining this process lets you walk the &quot;tree&quot; of references and definitions. This lets you see all the code executed when the original function runs. This is similar to stepping through code with a debugger.<p>The function code is isolated in each block with the name of the original source code file and the lines are numbered the same.  But when using the stack you can ignore what file each one came from. This gives a fresh way to look at what all the functions do without the cognitive load of remembering what file the functions are in.<p>AFAIK, this concept is original.  Correct me if I&#x27;m wrong.  My idea came from an IDE for Java from IBM many years ago.  In that system there were no source files at all.  Each function came from from a database. That IDE was a failure :-)  I think my version of that concept will do better because it doesn&#x27;t replace source files, it just adds a tool for working with source files.  The stack is created instantly and is just meant to be used occasionally when it makes sense.  It is sort of a Go To Definition on steroids.<p>Please give me feedback.  Since it is brand new I want to fix anything wrong including user experience problems.  Enjoy ..."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Offline SOS signaling+recovery app for disasters/wars",
+        "username": "nizarmah",
+        "url": "https://github.com/nizarmah/igatha",
+        "description": "A couple of months ago, I built this app to help identify people stuck under rubble.<p>First responders have awesome tools. But in tough situations, even common folks need to help.<p>After what happened in Myanmar, we need something like this that works properly.<p>It has only been tested in controlled environments. It can also be improved; I know BLE is not _that_ effective under rubble.<p>If you have any feedback or can contribute, don&#x27;t hold back."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Textcase: A Python Library for Text Case Conversion",
+        "username": "zobweyt",
+        "url": "https://github.com/zobweyt/textcase",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: SPL \u2013 Multi-Language Pipelines and Your Own Mini-FaaS on One Machine",
+        "username": "splimeproject",
+        "url": null,
+        "description": "Hello, Hackers!<p>I\u2019d like to share a pet project my teammate and I have been working on. The core idea is to build a multi-language computational graph that also lets you quickly deploy a mini-FaaS (Function as a Service) platform on your local machine. In other words, you can easily mix and match code from various sources (and even different third-party tools) using a local framework and server. We\u2019re calling this project SPL.<p>How did this idea come about?<p>While working on a complex model, we realized we needed to combine code and utilities written in different languages, pulled from earlier projects. We had separate DB-queries, several fundamentally different methods of preprocessing large datasets, a two-stage training process, plus final evaluation and validation of the resulting model.<p>We considered well-known tools like Airflow, Dagster, and Prefect. However, they felt a bit heavy for some simpler scenarios, and they weren\u2019t ideal for rapid prototyping. Besides, part of our dataset required lower-level processing with C++ rather than standard Python. That\u2019s how the idea for a pet project arose\u2014something that would let us seamlessly bring together code that otherwise wouldn\u2019t play nicely, and also allow us to share our work within the team. Essentially, we had a few key goals:<p>1. Build a connected computational graph made up of functions or utilities, regardless of their language or dependencies.<p>2. Support both local and remote execution of these graphs (so teams can share their work).<p>3. Make it possible to run only part of a graph, keeping the state and results of previous steps, to simplify testing new approaches.<p>Some implementation details<p>A computational graph is a directed, connected graph with nodes (functions or utilities) and links between them (inputs and outputs). Each node takes input parameters, performs a specific task, and sends the result along to the next node.<p>Our approach involves a framework for a specific language\u2014if we\u2019re running code\u2014plus a server that handles the FaaS side, orchestrates nodes in the graph, and takes care of passing artifacts around correctly.<p>We chose to build the first version of the SPL framework for Python, since that\u2019s the language we use most. The end result will be a library that lets you intuitively create computational graphs right from a Python notebook.<p>To manage the graph itself\u2014adding or removing nodes, saving results, and running only certain parts\u2014we decided on a mechanic similar to PyTorch. In PyTorch, you build a model by sequentially adding layers to `nn.Sequential()`.<p>A pocket-sized FaaS<p>One of the coolest features, in our opinion, is that you can quickly spin up your own mini-FaaS right on your machine. If your computer has internet access, your functions and graphs become instantly available to other users.<p>Right now, the SPL server supports:<p>-An HTTP API for remotely executing functions.<p>-Import and export of graphs in JSON format.<p>-Task coordination and distributed result caching.<p>-A simple web interface for viewing and editing graphs.<p>Possible use cases for SPL:\n1. Local development: Build graphs and functions you can reuse across different projects without constantly copying code.<p>2. Production usage: Keep business logic and infrastructure separate, with easy zero-downtime updates.<p>3. Personal FaaS (including a function marketplace): Potentially publish your work for others (including monetization), delivering only results instead of the entire codebase.<p>4. Visualizing business processes: The server supports graph rendering and displays input and output ports, which can be handy for high-level project management.<p>Why am I writing this post?<p>We\u2019d really love to hear what you think:<p>-Have you faced similar challenges?<p>-Would such a tool be useful for you?<p>-What features would you like to see in a project like this?<p>We\u2019re excited to discuss these ideas in the comments!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Smart AI tool for project planning",
+        "username": "mfareed",
+        "url": "https://taskra.space/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Make SVGs interactive in React with 1 line",
+        "username": "shantingHou",
+        "url": "https://svggles.vercel.app/",
+        "description": "Hey HN<p>I built svggles (npm: interactive-illustrations), a React utility that makes it easy to add playful, interactive SVGs to your frontend.<p>It supports mouse-tracking, scroll, hover, and other common interactions, and it&#x27;s designed to be lightweight and intuitive for React devs.<p>The inspiration came from my time playing with p5.js \u2014 I loved how expressive and fun it was to create interactive visuals. But I also wanted to bring that kind of creative freedom to everyday frontend work, in a way that fits naturally into the React ecosystem.<p>My goal is to help frontend developers make their UIs feel more alive \u2014 not just functional, but fun. I also know creativity thrives in community, so it&#x27;s open source and I\u2019d love to see contributions from artists, developers, or anyone interested in visual interaction.<p>Links:\nWebsite + Docs: svggles.vercel.app<p>GitHub: github.com&#x2F;shantinghou&#x2F;interactive-illustrations<p>NPM: interactive-illustrations<p>Let me know what you think \u2014 ideas, feedback, and contributions are all welcome"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I vibecoded a 35k LoC recipe app",
+        "username": "tomblomfield",
+        "url": "https://www.recipeninja.ai",
+        "description": "Over the last 2-3 weeks, I vibecoded the recipe app that I always wished existed - recipeninja.ai . It now includes a fully interactive voice assistant so you don&#x27;t need to get your dirty hands over your new iPad when you&#x27;re cooking.<p>Background: I\u2019m a startup founder turned investor. I taught myself (bad) PHP in 2000, and picked up Ruby on Rails in 2011. I\u2019d guess 2015 was the last time I wrote a line of Ruby professionally. Last month, I decided to use Windsurf to build a Rails 8 API backend and React front-end app, using OpenAI&#x27;s realtime API for voice-to-voice responses. Over the last few days, I also used Claude Code and Gemini 2.5 Pro for some of the trickier features. 35,000 LoC later, this is what I built!<p>The site uses function-calling to navigate the site in realtime as you chat with the voice assistant, which I think is pretty neat.<p>For the long version, see <a href=\"https:&#x2F;&#x2F;tomblomfield.com&#x2F;post&#x2F;778601470234918912&#x2F;vibecoding-a-production-app\" rel=\"nofollow\">https:&#x2F;&#x2F;tomblomfield.com&#x2F;post&#x2F;778601470234918912&#x2F;vibecoding-...</a><p>I&#x27;d love any feedback you have!<p>Demo video of the voice assistant: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kRhVc9D5kcg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kRhVc9D5kcg</a><p>Generate and edit new recipes: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=VwwZF6dHcHg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=VwwZF6dHcHg</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A Vim plugin for displaying information on NPM packages",
+        "username": "emurph55",
+        "url": "https://github.com/whatever555/npm-package-info",
+        "description": "A simple plugin that dislays information on npm plugins within vim.<p>Plugin &quot;<a href=\"https:&#x2F;&#x2F;github.com&#x2F;whatever555&#x2F;npm-package-info\">https:&#x2F;&#x2F;github.com&#x2F;whatever555&#x2F;npm-package-info</a>&quot;"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Compare Cloud and Bare Metal Servers",
+        "username": "matt-p",
+        "url": "https://www.serversearcher.com/",
+        "description": "I built ServerSearcher (<a href=\"https:&#x2F;&#x2F;serversearcher.com\" rel=\"nofollow\">https:&#x2F;&#x2F;serversearcher.com</a>) to make it easier to find cloud&#x2F;virtual and bare-metal servers that match specific requirements like RAM, location, or CPU.\nThe idea came from my own frustration trying to compare cloud servers across dozens of provider websites. There are a lot of server marketplaces and hosts, but I couldn\u2019t find a single place to search across all of them with proper filters. So I made one.<p>ServerSearcher indexes servers from a few providers but I have only just started and there are more providers being added at the moment.<p>Next I&#x27;ll be looking at adding GPU support as that was a second frustration."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Build Your Own Security Lake \u2013 Open-Source OCSF Converters to S3",
+        "username": "ethanblackburn",
+        "url": "https://github.com/Santiago-Labs/go-ocsf",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made a C program to create a vanity SHA-1 hash for a text file",
+        "username": "keepamovin",
+        "url": "https://gist.github.com/o0101/77eb378b5076fe47c3336583330ac615",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: LocalScore \u2013 Local LLM Benchmark",
+        "username": "sipjca",
+        "url": "https://www.localscore.ai/download",
+        "description": "Hey Folks!<p>I&#x27;ve been building an open source benchmark for measuring local LLM performance on your own hardware. The benchmarking tool is a CLI written on top of Llamafile to allow for portability across different hardware setups and operating systems. The website is a database of results from the benchmark, allowing you to explore the performance of different models and hardware configurations.<p>Please give it a try! Any feedback and contribution is much appreciated. I&#x27;d love for this to serve as a helpful resource for the local AI community.<p>For more check out:\n- Website: <a href=\"https:&#x2F;&#x2F;localscore.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;localscore.ai</a>\n- Demo video: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;De6pA1bQsHU\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;De6pA1bQsHU</a>\n- Blog post: <a href=\"https:&#x2F;&#x2F;localscore.ai&#x2F;blog\" rel=\"nofollow\">https:&#x2F;&#x2F;localscore.ai&#x2F;blog</a>\n- CLI Github: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Mozilla-Ocho&#x2F;llamafile&#x2F;tree&#x2F;main&#x2F;localscore\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Mozilla-Ocho&#x2F;llamafile&#x2F;tree&#x2F;main&#x2F;localsco...</a>\n- Website Github: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;cjpais&#x2F;localscore\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;cjpais&#x2F;localscore</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Haystack Code Reviewer \u2013 Guided Tours for Pull Requests",
+        "username": "akshaysg",
+        "url": "https://haystackeditor.com/playground",
+        "description": "Hi HN!<p>We\u2019re excited to share Haystack Code Reviewer, a tool that analyzes, chunks, and organizes the changes made in a pull request and guides you through them in a logical sequence on an interactive canvas. We hope that Haystack really cuts down on the time that you spend piecing together what&#x27;s happening in the pull request, so that you can spend time on the parts that matter, like providing feedback or internalizing the changes.<p>As software engineers who\u2019ve dreaded code reviews and always put them off as much as possible, we noticed how much time we spent poring over diffs to understand the broader picture or narrative of a pull request before even evaluating the code itself. Haystack Code Reviewer is designed to assemble that jigsaw puzzle for you, making code reviews less of a chore and more of a learning opportunity for both the reviewer and author!<p>To play with demo code reviews, go to <a href=\"https:&#x2F;&#x2F;haystackeditor.com&#x2F;playground\">https:&#x2F;&#x2F;haystackeditor.com&#x2F;playground</a> and select a pull request of your choice. If you\u2019re interested in learning more, feel free to check out our short demo video at <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;K_qLwXFwr8I\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;K_qLwXFwr8I</a>. \nOr if you\u2019re ready to try it out, head over to <a href=\"https:&#x2F;&#x2F;haystackeditor.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;haystackeditor.dev</a> and:<p>1. Optionally sign in (necessary if you want to review a pull request for a private repository). For public repositories, no sign-in is needed<p>2. Load any PR via URL or from the dropdown (for example, try <a href=\"https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;vscode&#x2F;pull&#x2F;238427\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;vscode&#x2F;pull&#x2F;238427</a>)<p>3. When prompted for AI analysis, click \u201cYes\u201d to enable automatic organization and sectioning (we send only the diffs in the pull request to OpenAI).<p>We hope you find Haystack Code Reviewer useful. Let us know what you think!<p>You might have seen our previous Show HN at <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42935218\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42935218</a>. We have now completely redesigned it to work with a guided AI tour of exactly how you should review the pull request so that you don&#x27;t have to even think about how to approach a code review!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Synto - micro-learning app to help you deeply understand classic books",
+        "username": "huttiepant",
+        "url": "https://www.synto-app.com",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: GuMCP \u2013 Open-source MCP servers, hosted for free",
+        "username": "murb",
+        "url": "https://github.com/gumloop/guMCP",
+        "description": "Hello! We open sourced all our current MCP servers to platforms like Slack, Google sheets, Linear, Perplexity and will be contributing a few more integrations every day to the project.<p>problems we&#x27;re hoping to solve:<p>- Many people are creating MCP servers for the same apps. They&#x27;re scattered across different repos but flavors of the same thing. We&#x27;re making one standardized mono project for all MCP servers.<p>- Startups are charging for hosting MCP servers. This is blocking tons of people from being able to play around with MCP casually. We&#x27;re hosting them for free.<p>- Non-technical people should be able to use MCP without needing to learn how to clone a repo and set up a venv. We&#x27;re trying to enable a one click integration if people want to use the free hosted service.<p>The plan is to keep contributing until we have an MCP server for basically every useful app anyone could want."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Aperture -Flip your phone case for a less distracting minimal interface",
+        "username": "cheesetoastie",
+        "url": "https://specialprojects.studio/project/aperture/",
+        "description": "We explored combining physical interaction (flipping a case) with minimal UI (potentially generative) to create context-aware interfaces for digital wellbeing, without needing new devices. Concept stage, building prototypes, sharing for feedback and use cases."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Docsumo's OCR Benchmark Report \u2013 Surpassing Mistral and Landing AI",
+        "username": "snehanairdoc",
+        "url": "https://www.docsumo.com/blogs/ocr/docsumo-ocr-benchmark-report",
+        "description": "We recently conducted an in-depth benchmark comparing Docsumo&#x27;s proprietary OCR technology against Mistral OCR and Landing AI&#x27;s Agentic Document Extraction. Our objective was to evaluate their performance in real-world document processing tasks, especially with complex layouts and low-quality scans.<p>Key Findings:<p>Accuracy: Docsumo&#x27;s OCR demonstrated higher precision in text extraction across various document types, including invoices and bank statements.<p>Layout Preservation: Our technology maintained the original structure of documents more effectively, ensuring better usability of extracted data.<p>Processing Speed: Docsumo achieved faster processing times, making it more suitable for high-volume document processing tasks.<p>To ensure transparency and reproducibility, we&#x27;ve made the benchmark results publicly accessible. You can explore side-by-side outputs, accuracy scores, and layout comparisons here:<p><a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;avinash112&#x2F;ocr-benchmark\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;avinash112&#x2F;ocr-benchmark</a><p>For a comprehensive breakdown of our methodology and detailed findings, please refer to our full report:<p>[Insert blog link]<p>Inviting the community to review our findings and share insights on the readiness of generative OCR tools for production environments. Are they truly up to the task?"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Visualizing AD data for security with Python and Obsidian",
+        "username": "jackson12t",
+        "url": "https://github.com/pangolinsec/shihtzu",
+        "description": "I put this tool together a few years back, and just recently got around to making it robust enough to share: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;pangolinsec&#x2F;shihtzu\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;pangolinsec&#x2F;shihtzu</a><p>It parses ldapsearch or dsquery output and writes markdown files with some extra logic added in so you can visualize nested memberships when you open the folder with Obsidian and use the graph view--it&#x27;s kind of like a very low-powered Bloodhound (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;SpecterOps&#x2F;BloodHound\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;SpecterOps&#x2F;BloodHound</a>) in that sense, but it is also much quieter. It also parses `useraccountcontrol` and some of the logon-relevant attributes in AD to automatically tag accounts that are particularly interesting or uninteresting to attackers.<p>Some core features:\n-  Parses LDAP attributes from text files into structured Obsidian markdown\n-  Intelligently categorizes objects as Users, Groups, or Computers\n-  Automatically identifies administrators and administrative privileges\n-  Detects potentially risky account configurations (stale accounts, low logon counts)\n-  Creates Obsidian links between related objects to enable network visualization\n-  Processes UserAccountControl (UAC) values with explanations\n-  Converts Windows timestamps to human-readable format\n-  Smart append mode that only adds new data to existing files\n-  Tagging for easy filtering and searching in Obsidian<p>It&#x27;s not novel, but it&#x27;s been quite useful for me in a few situations."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Nix Ninja \u2013 open-source Ninja-compatible build system for Nix",
+        "username": "hinshun",
+        "url": "https://github.com/pdtpartners/nix-ninja",
+        "description": "Hello, this is Edgar! We are open sourcing nix-ninja, an incremental build system for Nix that leverages dynamic derivations.<p>For those unfamiliar, Nix is a powerful package manager and build system that ensures reproducible builds via strict dependency isolation. However, one of its limitations has been that it builds packages as monolithic units - if you change one source file, Nix rebuilds the entire package from scratch.<p>nix-ninja solves this by bringing compilation unit level granularity to Nix builds. It targets ninja build files, a format for describing build graphs output by popular build systems like CMake and meson. This means that when you modify a single source file, only the affected compilation units need to be rebuilt, significantly reducing build times.<p>We&#x27;re excited because this gives Nix fine-grained caching with early cutoff optimisation (see the Build Systems \u00e0 la Carte paper). Combined with remote build farms like Nixbuild.net, this moves Nix into the incremental cloud build systems arena, alongside Google&#x27;s Bazel and Meta&#x27;s Buck2.<p>Dynamic derivations and content-addressed derivations are still experimental features in Nix, so we&#x27;re hoping to accelerate their maturation by providing a compelling use-case and implementation. Our north star is to have Hydra (nixpkgs&#x27; CI runner) support incremental compilation in nixpkgs for slow builds like LLVM.<p>nix-ninja can compile Nix itself today, but we&#x27;re still very early in its development. Given community interest in dynamic derivations and incremental compilation in Nix, we decided to open source it in an pre-alpha state to involve the community in its design.<p>Please take a look. We&#x27;ll be available in the comments to answer any questions: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;pdtpartners&#x2F;nix-ninja\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;pdtpartners&#x2F;nix-ninja</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Jetelina v3.0 Has Arrived",
+        "username": "onoke",
+        "url": "https://jetelina.org/release-note/",
+        "description": "Yay, Jetelna v3.0 has been released.Jetelina has quite unique functions, the primary is handling multi database at once in using webapis, the secondly is perfectly controlling with key typing, and of course more.\nThe v3.0 has been impremented in using MongoDB; then it can use Postgre&#x2F;Mysql&#x2F;redis and mongo at once, some stats functions,  and improved the usage. Visit the site."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Zoom-Mcp-Server]Schedule a Zoom Meeting with Anthropic MCP Help",
+        "username": "bill_lau",
+        "url": "https://github.com/JavaProgrammerLB/zoom-mcp-server",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Hexi \u2013 Modern header-only network binary serialisation for C++",
+        "username": "Chaosvex",
+        "url": "https://github.com/EmberEmu/Hexi",
+        "description": "Over the last few years, I&#x27;ve needed an easy way to quickly serialise and deserialise various network protocols safely and efficiently. Most of the libraries that existed at the time were either quite heavy, had less than stellar performance, or were an abstraction level above what I was looking for.<p>I decided to put together my own class to do the job, starting with an easy, low-overhead way to move bytes in and out of arbitrary buffers. Along the way, it picked up useful bits and pieces, such as buffer structures and allocators that made the byte shuffling faster, often being able to do it with zero allocations and zero copies. Safety features came along to make sure that malicious packet data or mistakes in the code wouldn&#x27;t result in segfaults or vulnerabilities.<p>It&#x27;s become useful enough to me that I&#x27;ve packaged it up in its own standalone library on the chance that it might be useful to others. It has zero dependencies other than the standard library and has been designed for quick integration into any project within minutes, or seconds with a copy paste of the amalgamated header. It can be used in production code but it&#x27;s also ideal for for those that want to quickly hack away at binary data with minimal fuss."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: We're Open Sourcing Our Dead Man's Switch",
+        "username": "EnthusiastShiv",
+        "url": "https://www.cipherwill.com",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: WhatsApp MCP Server",
+        "username": "lharries",
+        "url": "https://github.com/lharries/whatsapp-mcp",
+        "description": "Hi HN \u2013 I built an open-source, self-hosted Model Context Protocol (MCP) server for WhatsApp: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;lharries&#x2F;whatsapp-mcp\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;lharries&#x2F;whatsapp-mcp</a><p>It connects to your personal WhatsApp account via the WhatsApp Web multi-device API (using whatsmeow from the Beeper team), and doesn&#x27;t rely on third-party APIs. All messages are stored locally in SQLite. Nothing is sent to the cloud unless you explicitly allow your LLM to access the data via tools \u2013 so you maintain full control and privacy.<p>The MCP server can:<p>- Search your messages, contacts, and groups<p>- Send WhatsApp messages to individuals or groups<p>Why build this?<p>99% of your life is stored in WhatsApp, by connecting an LLM to WhatsApp you get all this context. And your AI agent can execute tasks on your behalf by sending messages."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Bolt/Loveable for Video Editing",
+        "username": "tonikami",
+        "url": "https://www.kozy.studio",
+        "description": "I\u2019m a indie hacker and I initially built this for myself to help with video editing since i\u2019ve spent hundreds of hours editing videos. I\u2019ve played with loveable and bolt and thought something like that for videos might work really well.<p>What it can do:\n- Upload a video and ask for an edit\n- It picks the best parts and combines it into a video\n- Adds text overlays, captions to keep viewers hooked<p>What it can\u2019t do:\n- Add zooms\n- Work for videos longer than 10 minutes (when i left this limit the models seem to struggle with making good edits)\n- Work on mobile (Remotion is really not great on mobile)<p>Here\u2019s a video of me playing with it: \n<a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;DsFVFgDezPA\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;DsFVFgDezPA</a><p>What are your initial thoughts?"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Physical Pomodoro Timer with ESP32 and e-paper screen",
+        "username": "rukenshia",
+        "url": "https://github.com/Rukenshia/pomodoro",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: FlashTokenizer \u2013 10x faster C++ tokenizer for Python",
+        "username": "springkim",
+        "url": "https://github.com/NLPOptimize/flash-tokenizer",
+        "description": "I built a tokenizer in C++ with a Python binding that outperforms HuggingFace tokenizers by 10x on large inputs. It&#x27;s optimized for minimal memory usage and latency.<p>Benchmarks and comparison included in README. Would love feedback or contributions!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Cloud-Ready Postgres MCP Server",
+        "username": "spennant",
+        "url": "https://github.com/stuzero/pg-mcp",
+        "description": "Hey HN,<p>I built pg-mcp, a Model Context Protocol (MCP) server for PostgreSQL that provides structured schema inspection and query execution for LLMs and agents. It&#x27;s multi-tenant and runs over HTTP&#x2F;SSE (not stdio)<p>Features\n - Supports multiple database connections from multiple agents<p>- Schema Introspection: Returns table structures, types, indexes and constraints; enriched with descriptions from pg_catalog. (for well documented databases)<p>- Read-Only Queries: Controlled execution of queries via MCP.<p>- EXPLAIN Tool: Helps smart agents optimize queries before execution.<p>- Extension Plugins: YAML-based plugin system for Postgres extensions (supports pgvector and postgis out of the box).<p>- Server Mode: Spin up the container and it&#x27;s ready to accept connections at <a href=\"http:&#x2F;&#x2F;localhost:8000&#x2F;sse\" rel=\"nofollow\">http:&#x2F;&#x2F;localhost:8000&#x2F;sse</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: OCR pipeline for ML training (tables, diagrams, math, multilingual)",
+        "username": "ses425500000",
+        "url": "https://github.com/ses4255/Versatile-OCR-Program",
+        "description": "Hi HN,<p>I\u2019ve been working on an OCR pipeline specifically optimized for machine learning dataset preparation. It\u2019s designed to process complex academic materials \u2014 including math formulas, tables, figures, and multilingual text \u2014 and output clean, structured formats like JSON and Markdown.<p>Some features:\n \u2022 Multi-stage OCR combining DocLayout-YOLO, Google Vision, MathPix, and Gemini Pro Vision\n \u2022 Extracts and understands diagrams, tables, LaTeX-style math, and multilingual text (Japanese&#x2F;Korean&#x2F;English)\n \u2022 Highly tuned for ML training pipelines, including dataset generation and preprocessing for RAG or fine-tuning tasks<p>Sample outputs and real exam-based examples are included (EJU Biology, UTokyo Math, etc.)\nWould love to hear any feedback or ideas for improvement.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ses4255&#x2F;Versatile-OCR-Program\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ses4255&#x2F;Versatile-OCR-Program</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: All Books, All Languages (ABAL)",
+        "username": "Falimonda",
+        "url": "https://www.abal.ai",
+        "description": "&quot;All Books, All Languages&quot;, or ABAL for short, is a modern, web-based, parallel text language-learning application that I&#x27;ve been working on as a side project for about a year.<p>I&#x27;ve already received a lot of great feedback about the application among language learners. In addition to what I hope is an intuitive UI&#x2F;UX, one of the unique things about ABAL is the way that pronunciations are customized to a user&#x27;s native and target languages.<p>Systems like IPA (<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;International_Phonetic_Alphabe\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;International_Phonetic_Alphabe</a>...) don&#x27;t make pronunciation any easier to get right for a majority of - if not all - language learners. ABAL solves this by showing phonetic hints that are written in the user&#x27;s native language script and are meant to be pronounced in the native language&#x27;s voice.<p>The name All Books, All Languages is intentionally quixotic, as it serves to set the ambitious and unreachable goal of hosting all of humanity&#x27;s written works while making them available to all language learners and readers across the globe!<p>Today, it hosts a number of generated short stories categorized by subject and CEFR level. I&#x27;m currently working on supporting (private) self-uploaded files, and works in the public domain. Work is also going into adding support for more languages, while evaluating and optimizing for cross-language translations accuracy.<p>It currently supports 56 languages (including Klingon and Latin!) - which comes out to 3080 permutations - or 3080 unique user profiles as I like to think of it. Both the marketing and application sites are fully internationalized - even response messages in 4xx responses use i18n. Quite a bit of work went into automating the i18n diff generation system to make sure I can release UI&#x2F;UX changes quickly.<p>I hope you&#x27;ll find it useful if you&#x27;re learning a new language or need to practice one you already know. If you&#x27;re not learning a new language, but wish you could read classics in a language you&#x27;re fluent in, stay tuned!<p>Marketing site: <a href=\"https:&#x2F;&#x2F;www.abal.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;www.abal.ai</a> \nApplication site: <a href=\"https:&#x2F;&#x2F;read.abal.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;read.abal.ai</a> \nX for updates: @abal_ai"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: StegaCube \u2013 Hide messages and files in scrambled Rubik's Cubes",
+        "username": "xtncl",
+        "url": "https://cube.xtn.sh/",
+        "description": "I built a tool to store text messages and arbitrary files in scrambled Rubik\u2019s Cubes - a simple form of analog steganography.<p>Each 3\u00d73 face encodes up to 4 characters by combining 6 standard cube colors (6\u00d76 = 36 combos).\nThe key idea: you only need one face, so you can hide messages by casually placing a scrambled cube in the background of a photo or video.<p>For binary data (images, zip files, encrypted blobs), use the scbase36.py script on GitHub \u2014 it works like base64, but uses 36 symbols (because 6\u00d76 = 36).<p>Would love feedback or ideas to push it further.\nI also made versions for 5\u00d75, 7\u00d77, and 9\u00d79 cubes \u2014 storing 12, 24, and 40 characters per face.<p>Try it out:\n- <a href=\"https:&#x2F;&#x2F;cube.xtn.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;cube.xtn.sh</a> (3\u00d73 \u2013 4 chars)\n- <a href=\"https:&#x2F;&#x2F;cube.xtn.sh&#x2F;5x5\" rel=\"nofollow\">https:&#x2F;&#x2F;cube.xtn.sh&#x2F;5x5</a> (12 chars)\n- <a href=\"https:&#x2F;&#x2F;cube.xtn.sh&#x2F;7x7\" rel=\"nofollow\">https:&#x2F;&#x2F;cube.xtn.sh&#x2F;7x7</a> (24 chars)\n- <a href=\"https:&#x2F;&#x2F;cube.xtn.sh&#x2F;9x9\" rel=\"nofollow\">https:&#x2F;&#x2F;cube.xtn.sh&#x2F;9x9</a> (40 chars)<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;xtncl&#x2F;StegaCube\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;xtncl&#x2F;StegaCube</a><p>No data ever leaves your browser. It\u2019s pure HTML&#x2F;CSS&#x2F;JS \u2014 you can also save it and use it fully offline."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Qwen-2.5-32B is now the best open source OCR model",
+        "username": "themanmaran",
+        "url": "https://github.com/getomni-ai/benchmark/blob/main/README.md",
+        "description": "Last week was big for open source LLMs. We got:<p>- Qwen 2.5 VL (72b and 32b)<p>- Gemma-3 (27b)<p>- DeepSeek-v3-0324<p>And a couple weeks ago we got the new mistral-ocr model. We updated our OCR benchmark to include the new models.<p>We evaluated 1,000 documents for JSON extraction accuracy. Major takeaways:<p>- Qwen 2.5 VL (72b and 32b) are by far the most impressive. Both landed right around 75% accuracy (equivalent to GPT-4o\u2019s performance). Qwen 72b was only 0.4% above 32b. Within the margin of error.<p>- Both Qwen models passed mistral-ocr (72.2%), which is specifically trained for OCR.<p>- Gemma-3 (27B) only scored 42.9%. Particularly surprising given that it&#x27;s architecture is based on Gemini 2.0 which still tops the accuracy chart.<p>The data set and benchmark runner is fully open source. You can check out the code and reproduction steps here:<p>- <a href=\"https:&#x2F;&#x2F;getomni.ai&#x2F;blog&#x2F;benchmarking-open-source-models-for-ocr\">https:&#x2F;&#x2F;getomni.ai&#x2F;blog&#x2F;benchmarking-open-source-models-for-...</a><p>- <a href=\"https:&#x2F;&#x2F;github.com&#x2F;getomni-ai&#x2F;benchmark\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;getomni-ai&#x2F;benchmark</a><p>- <a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;getomni-ai&#x2F;ocr-benchmark\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;getomni-ai&#x2F;ocr-benchmark</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Appear as anyone in video calls like zoom or Google meets",
+        "username": "michaelphi",
+        "url": "https://www.phazr.ai/",
+        "description": "Hey everyone! i built this free tool that basically let you appear as literally anyone in video calls. it uses the latest tech in audio driven portrait animation. Would love to have some people test this out and let me know what you think! It&#x27;s currently available on ubuntu systems. it works best with 4070 or 3080 gpus and up! basically anything with about 30TFLOPS on fp16. It runs totally on your device for 100% privacy too.<p>Just looking for people to test this out and let me know what they think! You can download it at <a href=\"https:&#x2F;&#x2F;www.phazr.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.phazr.ai&#x2F;</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Library to stream operating system events to AI",
+        "username": "louis030195",
+        "url": "https://github.com/mediar-ai/ui-events",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Share what you dreamt about and see if others had the same one",
+        "username": "bchhabra2490",
+        "url": "https://share-dreams-app.vercel.app/",
+        "description": "Share what you dreamt about and get notified when others also had the same dream."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: OC Maker",
+        "username": "Sophia_H",
+        "url": "https://komiko.app/oc-maker",
+        "description": "I just made the cutest AI-powered OC maker! Feel free to design your original characters and use them in your storytelling or animation!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: PythonECG \u2013 A minimal real-time ECG visualization tool",
+        "username": "benbojangles",
+        "url": "https://github.com/benb0jangles/pythonecg",
+        "description": "I built a lightweight Python application that visualizes audio input as an ECG-like display. It&#x27;s a simplified, open-source tool designed for educational purposes, signal visualization experiments, and prototyping. No commercial restrictions, just a clean interface with a single button to start&#x2F;stop tracing. Built with PyAudio, Matplotlib, and Tkinter. Looking for feedback and contributions!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Cursor IDE now remembers your coding prefs using MCP",
+        "username": "roseway4",
+        "url": null,
+        "description": "Hi, I&#x27;m Daniel from Zep. I&#x27;ve integrated the Cursor IDE with Graphiti, our open-source temporal knowledge graph framework, to provide Cursor with persistent memory across sessions. The goal was simple: help Cursor remember your coding preferences, standards, and project specs, so you don&#x27;t have to constantly remind it.<p>Before this integration, Cursor (an AI-assisted IDE many of us already use daily) lacked a robust way to persist user context. To solve this, I used Graphiti\u2019s Model Context Protocol (MCP) server, which allows structured data exchange between the IDE and Graphiti&#x27;s temporal knowledge graph.<p>Key points of how this works:<p>- Custom entities like &#x27;Requirement&#x27;, &#x27;Preference&#x27;, and &#x27;Procedure&#x27; precisely capture coding standards and project specs.<p>- Real-time updates let Cursor adapt instantly\u2014if you change frameworks or update standards, the memory updates immediately.<p>- Persistent retrieval ensures Cursor always recalls your latest preferences and project decisions, across new agent sessions, projects, and even after restarting the IDE.<p>I\u2019d love your feedback\u2014particularly on the approach and how it fits your workflow.<p>Here&#x27;s a detailed write-up: <a href=\"https:&#x2F;&#x2F;www.getzep.com&#x2F;blog&#x2F;cursor-adding-memory-with-graphiti-mcp&#x2F;\">https:&#x2F;&#x2F;www.getzep.com&#x2F;blog&#x2F;cursor-adding-memory-with-graphi...</a><p>GitHub Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;getzep&#x2F;graphiti\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;getzep&#x2F;graphiti</a><p>-Daniel"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: OmniTools \u2013 Self-Hosted Open-Source Swiss Army Knife for Everyday Tasks",
+        "username": "ludiciouss",
+        "url": "https://omnitools.app",
+        "description": "Hey HN!<p>I built OmniTools, a self-hosted web app that offers a collection of useful tools for everyday tasks. Think PDF manipulation,image, text utilities, and more\u2014all in one place.<p>Open-source &amp; self-hosted<p>Works fully in the browser (privacy-first)<p>Built with React, deployed via Docker<p>I made this because I wanted a free, self-hosted alternative to online tools that often require subscriptions. Would love feedback &amp; ideas on what to add next!<p>GitHub link: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;iib0011&#x2F;omni-tools\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;iib0011&#x2F;omni-tools</a>\nDemo link: <a href=\"https:&#x2F;&#x2F;omnitools.app\" rel=\"nofollow\">https:&#x2F;&#x2F;omnitools.app</a><p>Let me know what tools you want next."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Calculation Hub: Every Calculation Tool You'll Ever Need",
+        "username": "saguiitay",
+        "url": "https://calculation-hub.com",
+        "description": "Every Calculation Tool You&#x27;ll Ever Need.\nGrowing list of calculators, in a clean, simple design."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Exponent, a collaborative AI programming agent",
+        "username": "sthupukari",
+        "url": "https://www.exponent.run/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Bookmarklet to Add TOC to ChatGPT's Chats",
+        "username": "brostoffed",
+        "url": "https://gist.github.com/Brostoffed/cbe33856cb1beb5f1c3852b9b5625204",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Arrakis \u2013 Open-source, self-hostable sandboxing service for AI Agents",
+        "username": "abshkbh",
+        "url": "https://github.com/abshkbh/arrakis",
+        "description": "Hi HN!<p>My name is Abhishek. I&#x27;ve spent my career working on Operating Systems and Infrastructure at places like Replit, Google, and Microsoft.<p>Today, I&#x27;m excited to launch Arrakis: an open-source and self-hostable sandboxing service designed to let AI Agents execute code and operate a GUI securely.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;abshkbh&#x2F;arrakis\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;abshkbh&#x2F;arrakis</a><p>Watch Claude build a live Google Docs clone using Arrakis via MCP \u2013 with no re-prompting or interruption.\n<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IZ5cAnhAdPQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IZ5cAnhAdPQ</a><p>Key Features<p>- Self-hostable: Run it on your own infra or Linux server.<p>- Secure by Design: Uses MicroVMs for strong isolation between sandbox instances.<p>- Snapshotting &amp; Backtracking: First-class support allows AI agents to snapshot a running sandbox (including GUI state!) and revert if something goes wrong.<p>- Ready to Integrate: Comes with a Python SDK (<a href=\"https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;py-arrakis&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;py-arrakis&#x2F;</a>) and an MCP server (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;abshkbh&#x2F;arrakis-mcp-server\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;abshkbh&#x2F;arrakis-mcp-server</a>) out of the box.<p>- Customizable: Docker-based tooling makes it easy to tailor sandboxes to your needs.<p>Sandboxes = Smarter Agents<p>As the demo shows, AI agents become incredibly capable when given access to a full Linux VM environment. They can debug problems independently and produce working results with minimal human intervention.<p>I&#x27;m the solo founder and developer behind Arrakis. I&#x27;d love to hear your thoughts, answer any questions, or discuss how you might use this in your projects!<p>Get in touch<p>- Email: abshkbh AT gmail DOT com\n- LinkedIn: <a href=\"https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;abshkbh&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;abshkbh&#x2F;</a><p>Looking forward to your feedback!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Agent File (.af) \u2013 A standard file format for serializing AI agents",
+        "username": "wooders",
+        "url": "https://github.com/letta-ai/agent-file",
+        "description": "Hi HN - We\u2019re building Agent File (.af), which makes it possible to re-create the exact same agent (including memories, tools, message history, configs, etc.) across different machines.<p>A big difference between LLMs and <i>agents</i> is that agents have associated state: system prompts, editable memory (personality and user information), tool configurations (code and schemas), and LLM&#x2F;embedding model settings. While you can run the same LLM as someone else by downloading the weights, there\u2019s no \u201crepresentation\u201d of agents that allows you to re-create an instance of an agent across services.<p>Agent File (.af) is an open standard file format for serializing stateful agents. Originally designed for the Letta framework, .af is a human-readable representation of all the associated state of an agent to reproduce the exact behavior and memories.<p>To demonstrate .af, we also made a few example agents with download links to .af:<p>- MemGPT: An agent with memory management tools for infinite context, as described in the MemGPT paper \nDeep Research: A research agent with planning, search, and memory tools to enable writing deep research reports from iterative research<p>- Customer Support: A customer support agent that has dummy tools for handling order cancellations, looking up order status, and also memory<p>- Stateless Workflow: A stateless graph workflow agent (no memory and deterministic tool calling) that evaluates recruiting candidates and drafts emails<p>- Composio Tools: An example of an agent that uses a Composio tool to star a GitHub repository<p>We\u2019d love to hear what people think of the agent schema we chose and if we\u2019re missing anything (we included everything that we need from Letta, but there may be other features in other frameworks)."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Replace Chrome new tab with a blank WYSIWYG editor for taking notes",
+        "username": "hakaneskici",
+        "url": "https://github.com/hakaneskici/minimalistab",
+        "description": "minimalistab is an extension for Chrome that replaces the default &quot;New tab&quot; page with a blank WYSIWYG editor for taking notes.<p>Sometimes I need a blank screen to stare at, especially when context switching between tasks; so I made this Chrome extension with basic note taking capabilities.<p>I kept the code as simple as possible, formatted for developers with dyslexia. Let me know your opinions.<p>I hope you find it useful. Feel free to personalize and hack your own copy. Feedback very welcome.<p>DEMO: <a href=\"https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;hakaneskici&#x2F;minimalistab&#x2F;refs&#x2F;heads&#x2F;main&#x2F;minimalistab.html\" rel=\"nofollow\">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;hakaneskici&#x2F;minimalistab&#x2F;r...</a><p>Install as an extension: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;hakaneskici&#x2F;minimalistab\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hakaneskici&#x2F;minimalistab</a><p>Features:<p>* Take notes with formatting<p>* CMD&#x2F;CTRL + {B, I, U} or toolbar<p>* Works offline by design<p>* Auto save to local storage<p>* Download as .html file<p>* Dark&#x2F;light system theme<p>* Paste images and links<p>* Plain JS, no dependencies<p>* No tracking, no telemetry, no cookies<p>* Works without JS too (no saving)<p>* 100% handcrafted human code (TM)<p>Here&#x27;s the primary trick that makes this possible:<p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43179649\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43179649</a><p>Previous discussions and tools:<p>[1] Nash - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43358914\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43358914</a><p>[2] Notetime - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43434152\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43434152</a><p>[3] NoteUX - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43492415\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43492415</a><p>[4] TiddlyWiki - <a href=\"https:&#x2F;&#x2F;tiddlywiki.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;tiddlywiki.com&#x2F;</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Provide LLMs markdown documentation of libraries and frameworks",
+        "username": "vivekkalyan",
+        "url": "https://github.com/CartographAI/atlas-docs-mcp",
+        "description": "Hey HN!<p>We realised that LLMs are great at generating code for super popular libraries like React. But they kinda suck at using less popular&#x2F;newly released libraries, forcing us to stick to established tools and hindering innovation.<p>There is already a standard for creating documentation for LLMs (llmstxt.org), but in my experience the implementations have not been great so far. `llms.txt` works as a good index of the available pages, but in many cases they link to HTML pages. This is a waste for LLMs to parse through (For example, Hono&#x27;s [best practices](<a href=\"https:&#x2F;&#x2F;hono.dev&#x2F;docs&#x2F;guides&#x2F;best-practices\" rel=\"nofollow\">https:&#x2F;&#x2F;hono.dev&#x2F;docs&#x2F;guides&#x2F;best-practices</a>) page is ~37k tokens, while its core content as Markdown is only ~1k tokens)<p>To help with this, we built Atlas Docs, a service + MCP server that provides LLMs with clean, LLM-friendly documentation for various libraries.<p>On the backend, it scrapes pages from documentation sites, processes them into standardized, clean markdown, and stores them into a database. It uses existing `llms.txt`, standardizes links, and crucially, <i>generates a clean `llms.txt` index</i> if the library doesn&#x27;t provide one.<p>The MCP server exposes the processed documentation via the [Model Context Protocol](<a href=\"https:&#x2F;&#x2F;modelcontextprotocol.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;modelcontextprotocol.io&#x2F;</a>). This lets LLMs list search and query the docs and retrieve the relevant pages in clean Markdown format.<p>This gives LLMs the structured, concise context they need to generate better code and in our limited testing so far, it definitely improves success rate of working with less popular libraries.<p>If you\u2019re using LLMs for coding, give it a try! You can find instructions to install it with any client that supports MCPs (Cursor, Windsurf, Cline, Claude Desktop etc).<p>We&#x27;re actively adding more libraries. Let me know what you&#x27;d like to see supported!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I built an open-source NotebookLM alternative using Morphik",
+        "username": "ArnavAgrawal03",
+        "url": "https://github.com/morphik-org/morphik-core",
+        "description": "I really like using NoteBook LM, especially when I have a bunch of research papers I&#x27;m trying to extract insights from.<p>For example, if I&#x27;m implementing a new feature (like re-ranking) into Morphik, I like to create a notebook with some papers about it, and then compare those models with each other on different benchmarks.<p>I thought it would be cool to create a free, completely open-source version of it, so that I could use some private docs (like my journal!) and see if a NoteBook LM like system can help with that. I&#x27;ve found it to be insanely helpful, so I added a version of it onto the Morphik UI Component!<p>I&#x27;d love to hear the HN community&#x27;s thoughts and feature requests!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: AI-powered reading companion that helps you read hard books",
+        "username": "joezee",
+        "url": "https://lumen.collabai.live/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: AI Supported Workout Planner",
+        "username": "wunderlab",
+        "url": "https://www.repsome.com",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: FeedMe \u2013 An RSS Reader to Reclaim Your Attention",
+        "username": "fs_software",
+        "url": "https://feedme.digital",
+        "description": "Hi HN, I&#x27;m a solo dev and I&#x27;ve been building FeedMe, an RSS reader designed to help you take back control of your attention. I launched it today and would love your feedback!<p>I found myself overwhelmed by algorithmic feeds on platforms like YouTube and X, losing focus on what truly mattered. I missed the days when I controlled my information diet. FeedMe is my solution: an RSS reader that puts you back in the driver\u2019s seat.<p>For those who still value the power of RSS, FeedMe lets you subscribe to any RSS feed (articles, podcasts, YouTube channels&#x2F;playlists, subreddits, newsletters, even Hacker News). You can easily search, filter, mark items as read&#x2F;unread, as well as mute feeds to temporarily hide distractions and catch up on your terms. It also includes a dark mode for comfortable reading, and device sync is included for everyone.<p>The mute feature has been a game-changer for me, letting me focus on what&#x27;s important without the anxiety of unsubscribing and potentially missing out later. It&#x27;s about reclaiming attention from the noise.<p>FeedMe started as a personal project to learn new tech stacks (I\u2019d rebuild it every year or so), but it became a tool that genuinely improved my life. Now I want to share it with others who feel overwhelmed by algorithmic feeds.<p>Questions or critiques are more than welcome. Thanks for checking it out!<p><a href=\"https:&#x2F;&#x2F;feedme.digital\" rel=\"nofollow\">https:&#x2F;&#x2F;feedme.digital</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: TypeScript as a proof assistant for intuitionistic propositional logic",
+        "username": "xxmarijnw",
+        "url": "https://gist.github.com/marijnvanwezel/6a0cd3e79ef5684ab671586c202cc4de",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: rtrvr.ai one shotted doing taxes using Gemini 2.5 Pro",
+        "username": "arjunchint",
+        "url": "https://www.youtube.com/watch?v=hNCwMn3dIFk",
+        "description": "rtrvr.ai recently launched AI PDF Form Filling capability for our Chrome Extension, where you can leverage the context of multiple open tabs to fill a PDF form. To demo this capability, we had our agent fill an IRS 1040 form using IRS tax guidelines and a synthetic W2 as context!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Probirka \u2013 Python library for writing simple asynchronous healthchecks",
+        "username": "shpaker",
+        "url": "https://github.com/appKODE/probirka",
+        "description": "A few years ago, we worked on a rather problematic project. There were issues both in the code and in the cluster running the product. During troubleshooting, we developed a small library for running health checks, which helped us a lot and is still in use today. It seems like it could be useful to others as well, so not long ago, we published it on GitHub under the name Probirka. It\u2019s worth noting that I really like this library in the end, despite the fact that it\u2019s not perfect and part of the documentation was generated with the help of an AI assistant."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Pets for Cursor",
+        "username": "bearware",
+        "url": null,
+        "description": "I created an extension which adds a custom pet to your editor (Cursor&#x2F; VS Code&#x2F; Windsurf compatible).<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;blairjordan&#x2F;codachi\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;blairjordan&#x2F;codachi</a><p>As you type, your pet hatches, acquires XP and evolves.<p>A playing card is generated when your pet evolves.<p>All pixel art is original and hand&#x2F; mouse drawn."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Chat with LLMs on Your Kindle",
+        "username": "ringerapps",
+        "url": "https://www.companion.ink/",
+        "description": "After receiving a Kindle Scribe for Christmas, I wanted to use ChatGPT directly on my E-Ink display but couldn&#x27;t find any existing solutions. Despite the Kindle&#x27;s closed ecosystem, I discovered its browser _could_ support a simple chat UI.<p>I created companion.ink to mimic Kindle&#x27;s UI sensibilities and deliver a pretty seamless AI chat experience on E-Ink displays. It works on Kindle Scribe, Paperwhite, and should work on other E-Readers too, but let me know if there are any issues. Feedback welcome!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Pressure \u2013 a simple 2D board game in JavaScript",
+        "username": "ilmenit",
+        "url": "https://ilmenit.github.io/pressure/",
+        "description": "I&#x27;m a fan of minimalistic design and I tried to make an &quot;easy to learn, hard to master&quot; 2D board game.<p>Pressure is played on a 5\u00d75 grid with 12 tokens total. The key mechanic is a &quot;push&quot; feature where tokens can displace entire lines of other tokens if there&#x27;s an empty space at the end of the line. When opponent tokens are pushed, they become inactive for one turn. Capture occurs when tokens are surrounded on all four sides.<p>After analyzing gameplay data, I found Pressure has an average branching factor of 11.5, which is higher than Othello (10) and Checkers (2.8), though lower than Chess (35). Its game tree complexity is approximately 10^57, placing it remarkably close to Othello (10^58) and much higher than Checkers (10^40), despite the smaller board size.<p>The state space complexity appears to be in the range of 10^20, comparable to Checkers, which is notable given Pressure uses a 5\u00d75 grid versus Checkers&#x27; 8\u00d78 board. Chess and Othello have higher state spaces at 10^44 and 10^28 respectively.<p>What&#x27;s computationally interesting is how the push mechanic generates this complexity. About 27.5% of all moves involve pushing, which creates a multiplicative effect on the decision space. Each push can reposition multiple tokens simultaneously and create cascading positional consequences beyond what the compact board size would suggest.\nI&#x27;ve found the average game length is approximately 50 moves, similar to Othello (58) but shorter than Chess (70) and Checkers (70).<p>Let me know what do you think about the game."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Zocket \u2013 Zero-Configuration Sockets",
+        "username": "willforce",
+        "url": "https://github.com/willforce/zocket",
+        "description": "Ever since I read about RINA [1] some ten-odd years ago, I&#x27;ve always thought that this was the future standard of the Internet. I kept track of some implementations [2][3][4] but they&#x27;ve since been overtaken by developments in TCP&#x2F;IP, most notable (for me) among which is QUIC.<p>I&#x27;ve come to believe that rather than starting from a clean slate, we need to work within TCP&#x2F;IP&#x27;s constraints to bring us piecemeal from &quot;rough consensus and running code&quot; to sound networking theory.<p>Zocket is my contribution to this effect. It&#x27;s what you get when you marry a sockets API to zero-configuration networking--specify apps by their own names rather than their host&#x27;s addresses. It&#x27;s pretty rough, but the happy path mostly works.<p>I can imagine use cases for this in cluster networking, especially in the cloud. But I&#x27;ll probably start with something smaller, like how to backup pictures from a smartphone to a home server despite the latter being configured with DHCP.<p>Happy April Fools&#x27; Day!<p>[1] <a href=\"https:&#x2F;&#x2F;www.martingeddes.com&#x2F;think-tank&#x2F;network-architecture-research-tcp-ip-vs-rina&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.martingeddes.com&#x2F;think-tank&#x2F;network-architecture...</a>\n[2] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;IRATI&#x2F;stack\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;IRATI&#x2F;stack</a>\n[3] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;rlite&#x2F;rlite\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;rlite&#x2F;rlite</a>\n[4] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;dstaesse&#x2F;ouroboros\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;dstaesse&#x2F;ouroboros</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made a platform to load and performance test API's",
+        "username": "lazarkap",
+        "url": "https://buzzbench.io/",
+        "description": "I built BuzzBench because I was frustrated with how complex performance testing tools have become. And I was ending up writing my own scripts to test endpoints and manually check out resource usage at the time of testing.<p>Checkout demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=yAnbZMoQvmQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=yAnbZMoQvmQ</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Open-source AI text editor that runs on your own hardware",
+        "username": "ittaboba",
+        "url": "https://manzoni.app/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made Confetti: a configuration language file format",
+        "username": "hgs3",
+        "url": "https://confetti.hgs3.me/",
+        "description": "Hello everyone, I created Confetti: a simple, typeless, and localization-friendly configuration language designed for human-editable configuration files.<p>In my opinion, JSON works well for data interchange, but it&#x27;s overused for configuration, it&#x27;s not localization-friendly, and it&#x27;s too syntactically noisy. INI is simple but lacks hierarchical structures and doesn&#x27;t have a formal specification. Confetti is intended to bridge the gap.<p>I aim to keep Confetti simple and minimalistic, while encouraging others to extend it. Think of it like Markdown for configuration files: there&#x27;s a core specification, but your welcome to create your own variations that suit your needs."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Multi UPS SNMP based shutdown",
+        "username": "PhilKunz",
+        "url": "https://nupst.serve.zone",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: For those who want to stay informed without reading 10 articles",
+        "username": "x110",
+        "url": "https://www.worldpulsenow.com",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Vibe-saver \u2013 a simplified Git for vibe coders to never lose their work",
+        "username": "meetbryce",
+        "url": "https://github.com/meetbryce/vibe-saver",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Neuronpedia, an open source platform for AI interpretability",
+        "username": "hijohnnylin",
+        "url": "https://www.neuronpedia.org",
+        "description": "Mechanistic interpretability is the science of understanding how AI works internally, and Neuronpedia is a interpretability platform with APIs and tools to explore, share, and steer AI models. We&#x27;re open sourcing it today along with  4TB of interp data. Blog post here: <a href=\"https:&#x2F;&#x2F;www.neuronpedia.org&#x2F;blog&#x2F;neuronpedia-is-now-open-source\" rel=\"nofollow\">https:&#x2F;&#x2F;www.neuronpedia.org&#x2F;blog&#x2F;neuronpedia-is-now-open-sou...</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Oxy \u2013 build SQL bots and automations easily",
+        "username": "ryi",
+        "url": "https://github.com/oxy-hq/oxy",
+        "description": "Hey folks! We just launched a yaml-based open source framework for building SQL bots and automations called Oxy. You can build an answer engine for your team, automate report generation or deep dive analysis, etc.\nIn short, we wanted to make it easier for analysts to build with LLMs. Would love to hear your thoughts!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: SQLite? Postgres? Use both with omni_SQLite",
+        "username": "michelpp",
+        "url": "https://docs.omnigres.org/omni_sqlite/sqlite/",
+        "description": "omni_sqlite is an extension that adds the capability to use SQLite databases as a first-class data type within Postgres. It uses expandable datum technique to ensure no additional serialization overhead for data in-flight."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Envkit (Not YC) \u2013 Painless developer onboarding into codebase",
+        "username": "lexokoh",
+        "url": "https://envkit.co/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: PipZap \u2013 Zapping the mess out of the Python dependencies",
+        "username": "kivicode",
+        "url": "https://github.com/kivicode/pipzap",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A GUI Builder for Python GUIs",
+        "username": "pauls_freeman",
+        "url": "https://pyuibuilder.com",
+        "description": "Hey all,\nI am Paul, an indie-dev, I am working on this web based Drag and drop GUI builder tool for python. It&#x27;s still in beta and currently supports tkinter and customtk.<p>It can generate clean code python for the UI you build.<p>You can check out the source code here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;PaulleDemon&#x2F;PyUIBuilder\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;PaulleDemon&#x2F;PyUIBuilder</a><p>Feel free to check it out. Thanks!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I built a CLI for one-command fullstack TypeScript projects",
+        "username": "amanvarshney01",
+        "url": "https://github.com/better-t-stack/create-better-t-stack",
+        "description": "I built a CLI for scaffolding TypeScript projects with Turborepo, React, and tRPC.\nIt includes TanStack Router&#x2F;Query, Tailwind, Hono&#x2F;Elysia backends, Drizzle&#x2F;Prisma ORMs, and more.<p>npx create-better-t-stack@latest"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Monkeys.zip (Infinite Monkeys Writing Shakespeare)",
+        "username": "yathern",
+        "url": "https://monkeys.zip/",
+        "description": "Hey HN! I&#x27;ve been working on this concept on and off for about a year, and challenged myself to actually release it in time for April Fools as I tend to just hoard projects.<p>It&#x27;s a simulator of the Infinite Monkey Theorem! You can browse our grid of monkeys that are busily typing away randomly on their keyboards, and see what words they&#x27;ve written - how many of those words appear in the works of Shakespeare.<p>If you want, you can join in for free and get a monkey of your own. Monkeys get special rewards for typing special words - which can be used to customize their appearance. I just wiped the simulation this morning so we&#x27;re starting from scratch!<p>It&#x27;s a little rough around the edges in some spots, if some content doesn&#x27;t load right, just give it a refresh. I hope you get a kick out of it - it&#x27;s been an absolute labor of love for me!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I got burned by bad NYC rentals, so I built an extension for complaints",
+        "username": "egra",
+        "url": "https://realest.casa",
+        "description": "I built this after too many bad NYC apartment experiences: leaks, mice, no heat. All things that of course never show up on listings.<p>Realest is a browser extension that overlays 311 housing complaint data on StreetEasy listings, right in the search results.<p>It pulls from NYC\u2019s open data and is meant to help renters avoid hidden issues.<p>Would love feedback!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Generate Anki Decks from YouTube Videos to Anki Converter",
+        "username": "lengxzai",
+        "url": "https://asimpleai.com/",
+        "description": "Hello!<p>I love anki and have been using it for years to learn mandarin, but I&#x27;m lazy and always struggled to get over the &quot;motivation hump&quot; to sit down and create a deck.<p>Recently I&#x27;ve been consuming a lot of AI content from youtube, and spent 3 days creating a deck for Andrej Karpathy&#x27;s &quot;Deep Dive into LLMs&quot; video. This is impractical - so I built a little youtube to anki converter @ asimpleai.com<p>It&#x27;s rough around the edges... but I would like it to eventually become something useful to community. Feedback and suggestions are welcome!<p>peace"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: GitHub Actions OIDC for Python That Just Works(TM)",
+        "username": "mawildoer",
+        "url": "https://github.com/atopile/fastapi-github-oidc",
+        "description": "If you really want people to use your stuff, you should make it easy to get started as possible. For interacting with Github Actions, that means setting up OIDC, so you can prove who did what in which repo when - according to Github themselves.<p>That means for a dev on the other end of things, it should be as easy as:<p>```yaml<p>-uses atopile&#x2F;do-thing@v1<p>```<p>Hitch is, boy oh boy was this a PITA to get working in the first place. Honestly, I&#x27;d probably rather walk on lego for half an hour.<p>Hopefully, this package should make it a piece of cake - and we all have to mint fewer tokens manually"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A Cargo subcommand to run tests for changed crates and their dependents",
+        "username": "felixpackard",
+        "url": "https://github.com/felixpackard/cargo-test-changed",
+        "description": "While working on a large open-source Rust codebase, I found myself stuck between either running tests for the entire workspace (very slow), or manually figuring out which crates I&#x27;d changed and running their tests individually. This was adding several minutes to every development cycle.<p>I built cargo-test-changed to solve this problem. It automatically detects which crates have changed based on your Git status, and runs tests only for those crates \u2013 and optionally, their dependents.<p>Would love your feedback! If others find this useful, I&#x27;ll publish it to crates.io. The project is MIT&#x2F;Apache 2.0 licensed."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I built a privacy-first period tracker but it seems nobody cares",
+        "username": "ebenezerdon",
+        "url": null,
+        "description": "There\u2019s something quietly unsettling about how normal it&#x27;s become to hand over our most personal data to apps that barely deserve our trust.<p>My wife once showed me a notification she got from her period tracking app. At first, it seemed like a simple reminder. But then came the ads. Not long after, she started getting eerily specific suggestions on other platforms. Things she hadn\u2019t searched for. Things that felt too close. Somewhere, her cycle had been turned into a data point.<p>That bothered me more than I can explain.<p>These apps promise helpful insights. But in return, they take so much. Your private health data, your habits, your patterns. And they sell or share it with third parties. Some even charge ridiculous monthly fees, only to flood the app with ads and tracking scripts.<p>That moment was the beginning of something for me.<p>I built Faye because I couldn\u2019t stop thinking about how wrong this all felt.<p>Faye is a free menstrual cycle tracker built from the ground up with one thing in mind: you stay in control.<p>Your data stays on your device.<p>No accounts, no cloud sync, no background trackers.<p>No ads, ever.<p>You can export or delete your data whenever you want. No begging, no hoops.<p>There\u2019s a password lock option.<p>There\u2019s a discreet mode that makes the app look like a work productivity tool, just in case.<p>It\u2019s completely free, with no hidden costs.<p>It\u2019s not just an app. It\u2019s a quiet protest against how the system works.<p>But here\u2019s the part I didn\u2019t expect.<p>I shared it with a few people. Some friends. Some folks in tech. Some in health circles. Almost nobody responded. Not about the privacy. Not about the features. Not even about the idea. Some tried it, sure. But it was quiet. Too quiet.<p>And I started to wonder\u2026<p>Did I build something only we needed? Is this just a personal itch I scratched, or are there people out there who also want this\u2026really want this? People who care deeply about their data staying theirs - people tired of apps that exploit vulnerability for profit.<p>I sat with that silence longer than I expected.<p>It made me question everything. How we talk about privacy, who we build for, and whether anyone notices when something doesn\u2019t try to sell them something.<p>Because when you strip away the dark patterns and the dopamine loops, there\u2019s no reward system left. No notifications engineered to pull you back in. Just a quiet little app, trying to do the right thing.<p>And maybe that\u2019s the problem. Or maybe that\u2019s the point.<p>I still don\u2019t know.<p>I don\u2019t know if I built something only we needed.\nI don\u2019t know if people really want privacy.\nI don\u2019t know if \u201cdoing the right thing\u201d is enough to make something last.<p>What I do know is that I couldn\u2019t unsee what I saw. I couldn\u2019t forget that feeling, that jolt, when I realized how casually something so personal was being harvested and sold.<p>So I built the thing I couldn\u2019t find. I put it out there.<p>And I\u2019m sharing this, not as a launch or a pitch. Just as a note from someone who built something they believe in, and is now standing in the quiet, hoping it might matter to someone else too.<p>If that\u2019s you, I\u2019d really love to know. Even just a quick reply telling me you get it would mean a lot.<p>And if you think someone else in your life might care; a friend, a sister, a partner\u2026 maybe share Faye with them.<p>It\u2019s not a 100-million-dollar idea.\nBut it\u2019s honest.\nAnd built with care.<p><a href=\"https:&#x2F;&#x2F;faye.health&#x2F;period-tracker\" rel=\"nofollow\">https:&#x2F;&#x2F;faye.health&#x2F;period-tracker</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: CSS Clicker \u2013 a pure-CSS idle game where you build your own website",
+        "username": "rebane2001",
+        "url": "https://lyra.horse/css-clicker/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: GhydraMCP \u2013 Agentic reverse engineering across multiple binaries",
+        "username": "moeffju",
+        "url": "https://github.com/teal-bauer/GhydraMCP",
+        "description": "Hi HN, I was playing around with the recently posted ghidraMCP by LaurieWired (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;LaurieWired&#x2F;GhidraMCP\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;LaurieWired&#x2F;GhidraMCP</a>) and wanted to try it on a project I&#x27;m working, but that has multiple component that interact with each other. So after fixing some minor things in ghidraMCP I went overboard and extended it to support multiple open Ghidra files and interact with all of them in the same session. I also made the HTTP interfaces more REST-like, and am working on adding more functionality to the tool, like renaming local variables.<p>Huge thanks to LaurieWired for the initial plugin and impetus!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Kai Scheduler \u2013 K8s scheduler optimizing GPU for AI",
+        "username": "worldsavior",
+        "url": "https://github.com/NVIDIA/KAI-Scheduler",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Omnom \u2013 Bookmarking with Website Snapshots",
+        "username": "asciimoo",
+        "url": "https://github.com/asciimoo/omnom",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: RandomGeo.city",
+        "username": "emeth",
+        "url": "https://randomgeo.city/?seed=prP58p",
+        "description": "Browse a time before bots ruled the internet. Load a random geocities website. Share your favorite seeds!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: AI Call Answering Service for Home Service Businesses",
+        "username": "shaambhavs",
+        "url": "https://serviceagent.ai/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Create presentations with smart animations using Excalidraw",
+        "username": "OmarBrikaa",
+        "url": "https://github.com/excalidraw-smart-presentation/excalidraw-smart-presentation.github.io",
+        "description": "I often create presentations where elements need to move (animate) from one slide to the next. This is great for explaining algorithms, workflows, or anything that benefits from dynamic visuals.<p>I used to rely on Figma prototypes with smart animations for this, but I wanted a way to do it in Excalidraw\u2014maybe even more conveniently. So I made an Excalidraw fork which helps you present &quot;frames&quot; and interpolates animations between them.<p>Video demo (detecting cycles in a graph): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;user-attachments&#x2F;assets&#x2F;62033fca-03ca-489f-aeeb-5d51331deac9\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;user-attachments&#x2F;assets&#x2F;62033fca-03ca-489...</a><p>Instructions, tips, and current limitations: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;excalidraw-smart-presentation&#x2F;excalidraw-smart-presentation.github.io?tab=readme-ov-file#excalidraw-smart-presentation\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;excalidraw-smart-presentation&#x2F;excalidraw-...</a><p>Try it: <a href=\"https:&#x2F;&#x2F;excalidraw-smart-presentation.github.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;excalidraw-smart-presentation.github.io&#x2F;</a><p>Personal plug: I&#x27;m also currently looking for a full-time job. If you know of any opportunities or can refer me, I&#x27;d really appreciate it."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Online tool to show white fullscreen page",
+        "username": "atharvtathe",
+        "url": "https://www.mywhitescreen.com/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Cache for S3",
+        "username": "acstorage",
+        "url": "https://acceleratedcloudstorage.com",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Emissary \u2013 Rust implementation of the I2P protocol stack",
+        "username": "altonen",
+        "url": "https://github.com/altonen/emissary",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A web app that shows toilets near you",
+        "username": "jandr00id",
+        "url": "https://www.toilette-in-der-naehe.de",
+        "description": "Hello HN,\nI made a website where you can find toilets nearby on a map. It has data for Germany, Austria and Switzerland.\nI fetched the data from openstreetmap with overpass API, cleaned it up and stored it in a supabase DB. In case there was no address, i used nominatim API to geocode it.\nFeel free to ckeck it out. Happy for feedback.<p>Jan"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: We open sourced a $50M neobank",
+        "username": "garyhtou",
+        "url": "https://hackclub.com/fiscal-sponsorship/open-source/",
+        "description": "Open sourcing our neobank for nonprofits has been years in the making. We shared our initial launch here back in 2019 (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=19257241\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=19257241</a>). Today, I\u2019m happy to announce that our Ruby on Rails codebase is public on GitHub!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: MCP Server to let agents control the browser",
+        "username": "suchintan",
+        "url": "https://github.com/Skyvern-AI/skyvern/tree/main/integrations/mcp",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made a Chrome Extension to stop mindless browsing / avoid tab clutter",
+        "username": "deviscold",
+        "url": "https://lucid-landing-nine.vercel.app/",
+        "description": "Hey HN,<p>I&#x27;ve created on a Chrome Extension called Lucid to help me maintain my focus while browsing. It has been working great for me, so I wanted to share it here.<p>Whenever I start browsing with a certain intention, I always find myself get off track, doing some other thing, forgetting about my intention. This also leads to like 20+ cluttered tabs, not knowing what to keep or close.<p>So I built Lucid. Simply stating my intention (1) creates a floating reminder that follows me everywhere, and (2) creates a tab group off of the intention so the tabs will be organized automatically. You can add multiple intentions as well.<p>I hope this helps, and I would love to hear your feedback!<p>CB"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: CVE-Bench, the first LLM benchmark using real-world web vulnerabilities",
+        "username": "jbenn",
+        "url": "https://github.com/uiuc-kang-lab/cve-benchmark",
+        "description": "AI agents now have impressive reasoning capabilities. This raises an important question: how dangerous are these AI agents at identifying &amp; exploiting web vulnerabilities?<p>We created CVE-bench to find out (I&#x27;m one contributor of 16). To our knowledge CVE-bench is the first benchmark using real-world web vulnerabilities to evaluate AI agents&#x27; cyberattack capabilities. We included 40 CVEs from NIST&#x27;s database, focusing on critical-severity vulnerability (CVSS &gt; 9.0).<p>To properly evaluate agents\u2019 attacks, we built isolated environments with containerization and identified 8 common attack vectors. Each vulnerability took 5-24 person-hours to properly set up and validate.<p>Our results show that current AI agents successfully exploited up to 13% of vulnerabilities without knowledge about the vulnerability (0-day). If given a brief description of the vulnerability (1-day), they can exploit up to 25%. Agents are all using GPT-4o without specialized training.<p>The growing risk of AI misuse highlights the need for careful red-teaming. We hope CVE-bench can serve as a valuable tool for the community to assess the risks of emerging AI systems.<p>Paper: <a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2503.17332\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2503.17332</a><p>Code: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;uiuc-kang-lab&#x2F;cve-benchmark\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;uiuc-kang-lab&#x2F;cve-benchmark</a><p>Medium: <a href=\"https:&#x2F;&#x2F;medium.com&#x2F;@danieldkang&#x2F;measuring-ai-agents-ability-to-exploit-web-applications-ba4225aa281f\" rel=\"nofollow\">https:&#x2F;&#x2F;medium.com&#x2F;@danieldkang&#x2F;measuring-ai-agents-ability-...</a><p>Substack: <a href=\"https:&#x2F;&#x2F;ddkang.substack.com&#x2F;p&#x2F;measuring-ai-agents-ability-to-exploit\" rel=\"nofollow\">https:&#x2F;&#x2F;ddkang.substack.com&#x2F;p&#x2F;measuring-ai-agents-ability-to...</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Music Melee \u2013 High-speed parkour FPS for making beautiful music",
+        "username": "gianlucatruda",
+        "url": "https://github.com/gianlucatruda/music-melee",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Million Dollar Homepage is back, but there's a twist",
+        "username": "prajaktakohli",
+        "url": "https://10000resumes.com",
+        "description": "Check out yourself."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Zip-sizer \u2013 A tool to estimate the compressed size of large archives",
+        "username": "arunsupe",
+        "url": "https://github.com/arunsupe/zip-sizer",
+        "description": "Introducing zip-sizer, a small CLI, to estimate compressed sizes of directories. It works by choosing a representative sample of the data, compressing it in memory and forming an estimate. It is designed to work on very large archives. Fast and memory-efficient. Estimates for gzip&#x2F;bzip2 algorithms. Error ~2.5% in my testing.<p>Feedback welcome."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Rust Lib for Native OCR on macOS, Windows, Linux",
+        "username": "louis030195",
+        "url": "https://github.com/mediar-ai/uniOCR",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: MCP Neovim Server \u2013 Tiny AI Text Assistant for Neovim",
+        "username": "bigcodegen",
+        "url": "https://github.com/bigcodegen/mcp-neovim-server",
+        "description": "MCP-Neovim-Server is a proof-of-concept that connects Claude Desktop (or any client) to Neovim via the Model Context Protocol (MCP) and Neovim\u2019s NodeJS client library. It uses Vim\u2019s native editing power and the model&#x27;s knowledge of Vim to add a lightweight AI text assistant for coding or general use. Feedback and issues on github welcome."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Less Slow C++: Revisiting Performance Tricks for C/C++/CUDA/Asm/PTX",
+        "username": "ashvardanian",
+        "url": "https://github.com/ashvardanian/less_slow.cpp",
+        "description": "Earlier this year, I took a month to reexamine my coding habits and rethink some past design choices. I hope to rewrite and improve my FOSS libraries this year, and I needed answers to a few questions first. Perhaps some of these questions will resonate with others in the community, too.<p><pre><code>  - Are coroutines viable for high-performance work?\n  - Should I use SIMD intrinsics for clarity or drop to assembly for easier library distribution?\n  - Has hardware caught up with vectorized scatter&#x2F;gather in AVX-512 &amp; SVE?\n  - How do secure enclaves &amp; pointer tagging differ on Intel, Arm, &amp; AMD?\n  - What&#x27;s the throughput gap between CPU and GPU Tensor Cores (TCs)?\n  - How costly are misaligned memory accesses &amp; split-loads, and what gains do non-temporal loads&#x2F;stores offer?\n  - Which parts of the standard library hit performance hardest?\n  - How do error-handling strategies compare overhead-wise?\n  - What&#x27;s the compile-time vs. run-time trade-off for lazily evaluated ranges?\n  - What practical, non-trivial use cases exist for meta-programming?\n  - How challenging is Linux Kernel bypass with io_uring vs. POSIX sockets?\n  - How close are we to effectively using Networking TS or heterogeneous Executors in C++?\n  - What are best practices for propagating stateful allocators in nested containers, and which libraries support them?\n</code></pre>\nThese questions span from micro-kernel optimizations (nanoseconds) to distributed systems (micro&#x2F;millisecond latencies). Rather than tackling them all in one post, I compiled my explorations into a repository\u2014extending my previous Google Benchmark tutorial (&lt;<a href=\"https:&#x2F;&#x2F;ashvardanian.com&#x2F;posts&#x2F;google-benchmark\" rel=\"nofollow\">https:&#x2F;&#x2F;ashvardanian.com&#x2F;posts&#x2F;google-benchmark</a>&gt;)\u2014to serve as a sandbox for performance experimentation.<p>Some fun observations:<p><pre><code>  - Compilers now vectorize 3x3x3 and 4x4x4 single&#x2F;double precision multiplications well! The smaller one is ~60% slower despite 70% fewer operations, outperforming my vanilla SSE&#x2F;AVX and coming within 10% of AVX-512.\n  - Nvidia TCs vary dramatically across generations in numeric types, throughput, tile shapes, thread synchronization (thread&#x2F;quad-pair&#x2F;warp&#x2F;warp-groups), and operand storage. Post-Volta, manual PTX is often needed (as intrinsics lag), though the new TileIR (introduced at GTC) promises improvements for dense linear algebra kernels.\n  - The AI wave drives CPUs and GPUs to converge in mat-mul throughput &amp; programming complexity. It took me a day to debug TMM register initialization, and SME is equally odd. Sierra Forest packs 288 cores&#x2F;socket, and AVX10.2 drops 256-bit support for 512-bit... I wonder if discrete Intel GPUs are even needed, given CPU advances?\n  - In common floating-point ranges, scalar sine approximations can be up to 40x faster than standard implementations, even without SIMD. It&#x27;s a bit hand-wavy, though; I wish more projects documented error bounds and had 1 &amp; 3.5 ULP variants like Sleef.\n  - Meta-programming tools like CTRE can outperform typical RegEx engines by 5x and simplify building parsers compared to hand-crafted FSMs.\n  - Once clearly distinct in complexity and performance (DPDK&#x2F;SPDK vs. io_uring), the gap is narrowing. While pre-5.5 io_uring can boost UDP throughput by 4x on loopback IO, newer zero-copy and concurrency optimizations remain challenging.\n</code></pre>\nThe repository is loaded with links to favorite CppCon lectures, GitHub snippets, and tech blog posts. Recognizing that many high-level concepts are handled differently across languages, I&#x27;ve also started porting examples to Rust &amp; Python in separate repos. Coroutines look bad everywhere :(<p>Overall, this research project was rewarding! Most questions found answers in code \u2014 except pointer tagging and secure enclaves, which still elude me in public cloud. I&#x27;d love to hear from others, especially on comparing High-Level Synthesis for small matrix multiplications on FPGAs versus hand-written VHDL&#x2F;Verilog for integral types. Let me know if you have ideas for other cool, obscure topics to cover!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Lightweight and LLM-Powered Hacker News Terminal App (Go, Ollama)",
+        "username": "lascauje",
+        "url": "https://github.com/lascauje/chamot",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: AnuDB \u2013 An experimental C++ document store using RocksDB",
+        "username": "hashmak_jsn",
+        "url": "https://github.com/hash-anu/AnuDB",
+        "description": "I have been working in the database field for a significant amount of time; however, I never had the opportunity to work on the core of a database\u2014until now. I am excited to introduce AnuDB, a document-oriented database built using RocksDB for persistence.<p>Given my background in embedded Linux platforms, I conceptualized running a database on embedded systems. While there are several databases available in the market, most high-quality solutions cater primarily to enterprise customers. Although some databases exist for embedded platforms, they come with various limitations. AnuDB aims to address this gap, specifically targeting the IoT domain, where frequent data streaming and storage are essential.<p>AnuDB leverages RocksDB\u2019s LSM tree-based architecture as its storage engine, ensuring efficient handling of high-throughput workloads. The project includes JSON-based APIs for CRUD operations, with enforced indexing for document retrieval. The indexing mechanism is implemented using prefix extractors in RocksDB\u2014further details can be found in the Collection class of AnuDB.<p>I invite you to explore the GitHub repository:<a href=\"https:&#x2F;&#x2F;github.com&#x2F;hash-anu&#x2F;AnuDB\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hash-anu&#x2F;AnuDB</a>.\n Your insights and feedback would be invaluable in refining and improving the project. I look forward to hearing your thoughts!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Leaps in Bounds \u2013 compilation of progress on mathematical unknowns",
+        "username": "daniel-munro",
+        "url": "https://leapsinbounds.org",
+        "description": "I am fascinated by the collective process of narrowing bounds on mathematical constants (Ramsey numbers, the Busy Beaver function, etc.). I wanted to create visualizations but couldn&#x27;t find a convenient source of historical bounds updates across mathematical problems, so I created this repository.<p>The two main goals for the compiled data are to present them for browsing in a visually informative way, and to provide them for download in various formats (JSON, CSV, etc.).<p>I&#x27;m not a professional mathematician, so I welcome any suggestions on how to make this more useful and intuitive to mathematicians and enthusiasts. Contributions are also welcome via the GitHub Discussions!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Web3Wizz \u2013 Build Web3 Interfaces Without Code",
+        "username": "ditegashi",
+        "url": "https://web3wizz.com",
+        "description": "I&#x27;m Dit\u00e9, the founder of Web3Wizz. After 10+ years of building blockchain applications, I noticed a recurring pattern: developers spend 80% of their time creating and fixing UIs for web3 projects, with only 20% spent on actual smart contract development.<p>Web3Wizz solves this by automatically generating intuitive interfaces for any smart contract function. You simply connect your contract, select which functions to expose, customize the look and feel, and integrate it anywhere.<p>Some key features:\n- No-code interface builder for any smart contract\n- AI-powered customization (describe changes in plain English)\n- Auto-scanning of contract functions to create interactive widgets\n- Custom branding and styling\n- Future-proof with automatic security updates<p>We&#x27;re already trusted by projects like Blocksquare and FX1, managing over $700k in TVL through our interfaces and 260+ successful transactions.<p>I built this because I was tired of reinventing the UI wheel for every smart contract project. Most blockchain developers want to focus on contract logic, not spending weeks crafting clean interfaces that handle wallet connections, state management, and error handling.<p>I&#x27;d love your feedback on the product. Our goal is to make web3 development more accessible while maintaining the high security standards the space requires.<p>Try it out at web3wizz.com!"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: zxc \u2013 terminal TLS intercepting proxy in Rust with tmux and Vim as UI",
+        "username": "darkseid_is",
+        "url": "https://github.com/hail-hydrant/zxc",
+        "description": "- Disk based storage.<p>- Custom http&#x2F;1.1 parser to send malformed requests.<p>- http&#x2F;1.1 and websocket support.<p>Proxy: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc</a><p>Vim: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc.vim\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hail-hydrant&#x2F;zxc.vim</a>"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Auto-Browse \u2013 AI That Writes Automation Tests in Just One Line of Code",
+        "username": "gooru",
+        "url": "https://typescript.docs.auto-browse.com/introduction",
+        "description": "Hey HN,<p>I\u2019ve built Auto-Browse, an AI-powered agent that eliminates the need to write step definitions manually. Instead of mapping test steps to code, Auto-Browse directly executes BDD tests written in natural language with just one simple handler:<p>When(&#x2F;^(.*)$&#x2F;, async ({ page }, action: string) =&gt; {\n await auto(action, { page });\n});\nThat\u2019s it. No more writing boilerplate step definitions. No need for automation engineers to manually script test logic. Just describe your test steps in plain English, and the AI handles execution.<p>Why this is a game-changer:<p>No step definitions needed \u2013 write tests directly in natural language.<p>Works with BDD frameworks like Cucumber and Playwright.<p>Reduces test automation setup time drastically.<p>Example test case:<p>Given user is on the login page  \nWhen user enters &quot;admin&quot; in the username field  \nAnd user enters &quot;password&quot; in the password field  \nThen user should see the dashboard  \n See it in action: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;VxJg3RRShoY\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;VxJg3RRShoY</a>\n Docs: <a href=\"https:&#x2F;&#x2F;typescript.docs.auto-browse.com&#x2F;usage&#x2F;bdd-mode\" rel=\"nofollow\">https:&#x2F;&#x2F;typescript.docs.auto-browse.com&#x2F;usage&#x2F;bdd-mode</a>\n Website: <a href=\"https:&#x2F;&#x2F;www.auto-browse.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.auto-browse.com</a>\n NPM: npm install @auto-browse&#x2F;auto-browse<p>Would love to hear your thoughts\u2014does this approach resonate with you?"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Fake Broken Screen",
+        "username": "atharvtathe",
+        "url": "https://www.mywhitescreen.com/broken-screen",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Made a multiplayer game inspired by R/place (100% vibe-coded)",
+        "username": "paulcn",
+        "url": "https://pixel-war.xyz/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I made a website that finds your hobbies based on your email",
+        "username": "loyai",
+        "url": "https://hobbyfinder.app",
+        "description": "I built a website that uses OSINT to determine an email owner&#x27;s interests and hobbies based on their online activity.<p>Many people underestimate what OSINT is truly capable of."
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: I automate YT Shorts using this",
+        "username": "easyfree",
+        "url": "https://instavidai.app",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: A string Enum generator for Go lang",
+        "username": "theThree",
+        "url": "https://github.com/stanNthe5/stringenum",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Hot Notes \u2013 Fuzzy Search for Apple Notes (macOS)",
+        "username": "emadda",
+        "url": "https://hotmatcha.dev/hot-notes/",
+        "description": null
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Unlob \u2013 A search engine that reads websites and gives you direct answer",
+        "username": "ticktockten",
+        "url": "https://www.unlob.com",
+        "description": "I built Unlob because I was tired of search engines that only show links and AI tools that hallucinate answers. Unlob actually reads websites for you and extracts specific information directly from reliable sources.<p>Instead of:\n- Wading through pages of SEO-optimized garbage<p>- Getting vague AI-generated text with no citations<p>- Opening 10+ tabs to find one piece of information<p>Unlob gives you precise answers with direct attribution to real sources. No AI hallucinations, no sponsored results pushing products, just factual information extracted from the web.<p>Try these examples:<p>- When is John Wick 5 coming out - <a href=\"https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;john-wick-5\" rel=\"nofollow\">https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;john-wick-5</a><p>- What&#x27;s the best telescope under $500? - <a href=\"https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;whats-best-telescope-under-500\" rel=\"nofollow\">https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;whats-best-telescope-under-500</a><p>- Best low-cost robotic arms available today - <a href=\"https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;best-low-cost-robotic-arms-available\" rel=\"nofollow\">https:&#x2F;&#x2F;www.unlob.com&#x2F;lib&#x2F;best-low-cost-robotic-arms-availab...</a><p>I&#x27;d love your feedback, especially on search accuracy and the types of queries where this approach works best.<p>What kind of searches would you try with a tool like this?"
+    },
+    {
+        "origin": "show_hn_showstories",
+        "title": "Show HN: Multiplayer TRON Game in Browser",
+        "username": "kanishkdan98",
+        "url": "https://tron.kanishkdan.com",
+        "description": null
+    }
+]
