@@ -18,13 +18,13 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          pip install requests beautifulsoup4 python-dotenv slack-sdk
+
+      - name: Set up environment variables
+        run: |
+          echo "SLACK_AUTH_TOKEN=${{ secrets.SLACK_AUTH_TOKEN }}" >> .env
+          echo "SLACK_CHANNEL_ID=${{ secrets.SLACK_CHANNEL_ID }}" >> .env
 
       - name: Run Hacker News Script
         run: python get-show-new.py
-
-      - name: Upload Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: show_hn_stories
-          path: show_hn_stories.txt

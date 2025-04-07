@@ -2,6 +2,34 @@ from datetime import datetime
 import requests
 import json
 from bs4 import BeautifulSoup
+import os
+from dotenv import load_dotenv
+from slack_sdk import WebClient
+
+# Cargar variables del archivo .env
+load_dotenv()
+
+SLACK_TOKEN = os.getenv("SLACK_AUTH_TOKEN")
+SLACK_CHANNEL = os.getenv("SLACK_CHANNEL_ID")
+client = WebClient(token=SLACK_TOKEN)
+
+def send_to_slack(filename):
+    try:
+        print(f"Sending file to Slack: {filename}")
+        response = client.files_upload_v2(
+            file=filename,
+            title=f"Hacker News Shownew - {datetime.now().strftime('%d-%m-%Y')}",
+            channel=SLACK_CHANNEL,
+            initial_comment=f"Hacker News Shownew - {datetime.now().strftime('%d-%m-%Y')}",
+        )
+
+        if response.status_code == 200:
+            print("File sent to Slack successfully.")
+        else:
+            print("Failed to send file to Slack:", response.json())
+    except Exception as e:
+        print(f"Error sending file to Slack: {e}")
+
 
 def get_show_hn_stories_from_web():
     try:
@@ -66,6 +94,8 @@ def save_stories_to_file(stories):
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(json.dumps(stories, indent=4))
         print(f"Stories saved to {filename}")
+        
+        send_to_slack(filename)
     except Exception as e:
         print(f"Error saving to file: {e}")
 
@@ -73,3 +103,6 @@ def save_stories_to_file(stories):
 if __name__ == "__main__":
     stories = get_show_hn_stories_from_web()
     save_stories_to_file(stories)
+    
+
+    
