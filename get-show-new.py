@@ -41,8 +41,10 @@ def get_show_hn_stories_from_web():
                 url = f"{base_url}?next={next_id}&n={offset}"
             else:
                 url = f"{base_url}?n={offset}"
-
+            
+            print("Fetching URL:", url)
             response = requests.get(url)
+            print("Response:", response.status_code)
             if response.status_code != 200:
                 print(f"Error fetching Show HN page: {url}")
                 break
@@ -54,26 +56,33 @@ def get_show_hn_stories_from_web():
                 story_id = tr.get('id')
                 if story_id:
                     story_ids.append(int(story_id))
+                    
+            print("story_ids", story_ids)
 
             if not story_ids:
                 break
 
             for story_id in story_ids:
                 story_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
-                story_response = requests.get(story_url)
-                if story_response.status_code == 200:
-                    story_data = story_response.json()
-                    title = story_data.get('title', '')
-                    if title.startswith("Show HN"):
-                        stories.append({
-                            'id': story_data.get('id'),
-                            'origin': 'show_hn_newstories',
-                            'title': story_data.get('title'),
-                            'username': story_data.get('by'),
-                            'url': story_data.get('url'),
-                            'description': story_data.get('text'),
-                            'discussion_url': f'https://news.ycombinator.com/item?id={story_id}'
-                        })
+                
+                try: 
+                    story_response = requests.get(story_url)
+                    if story_response.status_code == 200:
+                        story_data = story_response.json()
+                        title = story_data.get('title', '')
+                        print("show title", title)
+                        if title.startswith("Show HN"):
+                            stories.append({
+                                'id': story_data.get('id'),
+                                'origin': 'show_hn_newstories',
+                                'title': story_data.get('title'),
+                                'username': story_data.get('by'),
+                                'url': story_data.get('url'),
+                                'description': story_data.get('text'),
+                                'discussion_url': f'https://news.ycombinator.com/item?id={story_id}'
+                            })
+                except Exception as e:
+                    print(f"Error fetching story {story_id}: {e}")
 
             # Obtener el ID del último elemento para la próxima página
             next_id = story_ids[-1] if story_ids else None
