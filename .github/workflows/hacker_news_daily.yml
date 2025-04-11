@@ -2,7 +2,7 @@ name: Run Hacker News Script Daily
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Todos los días a las 00:00 UTC
+    - cron: '30 19 * * *'
   workflow_dispatch:
 
 jobs:
